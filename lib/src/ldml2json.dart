@@ -2,7 +2,9 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-/// Utility for converting [Ldml][ldml] to Json.
+part of cldr;
+
+/// A wrapper around Cldr's [Ldml2JsonConverter][converter] tool.
 ///
 /// Dependencies:
 ///
@@ -10,54 +12,11 @@
 /// 2. [java][2]
 /// 3. [ant][3]
 ///
-/// [ldml]: http://unicode.org/reports/tr35/tr35-8.html
+/// [converter]: http://cldr.unicode.org/index/downloads/cldr-23-1
 /// [1]: http://unicode.org/Public/cldr/23.1
 /// [2]: http://java.com
 /// [3]: http://ant.apache.org
 // TODO: Run processes synchronously when http://dartbug.com/1707 is fixed.
-library cldr.tool.cldr.ldml2json;
-
-import 'dart:io';
-import 'dart:async';
-import 'package:path/path.dart';
-import 'package:args/args.dart';
-import 'util.dart';
-import 'io_util.dart';
-
-/// An entry point for the [Ldml2Json] class.
-///
-/// Usage:
-///
-///     dart ldml2json.dart --cldr [path to Cldr zips] --out [output path]
-///     dart ldml2json.dart --cldr [path to 1.] --out [output path] --config [Ldml2JsonConverter config path]
-///
-/// WARNING: This script will delete all existing files in --out.
-///
-main() {
-
-  // Define args.
-  var parser = new ArgParser();
-  parser.addOption(
-      'cldr',
-      help: 'The path to the extracted tools.zip and core.zip from Cldr');
-  parser.addOption(
-      'out',
-      help: 'The path in which to output the data');
-  parser.addOption(
-      'config',
-      help: 'The path to the Ldml2JsonConverter config file');
-
-  // Process args.
-  var results = parser.parse(new Options().arguments);
-  var cldr = results['cldr'];
-  var out = results['out'];
-  var config = results['config'];
-
-  new Ldml2Json(cldr, out, config).convert();
-}
-
-/// A wrapper around the [Ldml2JsonConverter][1] java tool.
-/// [1]: http://cldr.unicode.org/index/downloads/cldr-23-1
 class Ldml2Json {
 
   var logger = getLogger('cldr.ldml2json');
@@ -71,14 +30,20 @@ class Ldml2Json {
   /// The Ldml2JsonConverter config file path.
   final String config;
 
-  /// The java class.
-  static final _JAVA_CLASS = 'org.unicode.cldr.json.Ldml2JsonConverter';
+  /// The java class qualified name.
+  static final _JAVA_CLASS_QUALIFIED_NAME =
+      'org.unicode.cldr.json.$_JAVA_CLASS_SIMPLE_NAME';
+
+  /// The java class qualified name.
+  static final _JAVA_CLASS_SIMPLE_NAME = 'Ldml2JsonConverter';
 
   Ldml2Json(this.cldr, this.out, [this.config]);
 
   /// Converts Ldml data to Json.
-  Future convert() {
-    _checkDependencies().then((_) {
+  ///
+  /// The returned Future completes with the output Directory.
+  Future<Directory> convert() {
+    return _checkDependencies().then((_) {
 
       // Normalize output directory to exist and be empty.
       var outDir = new Directory(out);
@@ -90,31 +55,38 @@ class Ldml2Json {
         outDir.createSync(recursive: true);
       }
 
-      return _runAnt().then((_) {
-        // Run for both types of data.
-        Future.forEach(['main', 'supplemental'], _runJavaClass);
+      return _runCldrToolsAntBuild().then((_) {
+        // Run the java class for all relevant cldr subdirectories.
+        return Future.forEach(_cldrSubdirectories, _runJavaClass)
+            // Complete with the output directory.
+            .then((_) => outDir);
       });
     });
   }
 
-  /// Run ant build if necessary.
-  Future _runAnt() => new Future(() =>
-      !new Directory(_javaClassesPath).existsSync() ?
-          Process.run(
-              'ant',
-              ['clean', 'all'],
-              workingDirectory: _cldrJavaPath).then((_) => null) :
-          null);
+  /// Runs the Cldr tools ant build if necessary.
+  Future _runCldrToolsAntBuild() => new Future(() {
+    if(!new Directory(_javaClassesPath).existsSync()) {
+      logger.info("Running the Cldr tools ant build");
+      return Process.run(
+            'ant',
+            ['clean', 'all'],
+            workingDirectory: _cldrJavaPath).then((_) => null);
+    } else {
+      return null;
+    }
+  });
 
-  /// Actually run the java class.
+  /// Runs the java class.
   _runJavaClass(String cldrSubdirectory) {
     var javaArgs = _getJavaArgs(
-        _JAVA_CLASS,
+        _JAVA_CLASS_QUALIFIED_NAME,
         classPath: _classPath,
         systemProperties: {'CLDR_DIR' : cldr},
         classArgs: _getJavaClassArgs(cldrSubdirectory));
 
-    logger.info('Calling Ldml2JsonConverter with command:\n' + javaArgs.join(' '));
+    logger.info('''Calling $_JAVA_CLASS_SIMPLE_NAME with command:
+java ${javaArgs.join(' ')}''');
 
     return Process.run('java', javaArgs).then((ProcessResult result) {
       if(result.exitCode == 0) {
@@ -125,10 +97,10 @@ class Ldml2Json {
     });
   }
 
-  /// The path to the Cldr java classes.
+  /// The Cldr java path.
   String get _cldrJavaPath => join(cldr, "tools", "java");
 
-  /// The path to the Cldr java classes.
+  /// The Cldr java compiled classes path.
   String get _javaClassesPath => join(_cldrJavaPath, "classes");
 
   /// The java class path to use.
@@ -191,6 +163,20 @@ class Ldml2Json {
 
   /// Whether dependencies have been checked yet.
   bool _dependenciesChecked = false;
+
+  /// The Cldr subdirectories from which to run the java class.
+  Iterable<String> get _cldrSubdirectories {
+    // The default config contains all data.
+    var subdirs = ['main', 'supplemental'];
+
+    if(config != null) {
+      // Scan custom configs for subdirectory references.
+      var configContent = new File(config).readAsStringSync();
+      subdirs = subdirs.where((subdir) =>
+          configContent.contains('//cldr/$subdir'));
+    }
+    return subdirs;
+  }
 }
 
 /// Returns a class path consisting of [paths] using the platform dependent

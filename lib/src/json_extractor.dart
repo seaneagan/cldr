@@ -1,10 +1,8 @@
+// Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
 
-library cldr.json_extractor;
-
-import 'dart:io';
-import 'dart:json' as json;
-import 'package:path/path.dart';
-import 'package:cldr/src/util.dart';
+part of cldr;
 
 /// Mechanism to extract data from [Ldml2Json] output.
 abstract class JsonExtractor {
@@ -14,7 +12,7 @@ abstract class JsonExtractor {
   /// Path to the root of the [Ldml2Json] output.
   final String jsonRoot;
 
-  /// Json file [basename].  The [extension] is always "json".
+  /// Json file [basename].  The file [extension] is always "json".
   final String jsonFileBasename;
 
   /// Cldr top-level directory, either "main" or "supplemental".
