@@ -1,7 +1,11 @@
 name: cldr
-description: A sample command-line application
+version: 0.0.1
+author: Sean Eagan <seaneagan1@gmail.com>
+description: Mechanisms to extract data from Cldr.
+homepage: http://github.com/seaneagan/cldr
 dependencies:
   args: any
   logging: any
   path: any
+dev_dependencies:
   unittest: any
