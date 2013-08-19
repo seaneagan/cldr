@@ -36,7 +36,7 @@ main() {
   parser.addOption(
       'version',
       help: 'The Cldr version to install.',
-      defaultsTo: 'latest');
+      defaultsTo: _cldrLatest);
 
   // Process args.
   var results = parser.parse(new Options().arguments);
@@ -46,6 +46,7 @@ main() {
     return;
   }
   var path = results['path'];
+  if(path == null) path = cldr_install;
   var version = results['version'];
 
   _installCldr(version, path);
@@ -57,7 +58,7 @@ _installCldr(String version, String path) {
 }
 
 // TODO: Use correct method to concat Uri pieces.
-String _getCldrZipUri(String version, String zip) => _cldrDownloadRoot + version + '$zip.zip';
+String _getCldrZipUri(String version, String zip) => _cldrDownloadRoot + version + '/' + '$zip.zip';
 
 /// The [latest][cldr_latest] Cldr version.
 /// [cldr_latest]: http://cldr.unicode.org/index/downloads/latest
