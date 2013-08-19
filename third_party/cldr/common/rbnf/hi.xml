@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
     <identity>
-        <version number="$Revision: 4126 $"/>
-        <generation date="$Date: 2009-05-05 18:33:13 -0500 (Tue, 05 May 2009) $"/>
+        <version number="$Revision: 8242 $"/>
+        <generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
         <language type="hi"/>
     </identity>
     <rbnf>
@@ -17,7 +22,7 @@
             </ruleset>
             <ruleset type="spellout-cardinal">
                 <rbnfrule value="-x">ऋण →→;</rbnfrule>
-                <rbnfrule value="x.x">←← ... →→;</rbnfrule>
+                <rbnfrule value="x.x">←← दशमलव →→;</rbnfrule>
                 <rbnfrule value="0">शून्य;</rbnfrule>
                 <rbnfrule value="1">एक;</rbnfrule>
                 <rbnfrule value="2">दो;</rbnfrule>
@@ -119,12 +124,36 @@
                 <rbnfrule value="98">अट्ठानबे;</rbnfrule>
                 <rbnfrule value="99">निन्यानबे;</rbnfrule>
                 <rbnfrule value="100">←← सौ[ →→];</rbnfrule>
-                <rbnfrule value="1000">←← हजार[ →→];</rbnfrule>
+                <rbnfrule value="1000">←← हज़ार[ →→];</rbnfrule>
                 <rbnfrule value="100000">←← लाख[ →→];</rbnfrule>
                 <rbnfrule value="10000000">←← करोड़[ →→];</rbnfrule>
                 <rbnfrule value="1000000000">←← अरब[ →→];</rbnfrule>
                 <rbnfrule value="100000000000">←← खरब[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000000000">=#,##,##0=;</rbnfrule>
+            </ruleset>
+            <ruleset type="spellout-ordinal-masculine">
+                <rbnfrule value="-x">ऋण →→;</rbnfrule>
+                <rbnfrule value="x.x">=#,##0.#=;</rbnfrule>
+                <rbnfrule value="0">शून्यवाँ;</rbnfrule>
+                <rbnfrule value="1">पहला;</rbnfrule>
+                <rbnfrule value="2">दूसरा;</rbnfrule>
+                <rbnfrule value="3">तीसरा;</rbnfrule>
+                <rbnfrule value="4">चौथा;</rbnfrule>
+                <rbnfrule value="5">पाँचवाँ;</rbnfrule>
+                <rbnfrule value="6">छठा;</rbnfrule>
+                <rbnfrule value="7">=%spellout-cardinal=वाँ;</rbnfrule>
+            </ruleset>
+            <ruleset type="spellout-ordinal-feminine">
+                <rbnfrule value="-x">ऋण →→;</rbnfrule>
+                <rbnfrule value="x.x">=#,##0.#=;</rbnfrule>
+                <rbnfrule value="0">शून्यवी;</rbnfrule>
+                <rbnfrule value="1">पहली;</rbnfrule>
+                <rbnfrule value="2">दूसरी;</rbnfrule>
+                <rbnfrule value="3">तीसरी;</rbnfrule>
+                <rbnfrule value="4">चौथी;</rbnfrule>
+                <rbnfrule value="5">पाँचवी;</rbnfrule>
+                <rbnfrule value="6">छठी;</rbnfrule>
+                <rbnfrule value="7">=%spellout-cardinal=वी;</rbnfrule>
             </ruleset>
         </rulesetGrouping>
         <rulesetGrouping type="OrdinalRules">

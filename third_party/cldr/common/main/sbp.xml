@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5799 $"/>
-		<generation date="$Date: 2011-05-02 01:19:45 -0500 (Mon, 02 May 2011) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="sbp"/>
 	</identity>
 	<localeDisplayNames>
@@ -100,7 +104,6 @@
 			<territory type="CN">Shina</territory>
 			<territory type="CO">Kolombiya</territory>
 			<territory type="CR">Kositalika</territory>
-			<territory type="CS">Selibiya ni Montenegilo</territory>
 			<territory type="CU">Kuba</territory>
 			<territory type="CV">Kepuvede</territory>
 			<territory type="CY">Kupilosi</territory>
@@ -289,26 +292,76 @@
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P S T U V W Y]</exemplarCharacters>
 	</characters>
 	<delimiters>
-		<quotationStart>'</quotationStart>
-		<quotationEnd>'</quotationEnd>
-		<alternateQuotationStart>“</alternateQuotationStart>
-		<alternateQuotationEnd>”</alternateQuotationEnd>
+		<quotationStart>“</quotationStart>
+		<quotationEnd>”</quotationEnd>
+		<alternateQuotationStart>‘</alternateQuotationStart>
+		<alternateQuotationEnd>’</alternateQuotationEnd>
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d MMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd/MM/y GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M/d</dateFormatItem>
+						<dateFormatItem id="MEd">E, M/d</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
+						<dateFormatItem id="ms">m:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
+						<dateFormatItem id="yMd">M/d/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, M/d/y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">MMM d y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, MMM d, y</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
 						<monthWidth type="abbreviated">
 							<month type="1">Mup</month>
 							<month type="2">Mwi</month>
-							<month type="3">Mus</month>
+							<month type="3">Msh</month>
 							<month type="4">Mun</month>
-							<month type="5">Mus</month>
+							<month type="5">Mag</month>
 							<month type="6">Muj</month>
-							<month type="7">Mus</month>
-							<month type="8">Mup</month>
-							<month type="9">Mun</month>
+							<month type="7">Msp</month>
+							<month type="8">Mpg</month>
+							<month type="9">Mye</month>
 							<month type="10">Mok</month>
 							<month type="11">Mus</month>
 							<month type="12">Muh</month>
@@ -414,7 +467,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>dd/MM/yyyy</pattern>
+							<pattern>dd/MM/y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -443,7 +496,7 @@
 				<dateTimeFormats>
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="EEEd">EEE d</dateFormatItem>
+						<dateFormatItem id="Ed">E d</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
 						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
@@ -458,75 +511,75 @@
 						<dateFormatItem id="y">y</dateFormatItem>
 						<dateFormatItem id="yM">M/y</dateFormatItem>
 						<dateFormatItem id="yMd">M/d/y</dateFormatItem>
-						<dateFormatItem id="yMEd">EEE, M/d/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, M/d/y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">MMM d y</dateFormatItem>
-						<dateFormatItem id="yMMMEd">EEE, MMM d, y</dateFormatItem>
-						<dateFormatItem id="yQ">Q y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, MMM d, y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>Uluhaavi lwa</displayName>
-					</field>
-					<field type="year">
-						<displayName>Mwakha</displayName>
-					</field>
-					<field type="month">
-						<displayName>Mwesi</displayName>
-					</field>
-					<field type="week">
-						<displayName>Ilijuma</displayName>
-					</field>
-					<field type="day">
-						<displayName>Lusiku</displayName>
-						<relative type="-1">Imehe</relative>
-						<relative type="0">Ineng'uni</relative>
-						<relative type="1">Pamulaawu</relative>
-					</field>
-					<field type="weekday">
-						<displayName>Ulusiku lwa Lijuma</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>Uluhaavi lwa lusiku</displayName>
-					</field>
-					<field type="hour">
-						<displayName>Ilisala</displayName>
-					</field>
-					<field type="minute">
-						<displayName>Idakika</displayName>
-					</field>
-					<field type="second">
-						<displayName>Isekunde</displayName>
-					</field>
-					<field type="zone">
-						<displayName>Uluhaavi lwa lisaa</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>Uluhaavi lwa</displayName>
+			</field>
+			<field type="year">
+				<displayName>Mwakha</displayName>
+			</field>
+			<field type="month">
+				<displayName>Mwesi</displayName>
+			</field>
+			<field type="week">
+				<displayName>Ilijuma</displayName>
+			</field>
+			<field type="day">
+				<displayName>Lusiku</displayName>
+				<relative type="-1">Imehe</relative>
+				<relative type="0">Ineng'uni</relative>
+				<relative type="1">Pamulaawu</relative>
+			</field>
+			<field type="weekday">
+				<displayName>Ulusiku lwa Lijuma</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>Uluhaavi lwa lusiku</displayName>
+			</field>
+			<field type="hour">
+				<displayName>Ilisala</displayName>
+			</field>
+			<field type="minute">
+				<displayName>Idakika</displayName>
+			</field>
+			<field type="second">
+				<displayName>Isekunde</displayName>
+			</field>
+			<field type="zone">
+				<displayName>Uluhaavi lwa lisaa</displayName>
+			</field>
+		</fields>
 	</dates>
 	<numbers>
 		<symbols numberSystem="latn">
 			<decimal>.</decimal>
 			<group>,</group>
 		</symbols>
-		<decimalFormats>
+		<decimalFormats numberSystem="latn">
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 		</decimalFormats>
-		<percentFormats>
+		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
-		<currencyFormats>
+		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat>
 					<pattern>#,##0.00¤</pattern>
@@ -692,6 +745,9 @@
 				<displayName>Ihela ya Afilika Kusini</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Ihela ya Sambiya (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Ihela ya Sambiya</displayName>
 			</currency>
 			<currency type="ZWD">
@@ -706,3 +762,4 @@
 		</messages>
 	</posix>
 </ldml>
+

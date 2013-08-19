@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE supplementalData SYSTEM "../../common/dtd/ldmlSupplemental.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <supplementalData>
-	<version number="$Revision: 5835 $"/>
-	<generation date="$Date: 2011-05-04 12:09:04 -0500 (Wed, 04 May 2011) $"/>
+	<version number="$Revision: 8274 $"/>
+	<generation date="$Date: 2013-03-06 11:15:16 -0600 (Wed, 06 Mar 2013) $"/>
 
 	<metaZones>
 		<metazoneInfo>
@@ -89,6 +94,10 @@
 			<timezone type="Africa/Johannesburg">
 				<usesMetazone mzone="Africa_Southern"/>
 			</timezone>
+			<timezone type="Africa/Juba">
+				<usesMetazone to="2000-01-15 10:00" mzone="Africa_Central"/>
+				<usesMetazone from="2000-01-15 10:00" mzone="Africa_Eastern"/>
+			</timezone>
 			<timezone type="Africa/Kampala">
 				<usesMetazone mzone="Africa_Eastern"/>
 			</timezone>
@@ -165,7 +174,8 @@
 				<usesMetazone to="1990-05-03 23:00" from="1981-12-31 22:00" mzone="Europe_Central"/>
 				<usesMetazone to="1996-09-29 22:00" from="1990-05-03 23:00" mzone="Europe_Eastern"/>
 				<usesMetazone to="1997-10-03 22:00" from="1996-09-29 22:00" mzone="Europe_Central"/>
-				<usesMetazone from="1997-10-03 22:00" mzone="Europe_Eastern"/>
+				<usesMetazone to="2012-11-10 00:00" from="1997-10-03 22:00" mzone="Europe_Eastern"/>
+				<usesMetazone from="2012-11-10 00:00" mzone="Europe_Central"/>
 			</timezone>
 			<timezone type="Africa/Tunis">
 				<usesMetazone mzone="Europe_Central"/>
@@ -327,6 +337,9 @@
 			<timezone type="America/Costa_Rica">
 				<usesMetazone mzone="America_Central"/>
 			</timezone>
+			<timezone type="America/Creston">
+				<usesMetazone mzone="America_Mountain"/>
+			</timezone>
 			<timezone type="America/Cuiaba">
 				<usesMetazone mzone="Amazon"/>
 			</timezone>
@@ -470,6 +483,9 @@
 				<usesMetazone to="2000-10-29 07:00" mzone="America_Central"/>
 				<usesMetazone from="2000-10-29 07:00" mzone="America_Eastern"/>
 			</timezone>
+			<timezone type="America/Kralendijk">
+				<usesMetazone mzone="Atlantic"/>
+			</timezone>
 			<timezone type="America/La_Paz">
 				<usesMetazone mzone="Bolivia"/>
 			</timezone>
@@ -483,6 +499,9 @@
 				<usesMetazone to="1974-01-06 07:00" mzone="America_Eastern"/>
 				<usesMetazone to="1974-10-27 07:00" from="1974-01-06 07:00" mzone="America_Central"/>
 				<usesMetazone from="1974-10-27 07:00" mzone="America_Eastern"/>
+			</timezone>
+			<timezone type="America/Lower_Princes">
+				<usesMetazone mzone="Atlantic"/>
 			</timezone>
 			<timezone type="America/Maceio">
 				<usesMetazone mzone="Brasilia"/>
@@ -632,7 +651,8 @@
 				<usesMetazone to="2000-10-29 07:00" mzone="America_Central"/>
 				<usesMetazone to="2001-04-01 08:00" from="2000-10-29 07:00" mzone="America_Eastern"/>
 				<usesMetazone to="2006-10-29 07:00" from="2001-04-01 08:00" mzone="America_Central"/>
-				<usesMetazone from="2006-10-29 07:00" mzone="America_Eastern"/>
+				<usesMetazone to="2007-03-11 08:00" from="2006-10-29 07:00" mzone="America_Eastern"/>
+				<usesMetazone from="2007-03-11 08:00" mzone="America_Central"/>
 			</timezone>
 			<timezone type="America/Rio_Branco">
 				<usesMetazone to="2008-06-24 05:00" mzone="Acre"/>
@@ -728,7 +748,9 @@
 			<timezone type="Antarctica/Casey">
 				<usesMetazone to="2009-10-17 18:00" mzone="Australia_Western"/>
 				<usesMetazone to="2010-03-04 15:00" from="2009-10-17 18:00" mzone="Casey"/>
-				<usesMetazone from="2010-03-04 15:00" mzone="Australia_Western"/>
+				<usesMetazone to="2011-10-27 18:00" from="2010-03-04 15:00" mzone="Australia_Western"/>
+				<usesMetazone to="2012-02-21 17:00" from="2011-10-27 18:00" mzone="Casey"/>
+				<usesMetazone from="2012-02-21 17:00" mzone="Australia_Western"/>
 			</timezone>
 			<timezone type="Antarctica/Davis">
 				<usesMetazone mzone="Davis"/>
@@ -857,6 +879,10 @@
 				<usesMetazone to="1980-04-30 15:30" mzone="Changbai"/>
 				<usesMetazone from="1980-04-30 15:30" mzone="China"/>
 			</timezone>
+			<timezone type="Asia/Hebron">
+				<usesMetazone to="1995-12-31 22:00" mzone="Israel"/>
+				<usesMetazone from="1995-12-31 22:00" mzone="Europe_Eastern"/>
+			</timezone>
 			<timezone type="Asia/Hong_Kong">
 				<usesMetazone mzone="Hong_Kong"/>
 			</timezone>
@@ -892,6 +918,11 @@
 			</timezone>
 			<timezone type="Asia/Katmandu">
 				<usesMetazone mzone="Nepal"/>
+			</timezone>
+			<timezone type="Asia/Khandyga">
+				<usesMetazone to="2003-12-31 15:00" mzone="Yakutsk"/>
+				<usesMetazone to="2011-09-12 13:00" from="2003-12-31 15:00" mzone="Vladivostok"/>
+				<usesMetazone from="2011-09-12 13:00" mzone="Yakutsk"/>
 			</timezone>
 			<timezone type="Asia/Krasnoyarsk">
 				<usesMetazone mzone="Krasnoyarsk"/>
@@ -1015,6 +1046,11 @@
 				<usesMetazone to="1980-04-30 18:00" mzone="Urumqi"/>
 				<usesMetazone from="1980-04-30 18:00" mzone="China"/>
 			</timezone>
+			<timezone type="Asia/Ust-Nera">
+				<usesMetazone to="1981-03-31 15:00" mzone="Yakutsk"/>
+				<usesMetazone from="1981-03-31 15:00" to="2011-09-12 12:00" mzone="Magadan"/>
+				<usesMetazone from="2011-09-12 12:00" mzone="Vladivostok"/>
+			</timezone>
 			<timezone type="Asia/Vientiane">
 				<usesMetazone mzone="Indochina"/>
 			</timezone>
@@ -1134,6 +1170,9 @@
 			<timezone type="Europe/Budapest">
 				<usesMetazone mzone="Europe_Central"/>
 			</timezone>
+			<timezone type="Europe/Busingen">
+				<usesMetazone mzone="Europe_Central"/>
+			</timezone>
 			<timezone type="Europe/Chisinau">
 				<usesMetazone to="1990-05-05 21:00" mzone="Moscow"/>
 				<usesMetazone from="1990-05-05 21:00" mzone="Europe_Eastern"/>
@@ -1170,7 +1209,7 @@
 			</timezone>
 			<timezone type="Europe/Kaliningrad">
 				<usesMetazone to="1991-03-30 23:00" mzone="Moscow"/>
-				<usesMetazone from="1991-03-30 23:00" mzone="Europe_Eastern"/>
+				<usesMetazone to="2011-03-27 00:00" from="1991-03-30 23:00" mzone="Europe_Eastern"/>
 			</timezone>
 			<timezone type="Europe/Kiev">
 				<usesMetazone to="1990-06-30 23:00" mzone="Moscow"/>
@@ -1203,7 +1242,7 @@
 			</timezone>
 			<timezone type="Europe/Minsk">
 				<usesMetazone to="1991-03-30 23:00" mzone="Moscow"/>
-				<usesMetazone from="1991-03-30 23:00" mzone="Europe_Eastern"/>
+				<usesMetazone to="2011-03-27 00:00" from="1991-03-30 23:00" mzone="Europe_Eastern"/>
 			</timezone>
 			<timezone type="Europe/Monaco">
 				<usesMetazone mzone="Europe_Central"/>
@@ -1465,7 +1504,7 @@
 			</timezone>
 		</metazoneInfo>
 
-		<mapTimezones type="metazones">
+		<mapTimezones type="metazones" typeVersion="2011n">
 			<mapZone other="Acre" territory="001" type="America/Rio_Branco"/>
 			<mapZone other="Afghanistan" territory="001" type="Asia/Kabul"/>
 			<mapZone other="Africa_Central" territory="001" type="Africa/Maputo"/>
@@ -1548,6 +1587,7 @@
 			<mapZone other="Atlantic" territory="AW" type="America/Aruba"/>
 			<mapZone other="Atlantic" territory="BB" type="America/Barbados"/>
 			<mapZone other="Atlantic" territory="BM" type="Atlantic/Bermuda"/>
+			<mapZone other="Atlantic" territory="BQ" type="America/Kralendijk"/>
 			<mapZone other="Atlantic" territory="DM" type="America/Dominica"/>
 			<mapZone other="Atlantic" territory="GD" type="America/Grenada"/>
 			<mapZone other="Atlantic" territory="GL" type="America/Thule"/>
@@ -1558,6 +1598,7 @@
 			<mapZone other="Atlantic" territory="MQ" type="America/Martinique"/>
 			<mapZone other="Atlantic" territory="MS" type="America/Montserrat"/>
 			<mapZone other="Atlantic" territory="PR" type="America/Puerto_Rico"/>
+			<mapZone other="Atlantic" territory="SX" type="America/Lower_Princes"/>
 			<mapZone other="Atlantic" territory="TT" type="America/Port_of_Spain"/>
 			<mapZone other="Atlantic" territory="VC" type="America/St_Vincent"/>
 			<mapZone other="Atlantic" territory="VG" type="America/Tortola"/>
@@ -1586,7 +1627,6 @@
 			<mapZone other="Chile" territory="001" type="America/Santiago"/>
 			<mapZone other="Chile" territory="AQ" type="Antarctica/Palmer"/>
 			<mapZone other="China" territory="001" type="Asia/Shanghai"/>
-			<mapZone other="China" territory="MO" type="Asia/Macau"/>
 			<mapZone other="Choibalsan" territory="001" type="Asia/Choibalsan"/>
 			<mapZone other="Christmas" territory="001" type="Indian/Christmas"/>
 			<mapZone other="Cocos" territory="001" type="Indian/Cocos"/>
@@ -1662,7 +1702,6 @@
 			<mapZone other="GMT" territory="GM" type="Africa/Banjul"/>
 			<mapZone other="GMT" territory="GN" type="Africa/Conakry"/>
 			<mapZone other="GMT" territory="IE" type="Europe/Dublin"/>
-			<mapZone other="GMT" territory="LR" type="Africa/Monrovia"/>
 			<mapZone other="GMT" territory="ML" type="Africa/Bamako"/>
 			<mapZone other="GMT" territory="MR" type="Africa/Nouakchott"/>
 			<mapZone other="GMT" territory="SH" type="Atlantic/St_Helena"/>
@@ -1793,4 +1832,18 @@
 			<mapZone other="Yukon" territory="001" type="America/Yakutat"/>
 		</mapTimezones>
 	</metaZones>
+
+	<primaryZones>
+		<primaryZone iso3166="CL">America/Santiago</primaryZone>
+		<primaryZone iso3166="CN">Asia/Shanghai</primaryZone>
+		<primaryZone iso3166="DE">Europe/Berlin</primaryZone>
+		<primaryZone iso3166="EC">America/Guayaquil</primaryZone>
+		<primaryZone iso3166="ES">Europe/Madrid</primaryZone>
+		<primaryZone iso3166="MH">Pacific/Majuro</primaryZone>
+		<primaryZone iso3166="MY">Asia/Kuala_Lumpur</primaryZone>
+		<primaryZone iso3166="NZ">Pacific/Auckland</primaryZone>
+		<primaryZone iso3166="PT">Europe/Lisbon</primaryZone>
+		<primaryZone iso3166="UA">Europe/Kiev</primaryZone>
+		<primaryZone iso3166="UZ">Asia/Tashkent</primaryZone>
+	</primaryZones>
 </supplementalData>

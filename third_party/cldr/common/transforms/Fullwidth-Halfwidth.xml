@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE supplementalData SYSTEM "../../common/dtd/ldmlSupplemental.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <supplementalData>
-  <version number="$Revision: 4747 $"/>
-	<generation date="$Date: 2010-02-25 15:22:30 -0600 (Thu, 25 Feb 2010) $"/>
+  <version number="$Revision: 8242 $"/>
+	<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
 	<transforms>
 		<transform source="Fullwidth" target="Halfwidth" direction="both">
 			<comment># Fullwidth-Halfwidth</comment>
@@ -98,7 +103,7 @@
 			<tRule>Ｙ↔Y; # from FULLWIDTH LATIN CAPITAL LETTER Y</tRule>
 			<tRule>Ｚ↔Z; # from FULLWIDTH LATIN CAPITAL LETTER Z</tRule>
 			<tRule>［↔'['; # from FULLWIDTH LEFT SQUARE BRACKET</tRule>
-			<tRule>＼↔'\\'; # from FULLWIDTH REVERSE SOLIDUS {double escape - aliu}</tRule>
+			<tRule>＼↔'\'; # from FULLWIDTH REVERSE SOLIDUS {double escape - aliu}</tRule>
 			<tRule>］↔']'; # from FULLWIDTH RIGHT SQUARE BRACKET</tRule>
 			<tRule>＾↔'^'; # from FULLWIDTH CIRCUMFLEX ACCENT</tRule>
 			<tRule>＿↔'_'; # from FULLWIDTH LOW LINE</tRule>

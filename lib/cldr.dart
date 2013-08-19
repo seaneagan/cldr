@@ -4,12 +4,14 @@
 
 /// Mechanisms to extract data from [Cldr].
 ///
-/// It is a two step process:
+/// It is a multi-step process:
 ///
+/// 1.  Install Cldr by running:
+///     <this_package>/bin/install_cldr.dart
 /// 1.  Use [Ldml2Json] to convert Ldml data files to Json files.
 ///   * A convenience script for this is provided at:
 ///         <this package>/bin/ldml2json.dart
-/// 2.  Use [JsonExtractor] to extract data from [Ldml2Json] output files.
+/// 1.  Use [JsonExtractor] to extract data from [Ldml2Json] output files.
 ///
 /// [cldr]: http://cldr.unicode.org
 library cldr;

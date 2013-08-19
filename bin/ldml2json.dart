@@ -6,8 +6,8 @@ library cldr.bin.ldml2json;
 
 import 'dart:io';
 import 'package:args/args.dart';
-import 'package:path/path.dart';
 import 'package:cldr/cldr.dart';
+import 'src/util.dart';
 
 /// Converts Ldml data to Json.
 ///
@@ -21,16 +21,12 @@ import 'package:cldr/cldr.dart';
 /// --out          The path in which to output the data.
 /// --config       The path to the Ldml2JsonConverter config file.
 /// --cldr         The path to the extracted tools.zip and core.zip from Cldr.
-///                Defaults to <cldr package>/third_party/cldr.
+///                (defaults to "<cldr package>/third_party/cldr")
 main() {
-
-  var options = new Options();
 
   // Define args.
   var parser = new ArgParser();
-  parser.addFlag(
-      'help',
-      help: 'Print this usage information.', negatable: false);
+  addHelp(parser);
   parser.addOption(
       'out',
       help: 'The path in which to output the data.');
@@ -40,36 +36,20 @@ main() {
   parser.addOption(
       'cldr',
       help: '''The path to the extracted tools.zip and core.zip from Cldr.
-Defaults to <cldr package>/third_party/cldr.''');
+(defaults to "<this_package>/third_party/cldr")''');
 
   // Process args.
-  var results = parser.parse(options.arguments);
-
+  var results = parser.parse(new Options().arguments);
   if(results['help']) {
-    _usage(parser);
+    print(fullUsage(parser, description: 'Converts Ldml data to Json.'));
     return;
   }
-
   var out = results['out'];
   var config = results['config'];
   var cldr = results['cldr'];
   if(cldr == null) {
-    cldr = join(dirname(options.script), '..', 'third_party', 'cldr');
+    cldr = cldr_install;
   }
 
   new Ldml2Json(cldr, out, config).convert();
-}
-
-void _usage(ArgParser parser) {
-  print('''
-
-Converts Ldml data to Json.
-
-Usage:
-
-  dart ldml2json.dart [options]
-
-Options:
-
-${parser.getUsage()}''');
 }

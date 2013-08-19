@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5798 $"/>
-		<generation date="$Date: 2011-05-02 01:05:34 -0500 (Mon, 02 May 2011) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="az"/>
 	</identity>
 	<localeDisplayNames>
@@ -35,7 +39,6 @@
 			<language type="arp">arapaho dili</language>
 			<language type="art">suni dil</language>
 			<language type="arw">aravakça</language>
-			<language type="as">as</language>
 			<language type="ast">asturicə</language>
 			<language type="ath">atapaskanca</language>
 			<language type="aus">avstraliyca</language>
@@ -611,7 +614,6 @@
 			<script type="Sylo" draft="contributed">siloti nəqri</script>
 			<script type="Syrc" draft="contributed">siryak</script>
 			<script type="Syre" draft="contributed">estrangela süryanice</script>
-			<script type="Syrn" draft="contributed">Syrn</script>
 			<script type="Tagb" draft="contributed">taqbanva</script>
 			<script type="Tale" draft="contributed">tay le</script>
 			<script type="Talu" draft="contributed">təzə tay lu</script>
@@ -647,9 +649,7 @@
 			<territory type="014" draft="contributed">Şərq Afrika</territory>
 			<territory type="015" draft="contributed">Şimal Afrika</territory>
 			<territory type="017" draft="contributed">Orta Afrika</territory>
-			<territory type="018" draft="contributed">018</territory>
 			<territory type="019" draft="contributed">Amerikalar</territory>
-			<territory type="021" draft="contributed">021</territory>
 			<territory type="029" draft="contributed">Kariyıplar</territory>
 			<territory type="030" draft="contributed">Şərq Asiya</territory>
 			<territory type="034" draft="contributed">Cənub Asiya</territory>
@@ -659,7 +659,6 @@
 			<territory type="054" draft="contributed">Melanesya</territory>
 			<territory type="057" draft="contributed">Mikronesiya reqionu</territory>
 			<territory type="061" draft="contributed">Polineziya</territory>
-			<territory type="062" draft="contributed">Cənub Orta Asiya</territory>
 			<territory type="142" draft="contributed">Aziya</territory>
 			<territory type="143" draft="contributed">Orta Aziya</territory>
 			<territory type="145" draft="contributed">Qərb Asiya</territory>
@@ -667,8 +666,7 @@
 			<territory type="151" draft="contributed">Şərq Avropa</territory>
 			<territory type="154" draft="contributed">Şimal Avropa</territory>
 			<territory type="155" draft="contributed">Qərb Avropa</territory>
-			<territory type="172" draft="contributed">172</territory>
-			<territory type="419" draft="contributed">Latın Amerikası və Kariblər</territory>
+			<territory type="419" draft="contributed">Latın Amerikası</territory>
 			<territory type="AD" draft="contributed">Andorra</territory>
 			<territory type="AE" draft="contributed">Birləşmiş Ərəb Emiratları</territory>
 			<territory type="AF" draft="contributed">Əfqənistan</territory>
@@ -879,6 +877,7 @@
 			<territory type="SN" draft="contributed">Seneqal</territory>
 			<territory type="SO" draft="contributed">Somaliya</territory>
 			<territory type="SR" draft="contributed">surinamə</territory>
+			<territory type="SS" draft="provisional">Cənubi Sudan</territory>
 			<territory type="ST" draft="contributed">Sao Tom və Prinsip</territory>
 			<territory type="SV" draft="contributed">El Salvador</territory>
 			<territory type="SY" draft="contributed">siriya</territory>
@@ -944,18 +943,52 @@
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c ç d e ə f g ğ h x ı i {i\u0307} j k q l m n o ö p r s ş t u ü v y z]</exemplarCharacters>
+		<exemplarCharacters>[a b c ç d e ə f g ğ h x ı i İ j k q l m n o ö p r s ş t u ü v y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[w]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="contributed">[A B C Ç D E Ə F G Ğ H X I İ J K Q L M N O Ö P R S Ş T U Ü V W Y Z]</exemplarCharacters>
 	</characters>
 	<delimiters>
-		<quotationStart draft="contributed">“</quotationStart>
-		<quotationEnd draft="contributed">”</quotationEnd>
-		<alternateQuotationStart draft="contributed">‘</alternateQuotationStart>
-		<alternateQuotationEnd draft="contributed">’</alternateQuotationEnd>
+		<quotationStart draft="contributed">«</quotationStart>
+		<quotationEnd draft="contributed">»</quotationEnd>
+		<alternateQuotationStart draft="contributed">‹</alternateQuotationStart>
+		<alternateQuotationEnd draft="contributed">›</alternateQuotationEnd>
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, d, MMMM, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM , y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d MMM, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern draft="unconfirmed">GGGGG yy/MM/dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, d, MMM</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMd">d MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, d, MMM, y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -998,7 +1031,7 @@
 							<day type="wed">Ç.</day>
 							<day type="thu">C.A.</day>
 							<day type="fri">C</day>
-							<day type="sat" draft="contributed">Ş.</day>
+							<day type="sat">Ş.</day>
 						</dayWidth>
 						<dayWidth type="wide">
 							<day type="sun">bazar</day>
@@ -1096,51 +1129,49 @@
 					<availableFormats>
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">EEE, d, MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, d, MMM</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM, y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d MMM, y</dateFormatItem>
-						<dateFormatItem id="yMMMEd">EEE, d, MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, d, MMM, y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>era</displayName>
-					</field>
-					<field type="year">
-						<displayName>il</displayName>
-					</field>
-					<field type="month">
-						<displayName>ay</displayName>
-					</field>
-					<field type="week">
-						<displayName>həftə</displayName>
-					</field>
-					<field type="day">
-						<displayName>bu gün</displayName>
-						<relative type="-3">üç gün əvvəl</relative>
-						<relative type="-1">dünən</relative>
-						<relative type="0">bu gün</relative>
-						<relative type="1">sabah</relative>
-						<relative type="3">üç gün sonra</relative>
-					</field>
-					<field type="weekday">
-						<displayName>həftə günü</displayName>
-					</field>
-					<field type="hour">
-						<displayName>saat</displayName>
-					</field>
-					<field type="minute">
-						<displayName>dəqiqə</displayName>
-					</field>
-					<field type="second">
-						<displayName>saniyə</displayName>
-					</field>
-					<field type="zone">
-						<displayName>zona</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>era</displayName>
+			</field>
+			<field type="year">
+				<displayName>il</displayName>
+			</field>
+			<field type="month">
+				<displayName>ay</displayName>
+			</field>
+			<field type="week">
+				<displayName>həftə</displayName>
+			</field>
+			<field type="day">
+				<displayName>bu gün</displayName>
+				<relative type="-1">dünən</relative>
+				<relative type="0">bu gün</relative>
+				<relative type="1">sabah</relative>
+			</field>
+			<field type="weekday">
+				<displayName>həftə günü</displayName>
+			</field>
+			<field type="hour">
+				<displayName>saat</displayName>
+			</field>
+			<field type="minute">
+				<displayName>dəqiqə</displayName>
+			</field>
+			<field type="second">
+				<displayName>saniyə</displayName>
+			</field>
+			<field type="zone">
+				<displayName>zona</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<zone type="Etc/Unknown">
 				<exemplarCity draft="contributed">Bilinmir</exemplarCity>
@@ -1606,56 +1637,37 @@
 			</zone>
 			<metazone type="Europe_Central">
 				<long>
-					<standard draft="contributed">Orta Avropa</standard>
-					<daylight draft="contributed">Orta Avropa/yay</daylight>
+					<generic>Orta Avropa vaxtı</generic>
+					<standard>Orta Avropa standart vaxtı</standard>
+					<daylight>Orta Avropa yay vaxtı</daylight>
 				</long>
-				<short>
-					<standard draft="contributed">Orta Avropa/standart</standard>
-					<daylight draft="contributed">Orta Avropa/yaz</daylight>
-				</short>
 			</metazone>
 			<metazone type="Europe_Eastern">
 				<long>
-					<standard draft="contributed">Şərq Avropa</standard>
-					<daylight draft="contributed">Şərq Avropa/yay</daylight>
-				</long>
-				<short>
-					<standard draft="contributed">Şərq Avropa/standart</standard>
-					<daylight draft="contributed">Şərq Avropa/yaz</daylight>
-				</short>
-				<commonlyUsed draft="contributed">true</commonlyUsed>
-			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<standard draft="contributed">Kuybuşev</standard>
-					<daylight draft="contributed">Kuybuşev/yay</daylight>
+					<generic>Şərq Avropa vaxtı</generic>
+					<standard>Şərq Avropa standart vaxtı</standard>
+					<daylight>Şərq Avropa yay vaxtı</daylight>
 				</long>
 			</metazone>
 			<metazone type="Moscow">
 				<long>
-					<generic draft="contributed">Moskva</generic>
-					<standard draft="contributed">Moskva/standart</standard>
-					<daylight draft="contributed">Moskva/yay</daylight>
+					<generic>Moskva vaxtı</generic>
+					<standard>Moskva standart vaxtı</standard>
+					<daylight>Moskva yay vaxtı</daylight>
 				</long>
-				<commonlyUsed draft="contributed">true</commonlyUsed>
 			</metazone>
 			<metazone type="Samara">
 				<long>
-					<standard draft="contributed">Samara</standard>
-					<daylight draft="contributed">Samara/yay</daylight>
+					<generic>Samara vaxtı</generic>
+					<standard>Samara standart vaxtı</standard>
+					<daylight>Samara yay vaxtı</daylight>
 				</long>
-			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<standard draft="contributed">Türkiya</standard>
-					<daylight draft="contributed">Türkiya/yay</daylight>
-				</long>
-				<commonlyUsed draft="contributed">true</commonlyUsed>
 			</metazone>
 			<metazone type="Volgograd">
 				<long>
-					<standard draft="contributed">Volqoqrad</standard>
-					<daylight draft="contributed">Volqoqrad/yay</daylight>
+					<generic>Volqoqrad vaxtı</generic>
+					<standard>Volqoqrad standart vaxtı</standard>
+					<daylight>Volqoqrad yay vaxtı</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -1673,7 +1685,7 @@
 			<infinity draft="contributed">∞</infinity>
 			<nan draft="contributed">NaN</nan>
 		</symbols>
-		<currencyFormats>
+		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat>
 					<pattern draft="contributed">¤ #,##0.00</pattern>
@@ -1690,8 +1702,8 @@
 				<displayName count="other" draft="contributed">BƏE dirhamı</displayName>
 			</currency>
 			<currency type="AFA">
-				<displayName>Əfgəni (AFA)</displayName>
-				<displayName count="other" draft="contributed">Əfgən (AFA)</displayName>
+				<displayName>Əfgəni (1927-2002)</displayName>
+				<displayName count="other" draft="contributed">Əfgən (1927-2002)</displayName>
 			</currency>
 			<currency type="AFN">
 				<displayName>Əfgəni</displayName>
@@ -1715,7 +1727,7 @@
 			</currency>
 			<currency type="AOK">
 				<displayName>Anqola kvanzasi (1977-1990)</displayName>
-				<displayName count="other" draft="contributed">Anqola kvanzasi (AOK)</displayName>
+				<displayName count="other" draft="contributed">Anqola kvanzasi (1977-1990)</displayName>
 			</currency>
 			<currency type="AON">
 				<displayName>Anqola yeni kvanzası (1990-2000)</displayName>
@@ -1723,7 +1735,7 @@
 			</currency>
 			<currency type="AOR">
 				<displayName>Anqola kvanzası (1995-1999)</displayName>
-				<displayName count="other" draft="contributed">Anqola kvanzasi (AOR)</displayName>
+				<displayName count="other" draft="contributed">Anqola kvanzasi (1995-1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>Argentina avstralı</displayName>
@@ -1731,7 +1743,7 @@
 			</currency>
 			<currency type="ARP">
 				<displayName>Argentina pesosu (1983-1985)</displayName>
-				<displayName count="other" draft="contributed">Argentina pesosu (ARP)</displayName>
+				<displayName count="other" draft="contributed">Argentina pesosu (1983-1985)</displayName>
 			</currency>
 			<currency type="ARS">
 				<displayName>Argentina pesosu</displayName>
@@ -1751,7 +1763,7 @@
 			</currency>
 			<currency type="AZM">
 				<displayName>Manat</displayName>
-				<displayName count="other" draft="contributed">Azərbaycan manatı (AZM)</displayName>
+				<displayName count="other" draft="contributed">Azərbaycan manatı (1993-2006)</displayName>
 			</currency>
 			<currency type="AZN">
 				<displayName>Azərbaycan manatı</displayName>
@@ -1811,8 +1823,8 @@
 				<displayName count="other" draft="contributed">Bruney dolları</displayName>
 			</currency>
 			<currency type="BOB">
-				<displayName>Boliviano</displayName>
-				<displayName count="other" draft="contributed">Boliviano</displayName>
+				<displayName>Boliviya boliviano</displayName>
+				<displayName count="other" draft="contributed">Boliviya boliviano</displayName>
 			</currency>
 			<currency type="BOP">
 				<displayName>Boliviya pesosu</displayName>
@@ -1832,7 +1844,7 @@
 			</currency>
 			<currency type="BRE">
 				<displayName>Braziliya kruzeyrosu (1990-1993)</displayName>
-				<displayName count="other" draft="contributed">Braziliya kruzeyrosu (BRE)</displayName>
+				<displayName count="other" draft="contributed">Braziliya kruzeyrosu (1990-1993)</displayName>
 			</currency>
 			<currency type="BRL">
 				<displayName>Braziliya realı</displayName>
@@ -2380,7 +2392,7 @@
 			</currency>
 			<currency type="PLZ">
 				<displayName draft="contributed">Polsha zlotisi (1950-1995)</displayName>
-				<displayName count="other" draft="contributed">Polsha zlotisi (PLZ)</displayName>
+				<displayName count="other" draft="contributed">Polsha zlotisi (1950-1995)</displayName>
 			</currency>
 			<currency type="PTE">
 				<displayName draft="contributed">Portuqal eskudosu</displayName>
@@ -2416,7 +2428,7 @@
 			</currency>
 			<currency type="RUR">
 				<displayName draft="contributed">Rusiya rublu (1991-1998)</displayName>
-				<displayName count="other" draft="contributed">Rusiya rublu (RUR)</displayName>
+				<displayName count="other" draft="contributed">Rusiya rublu (1991-1998)</displayName>
 			</currency>
 			<currency type="RWF">
 				<displayName draft="contributed">Rvanda frankı</displayName>
@@ -2532,7 +2544,7 @@
 			</currency>
 			<currency type="UGS">
 				<displayName draft="contributed">Uqanda şelingi (1966-1987)</displayName>
-				<displayName count="other" draft="contributed">Uqanda şelingi (UGS)</displayName>
+				<displayName count="other" draft="contributed">Uqanda şelingi (1966-1987)</displayName>
 			</currency>
 			<currency type="UGX">
 				<displayName draft="contributed">Uqanda şelingi</displayName>
@@ -2556,30 +2568,30 @@
 			</currency>
 			<currency type="UYP">
 				<displayName draft="contributed">Uruqvay pesosu (1975-1993)</displayName>
-				<displayName count="other" draft="contributed">Uruqvay pesosu (UYP)</displayName>
+				<displayName count="other" draft="contributed">Uruqvay pesosu (1975-1993)</displayName>
 			</currency>
 			<currency type="UYU">
-				<displayName draft="contributed">Uruqvay pesosu (Uruguayo)</displayName>
+				<displayName draft="contributed">Uruqvay pesosu</displayName>
 				<displayName count="other" draft="contributed">Uruqvay pesosu</displayName>
 			</currency>
 			<currency type="UZS">
-				<displayName draft="contributed">özbəkistan sumu</displayName>
+				<displayName draft="contributed">Özbəkistan sumu</displayName>
 				<displayName count="other" draft="contributed">Özbəkistan sumu</displayName>
 			</currency>
 			<currency type="VEB">
-				<displayName draft="contributed">venesuela bolivarı</displayName>
-				<displayName count="other" draft="contributed">Venesuela bolivarı</displayName>
+				<displayName draft="contributed">Venesuela bolivarı (1871-2008)</displayName>
+				<displayName count="other" draft="contributed">Venesuela bolivarı (1871-2008)</displayName>
 			</currency>
 			<currency type="VEF">
-				<displayName draft="contributed">venesuela bolivar fuerti</displayName>
-				<displayName count="other" draft="contributed">Venesuela Bolivar fuerti</displayName>
+				<displayName draft="contributed">Venesuela bolivarı</displayName>
+				<displayName count="other" draft="contributed">Venesuela bolivarı</displayName>
 			</currency>
 			<currency type="VND">
-				<displayName draft="contributed">vyetnam donqu</displayName>
+				<displayName draft="contributed">Vyetnam donqu</displayName>
 				<displayName count="other" draft="contributed">Vyetnam donqu</displayName>
 			</currency>
 			<currency type="WST">
-				<displayName draft="contributed">qərb samoa talası</displayName>
+				<displayName draft="contributed">Qərb Samoa talası</displayName>
 				<displayName count="other" draft="contributed">Qərb Samoa talası</displayName>
 			</currency>
 			<currency type="XAG">
@@ -2591,7 +2603,7 @@
 				<displayName count="other" draft="contributed">qızıl</displayName>
 			</currency>
 			<currency type="XCD">
-				<displayName draft="contributed">şərq karib dolları</displayName>
+				<displayName draft="contributed">Şərq karib dolları</displayName>
 				<displayName count="other" draft="contributed">Şərq karib dolları</displayName>
 			</currency>
 			<currency type="XFO">
@@ -2651,6 +2663,10 @@
 				<displayName count="other" draft="contributed">Cənub Afrika randı</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName draft="contributed">Zambiya kvaçı (1968-2012)</displayName>
+				<displayName count="other" draft="contributed">Zambiya kvaçı (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName draft="contributed">Zambiya kvaçı</displayName>
 				<displayName count="other" draft="contributed">Zambiya kvaçı</displayName>
 			</currency>
@@ -2663,8 +2679,8 @@
 				<displayName count="other" draft="contributed">Zair zairi</displayName>
 			</currency>
 			<currency type="ZWD">
-				<displayName draft="contributed">Zimbabve dolları</displayName>
-				<displayName count="other" draft="contributed">Zimbabve dolları</displayName>
+				<displayName draft="contributed">Zimbabve dolları (1980-2008)</displayName>
+				<displayName count="other" draft="contributed">Zimbabve dolları (1980-2008)</displayName>
 			</currency>
 		</currencies>
 	</numbers>
@@ -2698,3 +2714,4 @@
 		</messages>
 	</posix>
 </ldml>
+

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5871 $"/>
-		<generation date="$Date: 2011-05-09 01:37:05 -0500 (Mon, 09 May 2011) $"/>
+		<version number="$Revision: 8242 $"/>
+		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="sk" /> 
 	</identity>
 		<collations  validSubLocales="sk_SK">
@@ -12,6 +17,9 @@
 				<!-- root search, suppress contractions for Thai, Lao -->
 				<suppress_contractions>[เ-ไ ເ-ໄ]</suppress_contractions>
 				<rules>
+					<!-- root search rules for Symbols -->
+					<reset>=</reset>
+					<p>≠</p>
 					<!-- root search rules for Arabic, Hebrew -->
 					<reset>ا</reset>	<!-- 0627 ARABIC LETTER ALEF -->
 							<t>ﺎ</t><t>ﺍ</t>	<!-- FE8E, FE8D: FINAL FORM, ISOLATED FORM -->

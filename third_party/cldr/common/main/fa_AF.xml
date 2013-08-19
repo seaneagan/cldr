@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5886 $"/>
-		<generation date="$Date: 2011-05-10 17:13:33 -0500 (Tue, 10 May 2011) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="fa"/>
 		<territory type="AF"/>
 	</identity>
@@ -201,6 +205,7 @@
 							<month type="4">س</month>
 							<month type="5">ا</month>
 							<month type="6">س</month>
+							<month type="7">م</month>
 							<month type="8">ع</month>
 							<month type="9">ق</month>
 							<month type="10">ج</month>
@@ -218,7 +223,7 @@
 		</calendars>
 	</dates>
 	<numbers>
-		<percentFormats>
+		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>'‪'#,##0%'‬'</pattern>

@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5806 $"/>
-		<generation date="$Date: 2011-05-02 13:42:02 -0500 (Mon, 02 May 2011) $"/>
+		<version number="$Revision: 8247 $"/>
+		<generation date="$Date: 2013-02-25 16:24:27 -0600 (Mon, 25 Feb 2013) $"/>
 		<language type="nn"/>
 	</identity>
-	<fallback>nb da sv en</fallback>
 	<localeDisplayNames>
 		<localeDisplayPattern>
 			<localePattern>{0} ({1})</localePattern>
 			<localeSeparator>, </localeSeparator>
+			<localeKeyTypePattern draft="unconfirmed">{0}: {1}</localeKeyTypePattern>
 		</localeDisplayPattern>
 		<languages>
 			<language type="aa">afar</language>
@@ -57,6 +61,7 @@
 			<language type="ban">balinesisk</language>
 			<language type="bas">basa</language>
 			<language type="bat">baltisk språk</language>
+			<language type="bax" draft="unconfirmed">bamun</language>
 			<language type="be">kviterussisk</language>
 			<language type="bej">beja</language>
 			<language type="bem">bemba</language>
@@ -77,6 +82,7 @@
 			<language type="bra">braj</language>
 			<language type="brx">bodo</language>
 			<language type="bs">bosnisk</language>
+			<language type="bss" draft="unconfirmed">bakossi</language>
 			<language type="btk">batak</language>
 			<language type="bua">burjatisk</language>
 			<language type="bug">buginesisk</language>
@@ -215,6 +221,7 @@
 			<language type="hz">herero</language>
 			<language type="ia">interlingua</language>
 			<language type="iba">iban</language>
+			<language type="ibb" draft="unconfirmed">ibibio</language>
 			<language type="id">indonesisk</language>
 			<language type="ie">interlingue</language>
 			<language type="ig">ibo</language>
@@ -255,6 +262,7 @@
 			<language type="ki">kikuyu</language>
 			<language type="kj">kuanyama</language>
 			<language type="kk">kasakhisk</language>
+			<language type="kkj" draft="unconfirmed">kako</language>
 			<language type="kl">kalaallisut; grønlandsk</language>
 			<language type="km">khmer</language>
 			<language type="kmb">kimbundu</language>
@@ -546,6 +554,7 @@
 			<script type="Armn">armensk</script>
 			<script type="Avst">avestisk</script>
 			<script type="Bali">balinesisk</script>
+			<script type="Bamu" draft="unconfirmed">bamun</script>
 			<script type="Batk">batak</script>
 			<script type="Beng">bengali</script>
 			<script type="Blis">blissymbol</script>
@@ -574,6 +583,7 @@
 			<script type="Geor">georgisk</script>
 			<script type="Glag">glagolittisk</script>
 			<script type="Goth">gotisk</script>
+			<script type="Gran" draft="unconfirmed">gammaltamilsk</script>
 			<script type="Grek">gresk</script>
 			<script type="Gujr">gujarati</script>
 			<script type="Guru">gurmukhi</script>
@@ -607,6 +617,7 @@
 			<script type="Limb">lumbu</script>
 			<script type="Lina">lineær A</script>
 			<script type="Linb">lineær B</script>
+			<script type="Lisu" draft="unconfirmed">Fraser</script>
 			<script type="Lyci">lykisk</script>
 			<script type="Lydi">lydisk</script>
 			<script type="Mand">mandaisk</script>
@@ -637,6 +648,7 @@
 			<script type="Runr">runer</script>
 			<script type="Samr">samaritansk</script>
 			<script type="Sara">sarati</script>
+			<script type="Sarb" draft="unconfirmed">gammalsydarabisk</script>
 			<script type="Saur">saurashtra</script>
 			<script type="Sgnw">teiknskrift</script>
 			<script type="Shaw">shavisk</script>
@@ -659,6 +671,7 @@
 			<script type="Thaa">thaana</script>
 			<script type="Thai">thai</script>
 			<script type="Tibt">tibetansk</script>
+			<script type="Tirh" draft="unconfirmed">tirhuta</script>
 			<script type="Ugar">ugaritisk</script>
 			<script type="Vaii">vai</script>
 			<script type="Visp">synleg tale</script>
@@ -695,7 +708,6 @@
 			<territory type="054">Melanesia</territory>
 			<territory type="057">Mikronesia</territory>
 			<territory type="061">Polynesia</territory>
-			<territory type="062">Sørlege Sentral-Asia</territory>
 			<territory type="142">Asia</territory>
 			<territory type="143">Sentral-Asia</territory>
 			<territory type="145">Vest-Asia</territory>
@@ -703,9 +715,7 @@
 			<territory type="151">Aust-Europa</territory>
 			<territory type="154">Nord-Europa</territory>
 			<territory type="155">Vest-Europa</territory>
-			<territory type="172">Samveldet av uavhengige statar</territory>
-			<territory type="419">Latin-Amerika og Karibia</territory>
-			<territory type="830">Kanaløyane</territory>
+			<territory type="419">Latin-Amerika</territory>
 			<territory type="AC">Ascension</territory>
 			<territory type="AD">Andorra</territory>
 			<territory type="AE">Dei sameinte arabiske emirata</territory>
@@ -737,6 +747,7 @@
 			<territory type="BM">Bermuda</territory>
 			<territory type="BN">Brunei Darussalam</territory>
 			<territory type="BO">Bolivia</territory>
+			<territory type="BQ" draft="unconfirmed">Karibisk Nederland</territory>
 			<territory type="BR">Brasil</territory>
 			<territory type="BS">Bahamas</territory>
 			<territory type="BT">Bhutan</territory>
@@ -761,9 +772,9 @@
 			<territory type="CO">Colombia</territory>
 			<territory type="CP">Clippertonøya</territory>
 			<territory type="CR">Costa Rica</territory>
-			<territory type="CS">Serbia og Montenegro</territory>
 			<territory type="CU">Cuba</territory>
 			<territory type="CV">Kapp Verde</territory>
+			<territory type="CW" draft="unconfirmed">Curaçao</territory>
 			<territory type="CX">Christmasøya</territory>
 			<territory type="CY">Kypros</territory>
 			<territory type="CZ">Tsjekkia</territory>
@@ -927,8 +938,10 @@
 			<territory type="SN">Senegal</territory>
 			<territory type="SO">Somalia</territory>
 			<territory type="SR">Surinam</territory>
+			<territory type="SS" draft="unconfirmed">Sør-Sudan</territory>
 			<territory type="ST">São Tomé og Príncipe</territory>
 			<territory type="SV">El Salvador</territory>
+			<territory type="SX" draft="unconfirmed">Nederlandsk St. Martin</territory>
 			<territory type="SY">Syria</territory>
 			<territory type="SZ">Swaziland</territory>
 			<territory type="TA">Tristan da Cunha</territory>
@@ -1009,26 +1022,60 @@
 			<key type="numbers">tal</key>
 		</keys>
 		<types>
+			<type type="arab" key="numbers" draft="unconfirmed">hindu-arabiske siffer (vestlige)</type>
+			<type type="arabext" key="numbers" draft="unconfirmed">hindu-arabiske siffer (østlige)</type>
+			<type type="armn" key="numbers" draft="unconfirmed">armenske numeraler</type>
+			<type type="armnlow" key="numbers" draft="unconfirmed">armenske numeraler i små bogstaver</type>
+			<type type="beng" key="numbers" draft="unconfirmed">bengalske siffer</type>
 			<type type="big5han" key="collation">tradisjonell kinesisk sortering</type>
 			<type type="buddhist" key="calendar">buddhistisk kalender</type>
 			<type type="chinese" key="calendar">kinesisk kalender</type>
-			<type type="direct" key="collation">direkte sortering</type>
+			<type type="deva" key="numbers" draft="unconfirmed">devanagariske siffer</type>
 			<type type="ducet" key="collation">grunnleggjande Unicode-sorteringsrekkjefølgje</type>
+			<type type="ethi" key="numbers" draft="unconfirmed">etiopiske numeraler</type>
 			<type type="ethiopic" key="calendar">etiopisk kalender</type>
 			<type type="ethiopic-amete-alem" key="calendar">etiopisk amete-alem-kalender</type>
+			<type type="fullwide" key="numbers" draft="unconfirmed">vesterlandske siffer i fuld bredde</type>
 			<type type="gb2312han" key="collation">forenkla kinesisk sortering</type>
+			<type type="geor" key="numbers" draft="unconfirmed">georgiske numeraler</type>
 			<type type="gregorian" key="calendar">gregoriansk kalender</type>
+			<type type="grek" key="numbers" draft="unconfirmed">græske numeraler</type>
+			<type type="greklow" key="numbers" draft="unconfirmed">græske numeraler i små bogstaver</type>
+			<type type="gujr" key="numbers" draft="unconfirmed">gujaratiske siffer</type>
+			<type type="guru" key="numbers" draft="unconfirmed">gurmukhiske siffer</type>
+			<type type="hanidec" key="numbers" draft="unconfirmed">kinesiskt stavede siffer</type>
+			<type type="hans" key="numbers" draft="unconfirmed">forenklet stavede kinesiske numeraler</type>
+			<type type="hansfin" key="numbers" draft="unconfirmed">forenklet stavede kinesiske financielle numeraler</type>
+			<type type="hant" key="numbers" draft="unconfirmed">traditionelt stavede kinesiske numeraler</type>
+			<type type="hantfin" key="numbers" draft="unconfirmed">traditionelt stavede kinesiske financielle numeraler</type>
+			<type type="hebr" key="numbers" draft="unconfirmed">hebæiske numeraler</type>
 			<type type="hebrew" key="calendar">hebraisk kalender</type>
 			<type type="indian" key="calendar">indisk nasjonalkalender</type>
 			<type type="islamic" key="calendar">islamsk kalender</type>
 			<type type="islamic-civil" key="calendar">islamsk sivil kalender</type>
 			<type type="japanese" key="calendar">japansk kalender</type>
+			<type type="jpan" key="numbers" draft="unconfirmed">japanskt stavede numeraler</type>
+			<type type="jpanfin" key="numbers" draft="unconfirmed">japanskt stavede financielle numeraler</type>
+			<type type="khmr" key="numbers" draft="unconfirmed">kambodiske siffer</type>
+			<type type="knda" key="numbers" draft="unconfirmed">kannadiske siffer</type>
+			<type type="laoo" key="numbers" draft="unconfirmed">laotiske siffer</type>
+			<type type="latn" key="numbers" draft="unconfirmed">vesterlandske siffer</type>
+			<type type="mlym" key="numbers" draft="unconfirmed">malayalamiske siffer</type>
+			<type type="mymr" key="numbers" draft="unconfirmed">burmeske siffer</type>
+			<type type="orya" key="numbers" draft="unconfirmed">oryiske siffer</type>
 			<type type="persian" key="calendar">persisk kalender</type>
 			<type type="phonebook" key="collation">telefonkatalogsortering</type>
 			<type type="pinyin" key="collation">pinyin-sortering</type>
 			<type type="roc" key="calendar">kalender for Republikken Kina</type>
+			<type type="roman" key="numbers" draft="unconfirmed">romernumeraler</type>
+			<type type="romanlow" key="numbers" draft="unconfirmed">romernumeraler i små bogstaver</type>
 			<type type="search" key="collation">søksorteringsrekkjefølgje etter CLDR</type>
 			<type type="stroke" key="collation">streksortering</type>
+			<type type="taml" key="numbers" draft="unconfirmed">traditionelle tamilske numeraler</type>
+			<type type="tamldec" key="numbers" draft="unconfirmed">tamilske siffer</type>
+			<type type="telu" key="numbers" draft="unconfirmed">telugiske siffer</type>
+			<type type="thai" key="numbers" draft="unconfirmed">thailandske siffer</type>
+			<type type="tibt" key="numbers" draft="unconfirmed">tibetanske siffer</type>
 			<type type="traditional" key="collation">tradisjonell sortering</type>
 		</types>
 		<measurementSystemNames>
@@ -1045,21 +1092,155 @@
 	<characters>
 		<exemplarCharacters>[a à b c d e é f g h i j k l m n o ó ò ô p q r s t u v w x y z æ ø å]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á ǎ č ç đ è ê ń ñ ŋ š ŧ ü ž ä ö]</exemplarCharacters>
-		<exemplarCharacters type="currencySymbol">[a b c d e f g h i j k l m n o p q r s t u v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å]</exemplarCharacters>
-		<ellipsis type="final" draft="unconfirmed">{0}...</ellipsis>
-		<ellipsis type="initial" draft="unconfirmed">...{0}</ellipsis>
-		<ellipsis type="medial" draft="unconfirmed">{0}...{1}</ellipsis>
+		<ellipsis type="final" draft="unconfirmed">{0}…</ellipsis>
+		<ellipsis type="initial" draft="unconfirmed">…{0}</ellipsis>
+		<ellipsis type="medial" draft="unconfirmed">{0}…{1}</ellipsis>
 	</characters>
 	<delimiters>
 		<quotationStart>«</quotationStart>
 		<quotationEnd>»</quotationEnd>
-		<alternateQuotationStart>“</alternateQuotationStart>
-		<alternateQuotationEnd>”</alternateQuotationEnd>
+		<alternateQuotationStart>‘</alternateQuotationStart>
+		<alternateQuotationEnd>’</alternateQuotationEnd>
 	</delimiters>
 	<dates>
-		<dateRangePattern>{0}−{1}</dateRangePattern>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE d. MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d. MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d. MMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd.MM.yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="d">d.</dateFormatItem>
+						<dateFormatItem id="Ed">E d.</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Md">d.M.</dateFormatItem>
+						<dateFormatItem id="MEd">E d.M</dateFormatItem>
+						<dateFormatItem id="MMdd">d.M.</dateFormatItem>
+						<dateFormatItem id="MMMd">d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d. MMMM</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="yM">M y</dateFormatItem>
+						<dateFormatItem id="yMd">d.M.y</dateFormatItem>
+						<dateFormatItem id="yMEd">E d.M.y</dateFormatItem>
+						<dateFormatItem id="yMM">MM.y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">d. MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E d. MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d.–d.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M.–M.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd.MM–dd.MM</greatestDifference>
+							<greatestDifference id="M">dd.MM–dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E dd.MM.–E dd.MM.</greatestDifference>
+							<greatestDifference id="M">E dd.MM.–E dd.MM.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM–MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d.–d. MMM</greatestDifference>
+							<greatestDifference id="M">d. MMM–d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E d.–E d. MMM</greatestDifference>
+							<greatestDifference id="M">E d. MMM–E d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM.y–MM.y</greatestDifference>
+							<greatestDifference id="y">MM.y–MM.y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd.MM.y–dd.MM.y</greatestDifference>
+							<greatestDifference id="M">dd.MM.y–dd.MM.y</greatestDifference>
+							<greatestDifference id="y">dd.MM.y–dd.MM.y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E dd.MM.y–E dd.MM.y</greatestDifference>
+							<greatestDifference id="M">E dd.MM.y–E dd.MM.y</greatestDifference>
+							<greatestDifference id="y">E dd.MM.y–E dd.MM.y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM–MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y–MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d.–d. MMM y</greatestDifference>
+							<greatestDifference id="M">d. MMM–d. MMM y</greatestDifference>
+							<greatestDifference id="y">d. MMM y–d. MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E d.–E d. MMM y</greatestDifference>
+							<greatestDifference id="M">E d. MMM–E d. MMM y</greatestDifference>
+							<greatestDifference id="y">E d. MMM y–E d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
+							<greatestDifference id="y">MMMM y–MMMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1098,6 +1279,7 @@
 							<month type="2" draft="unconfirmed">feb</month>
 							<month type="3" draft="unconfirmed">mar</month>
 							<month type="4" draft="unconfirmed">apr</month>
+							<month type="5" draft="unconfirmed">mai</month>
 							<month type="6" draft="unconfirmed">jun</month>
 							<month type="7" draft="unconfirmed">jul</month>
 							<month type="8" draft="unconfirmed">aug</month>
@@ -1253,29 +1435,28 @@
 				<dateTimeFormats>
 					<availableFormats>
 						<dateFormatItem id="d">d.</dateFormatItem>
-						<dateFormatItem id="EEEd">EEE d.</dateFormatItem>
+						<dateFormatItem id="Ed">E d.</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
 						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="Md">d.M.</dateFormatItem>
 						<dateFormatItem id="MEd">E d.M</dateFormatItem>
-						<dateFormatItem id="MMdd">dd.MM</dateFormatItem>
+						<dateFormatItem id="MMdd">d.M.</dateFormatItem>
 						<dateFormatItem id="MMMd">d. MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E d. MMM</dateFormatItem>
 						<dateFormatItem id="MMMMd">d. MMMM</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="yM">M y</dateFormatItem>
-						<dateFormatItem id="yMd">d.M.yyyy</dateFormatItem>
-						<dateFormatItem id="yMEd">EEE d.M.yyyy</dateFormatItem>
+						<dateFormatItem id="yMd">d.M.y</dateFormatItem>
+						<dateFormatItem id="yMEd">E d.M.y</dateFormatItem>
+						<dateFormatItem id="yMM">MM.y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d. MMM y</dateFormatItem>
-						<dateFormatItem id="yMMMEd">EEE d. MMM y</dateFormatItem>
-						<dateFormatItem id="yQ">Q y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E d. MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
-						<dateFormatItem id="yyMM">MM.yy</dateFormatItem>
-						<dateFormatItem id="yyQ">Q yy</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
@@ -1330,18 +1511,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">MM.yy–MM.yy</greatestDifference>
-							<greatestDifference id="y">MM.yy–MM.yy</greatestDifference>
+							<greatestDifference id="M">MM.y–MM.y</greatestDifference>
+							<greatestDifference id="y">MM.y–MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">dd.MM.yy–dd.MM.yy</greatestDifference>
-							<greatestDifference id="M">dd.MM.yy–dd.MM.yy</greatestDifference>
-							<greatestDifference id="y">dd.MM.yy–dd.MM.yy</greatestDifference>
+							<greatestDifference id="d">dd.MM.y–dd.MM.y</greatestDifference>
+							<greatestDifference id="M">dd.MM.y–dd.MM.y</greatestDifference>
+							<greatestDifference id="y">dd.MM.y–dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E dd.MM.yy–E dd.MM.yy</greatestDifference>
-							<greatestDifference id="M">E dd.MM.yy–E dd.MM.yy</greatestDifference>
-							<greatestDifference id="y">E dd.MM.yy–E dd.MM.yy</greatestDifference>
+							<greatestDifference id="d">E dd.MM.y–E dd.MM.y</greatestDifference>
+							<greatestDifference id="M">E dd.MM.y–E dd.MM.y</greatestDifference>
+							<greatestDifference id="y">E dd.MM.y–E dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y</greatestDifference>
@@ -1363,48 +1544,48 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>æra</displayName>
-					</field>
-					<field type="year">
-						<displayName>år</displayName>
-					</field>
-					<field type="month">
-						<displayName>månad</displayName>
-					</field>
-					<field type="week">
-						<displayName>veke</displayName>
-					</field>
-					<field type="day">
-						<displayName>dag</displayName>
-						<relative type="-2">i forgårs</relative>
-						<relative type="-1">i går</relative>
-						<relative type="0">i dag</relative>
-						<relative type="1">i morgon</relative>
-						<relative type="2">i overmorgon</relative>
-					</field>
-					<field type="weekday">
-						<displayName>vekedag</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>f.m./e.m.-val</displayName>
-					</field>
-					<field type="hour">
-						<displayName>time</displayName>
-					</field>
-					<field type="minute">
-						<displayName>minutt</displayName>
-					</field>
-					<field type="second">
-						<displayName>sekund</displayName>
-					</field>
-					<field type="zone">
-						<displayName>sone</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>æra</displayName>
+			</field>
+			<field type="year">
+				<displayName>år</displayName>
+			</field>
+			<field type="month">
+				<displayName>månad</displayName>
+			</field>
+			<field type="week">
+				<displayName>veke</displayName>
+			</field>
+			<field type="day">
+				<displayName>dag</displayName>
+				<relative type="-2">i forgårs</relative>
+				<relative type="-1">i går</relative>
+				<relative type="0">i dag</relative>
+				<relative type="1">i morgon</relative>
+				<relative type="2">i overmorgon</relative>
+			</field>
+			<field type="weekday">
+				<displayName>vekedag</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>f.m./e.m.-val</displayName>
+			</field>
+			<field type="hour">
+				<displayName>time</displayName>
+			</field>
+			<field type="minute">
+				<displayName>minutt</displayName>
+			</field>
+			<field type="second">
+				<displayName>sekund</displayName>
+			</field>
+			<field type="zone">
+				<displayName>sone</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -1424,8 +1605,17 @@
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity draft="unconfirmed">Kapp Verde</exemplarCity>
 			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity draft="unconfirmed">Curaçao</exemplarCity>
+			</zone>
+			<zone type="Europe/Copenhagen">
+				<exemplarCity draft="unconfirmed">København</exemplarCity>
+			</zone>
 			<zone type="Atlantic/Canary">
 				<exemplarCity>Kanariøyane</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Faeroe">
+				<exemplarCity draft="unconfirmed">Færøyane</exemplarCity>
 			</zone>
 			<zone type="America/Godthab">
 				<exemplarCity>Godthåb</exemplarCity>
@@ -1438,9 +1628,6 @@
 			</zone>
 			<zone type="Asia/Ulaanbaatar">
 				<exemplarCity>Ulan Bator</exemplarCity>
-			</zone>
-			<zone type="Indian/Mauritius">
-				<exemplarCity draft="unconfirmed">Mauritania</exemplarCity>
 			</zone>
 			<zone type="Indian/Maldives">
 				<exemplarCity draft="unconfirmed">Maldivane</exemplarCity>
@@ -1457,14 +1644,23 @@
 			<zone type="Europe/Lisbon">
 				<exemplarCity>Lisboa</exemplarCity>
 			</zone>
+			<zone type="Indian/Reunion">
+				<exemplarCity draft="unconfirmed">Réunion</exemplarCity>
+			</zone>
 			<zone type="Europe/Moscow">
 				<exemplarCity>Moskva</exemplarCity>
+			</zone>
+			<zone type="Africa/Sao_Tome">
+				<exemplarCity draft="unconfirmed">São Tomé</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/Center">
 				<exemplarCity>Center, Nord-Dakota</exemplarCity>
 			</zone>
 			<zone type="Asia/Tashkent">
 				<exemplarCity>Tasjkent</exemplarCity>
+			</zone>
+			<zone type="Asia/Saigon">
+				<exemplarCity draft="unconfirmed">Ho Chi Minh-byen</exemplarCity>
 			</zone>
 			<metazone type="Africa_Central">
 				<long>
@@ -1478,21 +1674,15 @@
 			</metazone>
 			<metazone type="Africa_Southern">
 				<long>
-					<generic>sørafrikansk tid</generic>
-					<standard>sørafrikansk standardtid</standard>
+					<standard>sørafrikansk tid</standard>
 				</long>
 			</metazone>
 			<metazone type="Africa_Western">
 				<long>
-					<standard>vestafrikansk tid</standard>
+					<generic>vestafrikansk tid</generic>
+					<standard>vestafrikansk standardtid</standard>
 					<daylight>vestafrikansk sommartid</daylight>
 				</long>
-			</metazone>
-			<metazone type="Armenia">
-				<short>
-					<standard>AMT (Armenia)</standard>
-					<daylight>AMST (Armenia)</daylight>
-				</short>
 			</metazone>
 			<metazone type="Australia_Central">
 				<long>
@@ -1522,40 +1712,46 @@
 					<daylight>vestaustralsk sommartid</daylight>
 				</long>
 			</metazone>
-			<metazone type="China">
-				<short>
-					<generic>CT (Kina)</generic>
-					<standard>CST (Kina)</standard>
-					<daylight>CDT (Kina)</daylight>
-				</short>
-			</metazone>
 			<metazone type="Europe_Central">
 				<long>
-					<standard>sentraleuropeisk tid</standard>
+					<generic>sentraleuropeisk tid</generic>
+					<standard>sentraleuropeisk standardtid</standard>
 					<daylight>sentraleuropeisk sommartid</daylight>
 				</long>
+				<short>
+					<generic>CET</generic>
+					<standard>CET</standard>
+					<daylight>CEST</daylight>
+				</short>
 			</metazone>
 			<metazone type="Europe_Eastern">
 				<long>
-					<standard>austeuropeisk tid</standard>
+					<generic>austeuropeisk tid</generic>
+					<standard>austeuropeisk standardtid</standard>
 					<daylight>austeuropeisk sommartid</daylight>
 				</long>
+				<short>
+					<generic>EET</generic>
+					<standard>EET</standard>
+					<daylight>EEST</daylight>
+				</short>
 			</metazone>
 			<metazone type="Europe_Western">
 				<long>
-					<standard>vesteuropeisk tid</standard>
+					<generic>vesteuropeisk tid</generic>
+					<standard>vesteuropeisk standardtid</standard>
 					<daylight>vesteuropeisk sommartid</daylight>
 				</long>
+				<short>
+					<generic>WET</generic>
+					<standard>WET</standard>
+					<daylight>WEST</daylight>
+				</short>
 			</metazone>
 			<metazone type="GMT">
 				<long>
 					<standard>greenwich middeltid</standard>
 				</long>
-			</metazone>
-			<metazone type="Israel">
-				<short>
-					<standard>IST (Israel)</standard>
-				</short>
 			</metazone>
 		</timeZoneNames>
 	</dates>
@@ -1572,28 +1768,84 @@
 			<infinity>∞</infinity>
 			<nan>NaN</nan>
 		</symbols>
-		<decimalFormats>
+		<decimalFormats numberSystem="latn">
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+			<decimalFormatLength type="long">
+				<decimalFormat>
+					<pattern type="1000" count="one" draft="unconfirmed">0 tusen</pattern>
+					<pattern type="1000" count="other" draft="unconfirmed">0 tusen</pattern>
+					<pattern type="10000" count="one" draft="unconfirmed">00 tusen</pattern>
+					<pattern type="10000" count="other" draft="unconfirmed">00 tusen</pattern>
+					<pattern type="100000" count="one" draft="unconfirmed">000 tusen</pattern>
+					<pattern type="100000" count="other" draft="unconfirmed">000 tusen</pattern>
+					<pattern type="1000000" count="one" draft="unconfirmed">0 million</pattern>
+					<pattern type="1000000" count="other" draft="unconfirmed">0 millioner</pattern>
+					<pattern type="10000000" count="one" draft="unconfirmed">00 million</pattern>
+					<pattern type="10000000" count="other" draft="unconfirmed">00 millioner</pattern>
+					<pattern type="100000000" count="one" draft="unconfirmed">000 million</pattern>
+					<pattern type="100000000" count="other" draft="unconfirmed">000 millioner</pattern>
+					<pattern type="1000000000" count="one" draft="unconfirmed">0 milliard</pattern>
+					<pattern type="1000000000" count="other" draft="unconfirmed">0 milliarder</pattern>
+					<pattern type="10000000000" count="one" draft="unconfirmed">00 milliard</pattern>
+					<pattern type="10000000000" count="other" draft="unconfirmed">00 milliarder</pattern>
+					<pattern type="100000000000" count="one" draft="unconfirmed">000 milliard</pattern>
+					<pattern type="100000000000" count="other" draft="unconfirmed">000 milliarder</pattern>
+					<pattern type="1000000000000" count="one" draft="unconfirmed">0 billion</pattern>
+					<pattern type="1000000000000" count="other" draft="unconfirmed">0 billioner</pattern>
+					<pattern type="10000000000000" count="one" draft="unconfirmed">00 billion</pattern>
+					<pattern type="10000000000000" count="other" draft="unconfirmed">00 billioner</pattern>
+					<pattern type="100000000000000" count="one" draft="unconfirmed">000 billion</pattern>
+					<pattern type="100000000000000" count="other" draft="unconfirmed">000 billioner</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
+			<decimalFormatLength type="short">
+				<decimalFormat>
+					<pattern type="1000" count="one" draft="unconfirmed">0 tn</pattern>
+					<pattern type="1000" count="other" draft="unconfirmed">0 tn</pattern>
+					<pattern type="10000" count="one" draft="unconfirmed">00 tn</pattern>
+					<pattern type="10000" count="other" draft="unconfirmed">00 tn</pattern>
+					<pattern type="100000" count="one" draft="unconfirmed">000 tn</pattern>
+					<pattern type="100000" count="other" draft="unconfirmed">000 tn</pattern>
+					<pattern type="1000000" count="one" draft="unconfirmed">0 mn</pattern>
+					<pattern type="1000000" count="other" draft="unconfirmed">0 mn</pattern>
+					<pattern type="10000000" count="one" draft="unconfirmed">00 mn</pattern>
+					<pattern type="10000000" count="other" draft="unconfirmed">00 mn</pattern>
+					<pattern type="100000000" count="one" draft="unconfirmed">000 mn</pattern>
+					<pattern type="100000000" count="other" draft="unconfirmed">000 mn</pattern>
+					<pattern type="1000000000" count="one" draft="unconfirmed">0 md</pattern>
+					<pattern type="1000000000" count="other" draft="unconfirmed">0 md</pattern>
+					<pattern type="10000000000" count="one" draft="unconfirmed">00 md</pattern>
+					<pattern type="10000000000" count="other" draft="unconfirmed">00 md</pattern>
+					<pattern type="100000000000" count="one" draft="unconfirmed">000 md</pattern>
+					<pattern type="100000000000" count="other" draft="unconfirmed">000 md</pattern>
+					<pattern type="1000000000000" count="one" draft="unconfirmed">0 bn</pattern>
+					<pattern type="1000000000000" count="other" draft="unconfirmed">0 bn</pattern>
+					<pattern type="10000000000000" count="one" draft="unconfirmed">00 bn</pattern>
+					<pattern type="10000000000000" count="other" draft="unconfirmed">00 bn</pattern>
+					<pattern type="100000000000000" count="one" draft="unconfirmed">000 bn</pattern>
+					<pattern type="100000000000000" count="other" draft="unconfirmed">000 bn</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
 		</decimalFormats>
-		<scientificFormats>
+		<scientificFormats numberSystem="latn">
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
-		<percentFormats>
+		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0 %</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
-		<currencyFormats>
+		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat>
 					<pattern>#,##0.00 ¤</pattern>
@@ -1614,7 +1866,6 @@
 			</currency>
 			<currency type="AFN">
 				<displayName>afghani</displayName>
-				<symbol>AFN</symbol>
 			</currency>
 			<currency type="ALL">
 				<displayName>albansk lek</displayName>
@@ -1624,11 +1875,9 @@
 			</currency>
 			<currency type="ANG">
 				<displayName>nederlansk antillegylden</displayName>
-				<symbol>ANG</symbol>
 			</currency>
 			<currency type="AOA">
 				<displayName>angolsk kwanza</displayName>
-				<symbol>AOA</symbol>
 			</currency>
 			<currency type="AOK">
 				<displayName>angolsk kwanza (1977-1990)</displayName>
@@ -1641,31 +1890,21 @@
 			</currency>
 			<currency type="ARA">
 				<displayName>argentisk austral</displayName>
-				<symbol>ARA</symbol>
-			</currency>
-			<currency type="ARL">
-				<symbol>ARL</symbol>
-			</currency>
-			<currency type="ARM">
-				<symbol>ARM</symbol>
 			</currency>
 			<currency type="ARP">
 				<displayName>argentinsk peso (1983-1985)</displayName>
 			</currency>
 			<currency type="ARS">
 				<displayName>argentinsk peso</displayName>
-				<symbol>ARS</symbol>
 			</currency>
 			<currency type="ATS">
 				<displayName>austerriksk schilling</displayName>
 			</currency>
 			<currency type="AUD">
 				<displayName>australsk dollar</displayName>
-				<symbol>AUD</symbol>
 			</currency>
 			<currency type="AWG">
 				<displayName>arubisk gylden</displayName>
-				<symbol>AWG</symbol>
 			</currency>
 			<currency type="AZM">
 				<displayName>aserbaijansk manat</displayName>
@@ -1674,29 +1913,24 @@
 				<displayName>aserbajdsjansk manat</displayName>
 				<displayName count="one">aserbajdsjansk manat</displayName>
 				<displayName count="other">aserbajdsjanske manat</displayName>
-				<symbol>AZN</symbol>
 			</currency>
 			<currency type="BAD">
 				<displayName>bosnisk-hercegovinsk dinar</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>bosnisk-hercegovinsk mark (konvertibel)</displayName>
-				<symbol>BAM</symbol>
 			</currency>
 			<currency type="BBD">
 				<displayName>barbadisk dollar</displayName>
-				<symbol>BBD</symbol>
 			</currency>
 			<currency type="BDT">
 				<displayName>bangladeshisk taka</displayName>
-				<symbol>BDT</symbol>
 			</currency>
 			<currency type="BEC">
 				<displayName>belgisk franc (konvertibel)</displayName>
 			</currency>
 			<currency type="BEF">
 				<displayName>belgisk franc</displayName>
-				<symbol>BEF</symbol>
 			</currency>
 			<currency type="BEL">
 				<displayName>belgisk franc (finansiell)</displayName>
@@ -1709,65 +1943,48 @@
 			</currency>
 			<currency type="BHD">
 				<displayName>bahrainsk dinar</displayName>
-				<symbol>BHD</symbol>
 			</currency>
 			<currency type="BIF">
 				<displayName>burundisk franc</displayName>
-				<symbol>BIF</symbol>
 			</currency>
 			<currency type="BMD">
 				<displayName>bermudisk dollar</displayName>
-				<symbol>BMD</symbol>
 			</currency>
 			<currency type="BND">
 				<displayName>bruneisk dollar</displayName>
-				<symbol>BND</symbol>
 			</currency>
 			<currency type="BOB">
 				<displayName>boliviano</displayName>
-				<symbol>BOB</symbol>
 			</currency>
 			<currency type="BOP">
 				<displayName>bolivisk peso</displayName>
-				<symbol>BOP</symbol>
 			</currency>
 			<currency type="BOV">
 				<displayName>bolivisk mvdol</displayName>
 			</currency>
 			<currency type="BRB">
 				<displayName>brasiliansk cruzeiro novo (1967-1986)</displayName>
-				<symbol>BRB</symbol>
 			</currency>
 			<currency type="BRC">
 				<displayName>brasiliansk cruzado</displayName>
-				<symbol>BRC</symbol>
 			</currency>
 			<currency type="BRE">
 				<displayName>brasiliansk cruzeiro (1990-1993)</displayName>
-				<symbol>BRE</symbol>
 			</currency>
 			<currency type="BRL">
 				<displayName>brasiliansk real</displayName>
-				<symbol>BRL</symbol>
 			</currency>
 			<currency type="BRN">
 				<displayName>brasiliansk cruzado novo</displayName>
-				<symbol>BRN</symbol>
 			</currency>
 			<currency type="BRR">
 				<displayName>brasiliansk cruzeiro</displayName>
-				<symbol>BRR</symbol>
-			</currency>
-			<currency type="BRZ">
-				<symbol>BRZ</symbol>
 			</currency>
 			<currency type="BSD">
 				<displayName>bahamisk dollar</displayName>
-				<symbol>BSD</symbol>
 			</currency>
 			<currency type="BTN">
 				<displayName>bhutansk ngultrum</displayName>
-				<symbol>BTN</symbol>
 			</currency>
 			<currency type="BUK">
 				<displayName>burmesisk kyat</displayName>
@@ -1791,13 +2008,11 @@
 				<displayName>belizisk dollar</displayName>
 				<displayName count="one">belizisk dollar</displayName>
 				<displayName count="other">beliziske dollar</displayName>
-				<symbol>BZD</symbol>
 			</currency>
 			<currency type="CAD">
 				<displayName>kanadisk dollar</displayName>
 				<displayName count="one">kanadisk dollar</displayName>
 				<displayName count="other">kanadiske dollar</displayName>
-				<symbol>CAD</symbol>
 			</currency>
 			<currency type="CDF">
 				<displayName>kongolesisk franc</displayName>
@@ -1813,15 +2028,11 @@
 				<displayName>sveitsisk franc</displayName>
 				<displayName count="one">sveitsisk franc</displayName>
 				<displayName count="other">sveitsiske franc</displayName>
-				<symbol>CHF</symbol>
 			</currency>
 			<currency type="CHW">
 				<displayName>WIR franc</displayName>
 				<displayName count="one">WIR franc</displayName>
 				<displayName count="other">WIR franc</displayName>
-			</currency>
-			<currency type="CLE">
-				<symbol>CLE</symbol>
 			</currency>
 			<currency type="CLF">
 				<displayName>chilensk unidades de fomento</displayName>
@@ -1832,7 +2043,6 @@
 				<displayName>chilensk peso</displayName>
 				<displayName count="one">chilensk peso</displayName>
 				<displayName count="other">chilenske peso</displayName>
-				<symbol>CLP</symbol>
 			</currency>
 			<currency type="CNY">
 				<displayName>kinesisk yuan renminbi</displayName>
@@ -1841,7 +2051,6 @@
 				<displayName>colombiansk peso</displayName>
 				<displayName count="one">colombiansk peso</displayName>
 				<displayName count="other">colombianske peso</displayName>
-				<symbol>COP</symbol>
 			</currency>
 			<currency type="COU">
 				<displayName>unidad de valor real</displayName>
@@ -1852,7 +2061,6 @@
 				<displayName>costaricansk colon</displayName>
 				<displayName count="one">costaricansk colon</displayName>
 				<displayName count="other">costaricanske colon</displayName>
-				<symbol>CRC</symbol>
 			</currency>
 			<currency type="CSD">
 				<displayName>gammal serbisk dinar</displayName>
@@ -1867,29 +2075,24 @@
 			<currency type="CUC">
 				<displayName count="one" draft="unconfirmed">kubansk peso (konvertibel)</displayName>
 				<displayName count="other" draft="unconfirmed">kubanska pesos (konvertibla)</displayName>
-				<symbol draft="unconfirmed">CUC</symbol>
 			</currency>
 			<currency type="CUP">
 				<displayName>kubansk peso</displayName>
 				<displayName count="one">kubansk peso</displayName>
 				<displayName count="other">kubanske peso</displayName>
-				<symbol draft="unconfirmed">CUP</symbol>
 			</currency>
 			<currency type="CVE">
 				<displayName>kappverdisk escudo</displayName>
-				<symbol>CVE</symbol>
 			</currency>
 			<currency type="CYP">
 				<displayName>kypriotisk pund</displayName>
 				<displayName count="one">kypriotisk pund</displayName>
 				<displayName count="other">kypriotiske pund</displayName>
-				<symbol>CYP</symbol>
 			</currency>
 			<currency type="CZK">
 				<displayName>tsjekkisk koruna</displayName>
 				<displayName count="one">tsjekkisk koruna</displayName>
 				<displayName count="other">tsjekkiske koruna</displayName>
-				<symbol>CZK</symbol>
 			</currency>
 			<currency type="DDM">
 				<displayName>austtysk mark</displayName>
@@ -1900,13 +2103,11 @@
 				<displayName>tysk mark</displayName>
 				<displayName count="one">tysk mark</displayName>
 				<displayName count="other">tyske mark</displayName>
-				<symbol>DEM</symbol>
 			</currency>
 			<currency type="DJF">
 				<displayName>djiboutisk franc</displayName>
 				<displayName count="one">djiboutisk franc</displayName>
 				<displayName count="other">djiboutiske franc</displayName>
-				<symbol draft="unconfirmed">DJF</symbol>
 			</currency>
 			<currency type="DKK">
 				<displayName>dansk krone</displayName>
@@ -1917,13 +2118,11 @@
 				<displayName>dominikansk peso</displayName>
 				<displayName count="one">dominikansk peso</displayName>
 				<displayName count="other">dominikanske peso</displayName>
-				<symbol>DOP</symbol>
 			</currency>
 			<currency type="DZD">
 				<displayName>algerisk dinar</displayName>
 				<displayName count="one">algerisk dinar</displayName>
 				<displayName count="other">algeriske dinarar</displayName>
-				<symbol draft="unconfirmed">DZD</symbol>
 			</currency>
 			<currency type="ECS">
 				<displayName>ecuadoriansk sucre</displayName>
@@ -1949,7 +2148,6 @@
 				<displayName>eritreisk nakfa</displayName>
 				<displayName count="one">eritreisk nakfa</displayName>
 				<displayName count="other">eritreiske nakfa</displayName>
-				<symbol draft="unconfirmed">ERN</symbol>
 			</currency>
 			<currency type="ESA">
 				<displayName>spansk peseta (A-konto)</displayName>
@@ -1965,49 +2163,41 @@
 				<displayName>spansk peseta</displayName>
 				<displayName count="one">spansk peseta</displayName>
 				<displayName count="other">spanske peseta</displayName>
-				<symbol draft="unconfirmed">ESP</symbol>
 			</currency>
 			<currency type="ETB">
 				<displayName>etiopisk birr</displayName>
 				<displayName count="one">etiopisk birr</displayName>
 				<displayName count="other">etiopiske birr</displayName>
-				<symbol draft="unconfirmed">ETB</symbol>
 			</currency>
 			<currency type="EUR">
 				<displayName>euro</displayName>
 				<displayName count="one" draft="unconfirmed">euro</displayName>
 				<displayName count="other" draft="unconfirmed">euro</displayName>
-				<symbol>EUR</symbol>
 			</currency>
 			<currency type="FIM">
 				<displayName>finsk mark</displayName>
 				<displayName count="one">finsk mark</displayName>
 				<displayName count="other">finske mark</displayName>
-				<symbol draft="unconfirmed">FIM</symbol>
 			</currency>
 			<currency type="FJD">
 				<displayName>fijiansk dollar</displayName>
 				<displayName count="one">fijiansk dollar</displayName>
 				<displayName count="other">fijianske dollar</displayName>
-				<symbol>FJD</symbol>
 			</currency>
 			<currency type="FKP">
 				<displayName>Falkland-pund</displayName>
 				<displayName count="one">Falkland-pund</displayName>
 				<displayName count="other">Falkland-pund</displayName>
-				<symbol>FKP</symbol>
 			</currency>
 			<currency type="FRF">
 				<displayName>fransk franc</displayName>
 				<displayName count="one">fransk franc</displayName>
 				<displayName count="other">franske franc</displayName>
-				<symbol>FRF</symbol>
 			</currency>
 			<currency type="GBP">
 				<displayName>britisk pund sterling</displayName>
 				<displayName count="one" draft="unconfirmed">britisk pund sterling</displayName>
 				<displayName count="other" draft="unconfirmed">britiske pund sterling</displayName>
-				<symbol>GBP</symbol>
 			</currency>
 			<currency type="GEK">
 				<displayName>georgisk kupon larit</displayName>
@@ -2023,19 +2213,16 @@
 				<displayName>ghanesisk cedi (1979-2007)</displayName>
 				<displayName count="one">ghanesisk cedi (GHC)</displayName>
 				<displayName count="other">ghanesiske cedi (GHC)</displayName>
-				<symbol>GHC</symbol>
 			</currency>
 			<currency type="GHS">
 				<displayName>ghanesisk cedi</displayName>
 				<displayName count="one">ghanesisk cedi</displayName>
 				<displayName count="other">ghanesiske cedi</displayName>
-				<symbol>GHS</symbol>
 			</currency>
 			<currency type="GIP">
 				<displayName>gibraltarsk pund</displayName>
 				<displayName count="one">gibraltarsk pund</displayName>
 				<displayName count="other">gibraltarske pund</displayName>
-				<symbol>GIP</symbol>
 			</currency>
 			<currency type="GMD">
 				<displayName>gambisk dalasi</displayName>
@@ -2046,7 +2233,6 @@
 				<displayName>guineansk franc</displayName>
 				<displayName count="one">guineansk franc</displayName>
 				<displayName count="other">guineanske franc</displayName>
-				<symbol draft="unconfirmed">GNF</symbol>
 			</currency>
 			<currency type="GNS">
 				<displayName>guineansk syli</displayName>
@@ -2062,7 +2248,6 @@
 				<displayName>gresk drakme</displayName>
 				<displayName count="one">gresk drakme</displayName>
 				<displayName count="other">greske drakmer</displayName>
-				<symbol draft="unconfirmed">GRD</symbol>
 			</currency>
 			<currency type="GTQ">
 				<displayName>guatemalansk quetzal</displayName>
@@ -2081,7 +2266,6 @@
 				<displayName>guyansk dollar</displayName>
 				<displayName count="one">guyansk dollar</displayName>
 				<displayName count="other">guyanske dollar</displayName>
-				<symbol draft="unconfirmed">GYD</symbol>
 			</currency>
 			<currency type="HKD">
 				<displayName>Hongkong-dollar</displayName>
@@ -2102,7 +2286,6 @@
 				<displayName>kroatisk kuna</displayName>
 				<displayName count="one">kroatisk kuna</displayName>
 				<displayName count="other">kroatiske kuna</displayName>
-				<symbol draft="unconfirmed">HRK</symbol>
 			</currency>
 			<currency type="HTG">
 				<displayName>haitisk gourde</displayName>
@@ -2113,25 +2296,21 @@
 				<displayName>ungarsk forint</displayName>
 				<displayName count="one">ungarsk forint</displayName>
 				<displayName count="other">ungarske forintar</displayName>
-				<symbol draft="unconfirmed">HUF</symbol>
 			</currency>
 			<currency type="IDR">
 				<displayName>indonesisk rupi</displayName>
 				<displayName count="one">indonesisk rupi</displayName>
 				<displayName count="other">indonesiske rupiar</displayName>
-				<symbol draft="unconfirmed">IDR</symbol>
 			</currency>
 			<currency type="IEP">
 				<displayName>irsk pund</displayName>
 				<displayName count="one">irsk pund</displayName>
 				<displayName count="other">irske pund</displayName>
-				<symbol draft="unconfirmed">IEP</symbol>
 			</currency>
 			<currency type="ILP">
 				<displayName>israelsk pund</displayName>
 				<displayName count="one">israelsk pund</displayName>
 				<displayName count="other">israelske pund</displayName>
-				<symbol draft="unconfirmed">ILP</symbol>
 			</currency>
 			<currency type="ILS">
 				<displayName>israelsk ny shekel</displayName>
@@ -2142,7 +2321,6 @@
 				<displayName>indisk rupi</displayName>
 				<displayName count="one" draft="unconfirmed">indisk rupi</displayName>
 				<displayName count="other" draft="unconfirmed">indiske rupier</displayName>
-				<symbol>INR</symbol>
 			</currency>
 			<currency type="IQD">
 				<displayName>iraksk dinar</displayName>
@@ -2178,13 +2356,11 @@
 				<displayName>japansk yen</displayName>
 				<displayName count="one" draft="unconfirmed">japansk yen</displayName>
 				<displayName count="other" draft="unconfirmed">japanske yen</displayName>
-				<symbol>JPY</symbol>
 			</currency>
 			<currency type="KES">
 				<displayName>kenyansk shilling</displayName>
 				<displayName count="one">kenyansk shilling</displayName>
 				<displayName count="other">kenyanske shilling</displayName>
-				<symbol draft="unconfirmed">KES</symbol>
 			</currency>
 			<currency type="KGS">
 				<displayName>kirgisisk som</displayName>
@@ -2504,7 +2680,6 @@
 				<displayName>paraguayansk guarani</displayName>
 				<displayName count="one">paraguayansk guarani</displayName>
 				<displayName count="other">paraguayanske guarani</displayName>
-				<symbol draft="unconfirmed">PYG</symbol>
 			</currency>
 			<currency type="QAR">
 				<displayName>qatarsk rial</displayName>
@@ -2710,7 +2885,6 @@
 				<displayName>ukrainsk hryvnia</displayName>
 				<displayName count="one">ukrainsk hryvnia</displayName>
 				<displayName count="other">ukrainske hryvnia</displayName>
-				<symbol draft="unconfirmed">UAH</symbol>
 			</currency>
 			<currency type="UAK">
 				<displayName>ukrainsk karbovanetz</displayName>
@@ -2731,7 +2905,6 @@
 				<displayName>amerikansk dollar</displayName>
 				<displayName count="one" draft="unconfirmed">amerikansk dollar</displayName>
 				<displayName count="other" draft="unconfirmed">amerikanske dollar</displayName>
-				<symbol>USD</symbol>
 			</currency>
 			<currency type="USN">
 				<displayName>amerikansk dollar (neste dag)</displayName>
@@ -2764,14 +2937,14 @@
 				<displayName count="other">usbekiske sum</displayName>
 			</currency>
 			<currency type="VEB">
+				<displayName>venezuelansk bolivar (1871-2008)</displayName>
+				<displayName count="one">venezuelansk bolivar (1871-2008)</displayName>
+				<displayName count="other">venezuelanske bolivar (1871-2008)</displayName>
+			</currency>
+			<currency type="VEF">
 				<displayName>venezuelansk bolivar</displayName>
 				<displayName count="one">venezuelansk bolivar</displayName>
 				<displayName count="other">venezuelanske bolivar</displayName>
-			</currency>
-			<currency type="VEF">
-				<displayName>venezuelansk bolivar fuerte</displayName>
-				<displayName count="one">venezuelansk bolivar fuerte</displayName>
-				<displayName count="other">venezuelanske bolivar fuerte</displayName>
 			</currency>
 			<currency type="VND">
 				<displayName>vietnamesisk dong</displayName>
@@ -2898,7 +3071,8 @@
 			</currency>
 			<currency type="YUM">
 				<displayName>jugoslavisk noviy-dinar</displayName>
-				<displayName count="one">jugoslaviske noviy-dinarar</displayName>
+				<displayName count="one">jugoslavisk noviy-dinarar</displayName>
+				<displayName count="other">jugoslaviske noviy-dinar</displayName>
 			</currency>
 			<currency type="YUN">
 				<displayName>jugoslavisk konvertibel dinar</displayName>
@@ -2912,6 +3086,9 @@
 				<displayName>sørafrikansk rand</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>zambisk kwacha (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>zambisk kwacha</displayName>
 			</currency>
 			<currency type="ZRN">
@@ -2932,7 +3109,9 @@
 	<units>
 		<unit type="day">
 			<unitPattern count="one">{0} døgn</unitPattern>
+			<unitPattern count="one" alt="short" draft="unconfirmed">{0} d</unitPattern>
 			<unitPattern count="other">{0} døgn</unitPattern>
+			<unitPattern count="other" alt="short" draft="unconfirmed">{0} d</unitPattern>
 		</unit>
 		<unit type="day-future">
 			<unitPattern count="one">om {0} dag</unitPattern>
@@ -2944,7 +3123,9 @@
 		</unit>
 		<unit type="hour">
 			<unitPattern count="one">{0} time</unitPattern>
+			<unitPattern count="one" alt="short" draft="unconfirmed">{0} h</unitPattern>
 			<unitPattern count="other">{0} timar</unitPattern>
+			<unitPattern count="other" alt="short" draft="unconfirmed">{0} h</unitPattern>
 		</unit>
 		<unit type="hour-future">
 			<unitPattern count="one">om {0} time</unitPattern>
@@ -2956,7 +3137,9 @@
 		</unit>
 		<unit type="minute">
 			<unitPattern count="one">{0} minutt</unitPattern>
+			<unitPattern count="one" alt="short" draft="unconfirmed">{0} mi</unitPattern>
 			<unitPattern count="other">{0} minutt</unitPattern>
+			<unitPattern count="other" alt="short" draft="unconfirmed">{0} mi</unitPattern>
 		</unit>
 		<unit type="minute-future">
 			<unitPattern count="one">om {0} minutt</unitPattern>
@@ -2968,7 +3151,9 @@
 		</unit>
 		<unit type="month">
 			<unitPattern count="one">{0} månad</unitPattern>
+			<unitPattern count="one" alt="short" draft="unconfirmed">{0} må</unitPattern>
 			<unitPattern count="other">{0} månader</unitPattern>
+			<unitPattern count="other" alt="short" draft="unconfirmed">{0} må</unitPattern>
 		</unit>
 		<unit type="month-future">
 			<unitPattern count="one">om {0} månad</unitPattern>
@@ -2980,7 +3165,9 @@
 		</unit>
 		<unit type="second">
 			<unitPattern count="one">{0} sekund</unitPattern>
+			<unitPattern count="one" alt="short" draft="unconfirmed">{0} s</unitPattern>
 			<unitPattern count="other">{0} sekund</unitPattern>
+			<unitPattern count="other" alt="short" draft="unconfirmed">{0} s</unitPattern>
 		</unit>
 		<unit type="second-future">
 			<unitPattern count="one">om {0} sekund</unitPattern>
@@ -2992,7 +3179,9 @@
 		</unit>
 		<unit type="week">
 			<unitPattern count="one">{0} veke</unitPattern>
+			<unitPattern count="one" alt="short" draft="unconfirmed">{0} v</unitPattern>
 			<unitPattern count="other">{0} veker</unitPattern>
+			<unitPattern count="other" alt="short" draft="unconfirmed">{0} v</unitPattern>
 		</unit>
 		<unit type="week-future">
 			<unitPattern count="one">om {0} veke</unitPattern>
@@ -3004,7 +3193,9 @@
 		</unit>
 		<unit type="year">
 			<unitPattern count="one">{0} år</unitPattern>
+			<unitPattern count="one" alt="short" draft="unconfirmed">{0} år</unitPattern>
 			<unitPattern count="other">{0} år</unitPattern>
+			<unitPattern count="other" alt="short" draft="unconfirmed">{0} år</unitPattern>
 		</unit>
 		<unit type="year-future">
 			<unitPattern count="one">om {0} år</unitPattern>

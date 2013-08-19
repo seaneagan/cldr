@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5879 $"/>
-		<generation date="$Date: 2011-05-10 13:52:32 -0500 (Tue, 10 May 2011) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="sl"/>
 	</identity>
 	<localeDisplayNames>
@@ -95,6 +99,7 @@
 			<language type="chp">čipevščina</language>
 			<language type="chr">čerokeščina</language>
 			<language type="chy">čejenščina</language>
+			<language type="ckb" draft="contributed">soranska kurdščina</language>
 			<language type="cmc">camski jezik</language>
 			<language type="co">korziščina</language>
 			<language type="cop">koptščina</language>
@@ -187,7 +192,6 @@
 			<language type="gsw">nemščina (Švica)</language>
 			<language type="gu">gudžaratščina</language>
 			<language type="gv">manščina</language>
-			<language type="gwi">gwi</language>
 			<language type="ha">havščina</language>
 			<language type="hai">haidščina</language>
 			<language type="haw">havajščina</language>
@@ -210,7 +214,6 @@
 			<language type="id">indonezijščina</language>
 			<language type="ie">interlingve</language>
 			<language type="ig">igboščina</language>
-			<language type="ii">ii</language>
 			<language type="ijo">ijo</language>
 			<language type="ik">inupiaščina</language>
 			<language type="ilo">ilokanščina</language>
@@ -232,13 +235,11 @@
 			<language type="kaa">karakalpaščina</language>
 			<language type="kab">kabilščina</language>
 			<language type="kac">kačinščina</language>
-			<language type="kaj">kaj</language>
 			<language type="kam">kamba</language>
 			<language type="kar">karenščina</language>
 			<language type="kaw">kavi</language>
 			<language type="kbd">kabardinščina</language>
 			<language type="kcg">tjapska nigerijščina</language>
-			<language type="kfo">kfo</language>
 			<language type="kg">kongovščina</language>
 			<language type="kha">kasi</language>
 			<language type="khi">koisanski jezik</language>
@@ -296,6 +297,7 @@
 			<language type="mdf">mokšavščina</language>
 			<language type="mdr">mandarščina</language>
 			<language type="men">mende</language>
+			<language type="mfe" draft="contributed">morisjenščina</language>
 			<language type="mg">malagaščina</language>
 			<language type="mga">srednja irščina</language>
 			<language type="mh">marshallovščina</language>
@@ -318,7 +320,6 @@
 			<language type="mt">malteščina</language>
 			<language type="mul">več jezikov</language>
 			<language type="mun">mundski jezik</language>
-			<language type="mus">mus</language>
 			<language type="mwl">mirandeščina</language>
 			<language type="mwr">marvarščina</language>
 			<language type="my">burmanščina</language>
@@ -333,7 +334,6 @@
 			<language type="nds">nizka nemščina</language>
 			<language type="ne">nepalščina</language>
 			<language type="new">nevarščina</language>
-			<language type="ng">ng</language>
 			<language type="nia">niaščina</language>
 			<language type="nic">nigrsko-kordofanski jezik</language>
 			<language type="niu">niuejščina</language>
@@ -343,7 +343,6 @@
 			<language type="no">norveščina</language>
 			<language type="nog">nogajščina</language>
 			<language type="non">stara nordijščina</language>
-			<language type="nqo">nqo</language>
 			<language type="nr">južna ndebelščina</language>
 			<language type="nso">severna sotščina</language>
 			<language type="nub">nubijski jezik</language>
@@ -365,7 +364,6 @@
 			<language type="pa">pandžabščina</language>
 			<language type="paa">papuanski jezik</language>
 			<language type="pag">pangasinanščina</language>
-			<language type="pal">pal</language>
 			<language type="pam">pampanščina</language>
 			<language type="pap">papiamentu</language>
 			<language type="pau">palavanščina</language>
@@ -391,15 +389,11 @@
 			<language type="ro">romunščina</language>
 			<language type="roa">romanski jezik</language>
 			<language type="rom">romščina</language>
-			<language type="root">root</language>
 			<language type="ru">ruščina</language>
 			<language type="rup">aromunščina</language>
 			<language type="rw">ruandščina</language>
 			<language type="sa">sanskrt</language>
-			<language type="sad">sad</language>
 			<language type="sah">jakutščina</language>
-			<language type="sai">sai</language>
-			<language type="sal">sal</language>
 			<language type="sam">samaritanska aramejščina</language>
 			<language type="sas">sasaščina</language>
 			<language type="sat">santalščina</language>
@@ -429,9 +423,7 @@
 			<language type="smn">inarska samijščina</language>
 			<language type="sms">samijščina Skolt</language>
 			<language type="sn">šonščina</language>
-			<language type="snk">snk</language>
 			<language type="so">somalščina</language>
-			<language type="sog">sog</language>
 			<language type="son">songajščina</language>
 			<language type="sq">albanščina</language>
 			<language type="sr">srbščina</language>
@@ -453,7 +445,6 @@
 			<language type="tai">tajski jezik</language>
 			<language type="te">telugijščina</language>
 			<language type="tem">temnejščina</language>
-			<language type="ter">ter</language>
 			<language type="tet">tetumščina</language>
 			<language type="tg">tadžiščina</language>
 			<language type="th">tajščina</language>
@@ -510,7 +501,6 @@
 			<language type="yo">jorubščina</language>
 			<language type="ypk">jupiški jezik</language>
 			<language type="yue">kantonščina</language>
-			<language type="za">za</language>
 			<language type="zap">zapoteščina</language>
 			<language type="zbl">znakovni jezik Bliss</language>
 			<language type="zen">zenaščina</language>
@@ -538,9 +528,7 @@
 			<script type="Brai">braillova pisava</script>
 			<script type="Bugi">buginski</script>
 			<script type="Buhd">buhidski</script>
-			<script type="Cakm">Cakm</script>
 			<script type="Cans">poenotena zlogovna pisava kanadskih staroselcev</script>
-			<script type="Cari">Cari</script>
 			<script type="Cham">Cham</script>
 			<script type="Cher">čerokeški</script>
 			<script type="Cirt">kirt</script>
@@ -584,7 +572,6 @@
 			<script type="Knda">kanadski</script>
 			<script type="Kore">korejski</script>
 			<script type="Kthi">kajatski</script>
-			<script type="Lana">Lana</script>
 			<script type="Laoo">laoški</script>
 			<script type="Latf">fraktura</script>
 			<script type="Latg">gelski latinični</script>
@@ -604,7 +591,6 @@
 			<script type="Moon">Moonova pisava za slepe</script>
 			<script type="Mtei">manipurski</script>
 			<script type="Mymr">mjanmarski</script>
-			<script type="Nkoo">Nkoo</script>
 			<script type="Ogam">ogamski</script>
 			<script type="Olck">santalski</script>
 			<script type="Orkh">orkonski</script>
@@ -617,13 +603,10 @@
 			<script type="Phlv">knjižno palavanski</script>
 			<script type="Phnx">feničanski</script>
 			<script type="Plrd">Pollardova fonetska pisava</script>
-			<script type="Prti">Prti</script>
-			<script type="Rjng">Rjng</script>
 			<script type="Roro">rongorongo</script>
 			<script type="Runr">runski</script>
 			<script type="Samr">samaritanski</script>
 			<script type="Sara">saratski</script>
-			<script type="Saur">Saur</script>
 			<script type="Sgnw">znakovna pisava</script>
 			<script type="Shaw">šojevski</script>
 			<script type="Sinh">sinhalski</script>
@@ -634,8 +617,6 @@
 			<script type="Syrj">zahodnosirijski</script>
 			<script type="Syrn">vzhodnosirijski</script>
 			<script type="Tagb">tagbanski</script>
-			<script type="Tale">Tale</script>
-			<script type="Talu">Talu</script>
 			<script type="Taml">tamilski</script>
 			<script type="Tavt">tajsko-vietnamski</script>
 			<script type="Telu">teluški</script>
@@ -650,7 +631,6 @@
 			<script type="Visp">vidni govor</script>
 			<script type="Xpeo">staroperzijski</script>
 			<script type="Xsux">sumersko-akadski klinopis</script>
-			<script type="Yiii">Yiii</script>
 			<script type="Zinh">podedovan</script>
 			<script type="Zmth">matematična znamenja</script>
 			<script type="Zsym">simboli</script>
@@ -681,7 +661,6 @@
 			<territory type="054">Melanezija</territory>
 			<territory type="057">mikronezijska regija</territory>
 			<territory type="061">Polinezija</territory>
-			<territory type="062">Južna osrednja Azija</territory>
 			<territory type="142">Azija</territory>
 			<territory type="143">Osrednja Azija</territory>
 			<territory type="145">Zahodna Azija</territory>
@@ -689,9 +668,7 @@
 			<territory type="151">Vzhodna Evropa</territory>
 			<territory type="154">Severna Evropa</territory>
 			<territory type="155">Zahodna Evropa</territory>
-			<territory type="172">Skupnost neodvisnih držav</territory>
-			<territory type="419">Latinska Amerika in Karibi</territory>
-			<territory type="830">Kanalski otoki</territory>
+			<territory type="419">Latinska Amerika</territory>
 			<territory type="AC">Otok Ascension</territory>
 			<territory type="AD">Andora</territory>
 			<territory type="AE">Združeni arabski emirati</territory>
@@ -723,6 +700,7 @@
 			<territory type="BM">Bermudi</territory>
 			<territory type="BN">Brunej</territory>
 			<territory type="BO">Bolivija</territory>
+			<territory type="BQ" draft="contributed">Nizozemski Karibi</territory>
 			<territory type="BR">Brazilija</territory>
 			<territory type="BS">Bahami</territory>
 			<territory type="BT">Butan</territory>
@@ -747,9 +725,9 @@
 			<territory type="CO">Kolumbija</territory>
 			<territory type="CP">Otok Clipperton</territory>
 			<territory type="CR">Kostarika</territory>
-			<territory type="CS">Srbija in Črna gora</territory>
 			<territory type="CU">Kuba</territory>
 			<territory type="CV">Zelenortski otoki</territory>
+			<territory type="CW" draft="contributed">Curaçao</territory>
 			<territory type="CX">Božični otok</territory>
 			<territory type="CY">Ciper</territory>
 			<territory type="CZ">Češka</territory>
@@ -776,7 +754,6 @@
 			<territory type="FM">Mikronezija</territory>
 			<territory type="FO">Ferski otoki</territory>
 			<territory type="FR">Francija</territory>
-			<territory type="FX">Metropolitanska Francija</territory>
 			<territory type="GA">Gabon</territory>
 			<territory type="GB">Velika Britanija</territory>
 			<territory type="GD">Grenada</territory>
@@ -889,6 +866,7 @@
 			<territory type="PN">Pitcairn</territory>
 			<territory type="PR">Portoriko</territory>
 			<territory type="PS">Palestinsko ozemlje</territory>
+			<territory type="PS" alt="short">Palestina</territory>
 			<territory type="PT">Portugalska</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paragvaj</territory>
@@ -914,8 +892,10 @@
 			<territory type="SN">Senegal</territory>
 			<territory type="SO">Somalija</territory>
 			<territory type="SR">Surinam</territory>
+			<territory type="SS" draft="contributed">Južni Sudan</territory>
 			<territory type="ST">Sao Tome in Principe</territory>
 			<territory type="SV">Salvador</territory>
+			<territory type="SX" draft="contributed">Sint Maarten</territory>
 			<territory type="SY">Sirija</territory>
 			<territory type="SZ">Svazi</territory>
 			<territory type="TA">Tristan da Cunha</territory>
@@ -951,6 +931,7 @@
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Wallis in Futuna</territory>
 			<territory type="WS">Samoa</territory>
+			<territory type="XK">Kosovo</territory>
 			<territory type="YE">Jemen</territory>
 			<territory type="YT">Mayotte</territory>
 			<territory type="ZA">Južnoafriška republika</territory>
@@ -995,9 +976,20 @@
 		</variants>
 		<keys>
 			<key type="calendar">koledar</key>
+			<key type="colAlternate" draft="contributed">Razvrščanje s prezrtimi znaki</key>
+			<key type="colBackwards" draft="contributed">Razvrščanje z obratnimi naglasi</key>
+			<key type="colCaseFirst" draft="contributed">Razvrščanje velike črke/male črke</key>
+			<key type="colCaseLevel" draft="contributed">Razvrščanje, občutljivo na velike/male črke</key>
+			<key type="colHiraganaQuaternary" draft="contributed">Razvrščanje kana</key>
 			<key type="collation">razvrščanje</key>
+			<key type="colNormalization" draft="contributed">Normalizirano razvrščanje</key>
+			<key type="colNumeric" draft="contributed">Številsko razvrščanje</key>
+			<key type="colStrength" draft="contributed">Moč razvrščanja</key>
 			<key type="currency">valuta</key>
 			<key type="numbers" draft="contributed">Številke</key>
+			<key type="timezone" draft="contributed">Časovni pas</key>
+			<key type="va" draft="contributed">Različica območnih nastavitev</key>
+			<key type="variableTop" draft="contributed">Razvrščanje kot simboli</key>
 			<key type="x" draft="contributed">Private-Use</key>
 		</keys>
 		<types>
@@ -1012,11 +1004,11 @@
 			<type type="coptic" key="calendar" draft="contributed">Koptski koledar</type>
 			<type type="deva" key="numbers" draft="contributed">Devangarske števke</type>
 			<type type="dictionary" key="collation" draft="contributed">Vrstni red razvrščanja v slovarju</type>
-			<type type="direct" key="collation">neposredno razvrščanje</type>
 			<type type="ducet" key="collation" draft="contributed">Privzeto razvrščanje Unicode</type>
 			<type type="ethi" key="numbers" draft="contributed">Etiopijske številke</type>
 			<type type="ethiopic" key="calendar" draft="contributed">Etiopski koledar</type>
 			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Etiopsko ametsko alemski koledar</type>
+			<type type="finance" key="numbers" draft="contributed">Finančne številke</type>
 			<type type="fullwide" key="numbers" draft="contributed">Števke polne širine</type>
 			<type type="gb2312han" key="collation">razvrščanje po sistemu poenostavljene kitajščine - GB2312</type>
 			<type type="geor" key="numbers" draft="contributed">Gruzijske številke</type>
@@ -1032,6 +1024,7 @@
 			<type type="hantfin" key="numbers" draft="contributed">Tradicionalne kitajske finančne številke</type>
 			<type type="hebr" key="numbers" draft="contributed">Hebrejske številke</type>
 			<type type="hebrew" key="calendar">hebrejski koledar</type>
+			<type type="identical" key="colStrength" draft="contributed">Razvrščanje vsega</type>
 			<type type="indian" key="calendar">indijanski koledar</type>
 			<type type="islamic" key="calendar">islamski koledar</type>
 			<type type="islamic-civil" key="calendar">islamski civilni koledar</type>
@@ -1042,30 +1035,54 @@
 			<type type="knda" key="numbers" draft="contributed">Kanaredske števke</type>
 			<type type="laoo" key="numbers" draft="contributed">Laoške števke</type>
 			<type type="latn" key="numbers" draft="contributed">Zahodne števke</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Razvrščanje malih črk najprej</type>
 			<type type="mlym" key="numbers" draft="contributed">Malajalamske števke</type>
 			<type type="mong" key="numbers" draft="contributed">Mongolske števke</type>
 			<type type="mymr" key="numbers" draft="contributed">Mjanmarske števke</type>
+			<type type="native" key="numbers" draft="contributed">Domače števke</type>
+			<type type="no" key="colBackwards" draft="contributed">Navadno razvrščanje naglasov</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Razvrščanje v običajnem zaporedju velikih/malih črk</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Razvrščanje ne glede na velike/male črke</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Razvrščanje kana ločeno</type>
+			<type type="no" key="colNormalization" draft="contributed">Razvrščanje brez normaliziranja</type>
+			<type type="no" key="colNumeric" draft="contributed">Ločeno razvrščanje številk</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Razvrščanje simbolov</type>
 			<type type="orya" key="numbers" draft="contributed">Orijske števke</type>
 			<type type="persian" key="calendar" draft="contributed">Perzijski koledar</type>
 			<type type="phonebook" key="collation">razvrščanje po abecedi</type>
+			<type type="phonetic" key="collation" draft="contributed">Fonetično razvrščanje</type>
 			<type type="pinyin" key="collation">razvrščanje po sistemu pinjin</type>
+			<type type="primary" key="colStrength" draft="contributed">Razvrščanje samo osnovnih črk</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Razvrščanje po naglasih/velikih črkah/malih črkah/širini/kana</type>
 			<type type="reformed" key="collation" draft="contributed">Reformirano razvrščanje</type>
 			<type type="roc" key="calendar">kitajski državni koledar</type>
 			<type type="roman" key="numbers" draft="contributed">Rimske številke</type>
 			<type type="romanlow" key="numbers" draft="contributed">Rimske male številke</type>
 			<type type="search" key="collation" draft="contributed">Splošno iskanje</type>
+			<type type="searchjl" key="collation" draft="contributed">Iskanje po začetnem soglasniku hangul</type>
+			<type type="secondary" key="colStrength" draft="contributed">Razvrščanje naglasov</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Razvrščanje s prezrtjem simbolov</type>
 			<type type="stroke" key="collation">razvrščanje po zaporedju pisanja pismenk</type>
 			<type type="taml" key="numbers" draft="contributed">Tamilske številke</type>
 			<type type="telu" key="numbers" draft="contributed">Teluške števke</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Razvrščanje po naglasih/velikih črkah/malih črkah/širini</type>
 			<type type="thai" key="numbers" draft="contributed">Tajske števke</type>
 			<type type="tibt" key="numbers" draft="contributed">Tibetanske števke</type>
 			<type type="traditional" key="collation">razvrščanje po tradicionalnem sistemu</type>
+			<type type="traditional" key="numbers" draft="contributed">Tradicionalne številke</type>
 			<type type="unihan" key="collation" draft="contributed">Razvrščanje koren-poteza</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Razvrščanje velikih črk najprej</type>
+			<type type="vaii" key="numbers" draft="contributed">Številke vai</type>
+			<type type="yes" key="colBackwards" draft="contributed">Obratno razvrščanje naglasov</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Razvrščanje ob upoštevanju velikih/malih črk</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Razvrščanje kana različno</type>
+			<type type="yes" key="colNormalization" draft="contributed">Normalizirano razvrščanje Unicode</type>
+			<type type="yes" key="colNumeric" draft="contributed">Številsko razvrščanje števk</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
-			<transformName type="Numeric" draft="contributed">Numeric</transformName>
-			<transformName type="Tone" draft="contributed">Tone</transformName>
+			<transformName type="Numeric" draft="contributed">Številsko</transformName>
+			<transformName type="Tone" draft="contributed">Ton</transformName>
 			<transformName type="UNGEGN" draft="contributed">UNGEGN</transformName>
 			<transformName type="x-Accents" draft="contributed">Accents</transformName>
 			<transformName type="x-Fullwidth" draft="contributed">Polna širina</transformName>
@@ -1081,29 +1098,193 @@
 		</measurementSystemNames>
 		<codePatterns>
 			<codePattern type="language">Jezik: {0}</codePattern>
-			<codePattern type="script" draft="provisional">{0}</codePattern>
+			<codePattern type="script" draft="contributed">{0}</codePattern>
 			<codePattern type="territory">Regija: {0}</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
-	<layout>
-		<inText type="keys">titlecase-firstword</inText>
-		<inText type="types">titlecase-firstword</inText>
-	</layout>
 	<characters>
 		<exemplarCharacters>[a b c č d e f g h i j k l m n o p r s š t u v z ž]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á à ă â å ä ā æ ç ć đ é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ q ú ù ŭ û ü ū w x y ÿ]</exemplarCharacters>
-		<exemplarCharacters type="currencySymbol">[a b c č d e f g h i j k l ł m n o º p q r s t u v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C Č Ć D Đ E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž]</exemplarCharacters>
+		<moreInformation draft="contributed">?</moreInformation>
 	</characters>
 	<delimiters>
-		<quotationStart>»</quotationStart>
-		<quotationEnd>«</quotationEnd>
-		<alternateQuotationStart>„</alternateQuotationStart>
-		<alternateQuotationEnd>“</alternateQuotationEnd>
+		<quotationStart>„</quotationStart>
+		<quotationEnd>“</quotationEnd>
+		<alternateQuotationStart>‚</alternateQuotationStart>
+		<alternateQuotationEnd>‘</alternateQuotationEnd>
 	</delimiters>
 	<dates>
-		<dateRangePattern>{0} – {1}</dateRangePattern>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, dd. MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>dd. MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d. MMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>d. MM. yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d" draft="contributed">d</dateFormatItem>
+						<dateFormatItem id="Ed">E, d.</dateFormatItem>
+						<dateFormatItem id="h" draft="contributed">h a</dateFormatItem>
+						<dateFormatItem id="H" draft="contributed">HH</dateFormatItem>
+						<dateFormatItem id="hm" draft="contributed">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms" draft="contributed">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M" draft="contributed">L</dateFormatItem>
+						<dateFormatItem id="Md">d. M.</dateFormatItem>
+						<dateFormatItem id="MEd">E, d. MM.</dateFormatItem>
+						<dateFormatItem id="MMM" draft="contributed">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, d. MMM</dateFormatItem>
+						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM" draft="contributed">M/y</dateFormatItem>
+						<dateFormatItem id="yMd">d. M. y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, d. M. y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd" draft="contributed">d. MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, d. MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ" draft="contributed">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ" draft="contributed">QQQQ y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d.–d.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H" draft="contributed">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H" draft="contributed">HH.mm–HH.mm</greatestDifference>
+							<greatestDifference id="m" draft="contributed">HH.mm–HH.mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H" draft="contributed">HH.mm–HH.mm v</greatestDifference>
+							<greatestDifference id="m" draft="contributed">HH.mm–HH.mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H" draft="contributed">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M.–M.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">d. – d. M.</greatestDifference>
+							<greatestDifference id="M">d. M. – d. M.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, d. – E, d. M.</greatestDifference>
+							<greatestDifference id="M">E, d. M. – E, d. M.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM–MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d.–d. MMM</greatestDifference>
+							<greatestDifference id="M">d. MMM – d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, d. – E, d. MMM</greatestDifference>
+							<greatestDifference id="M">E, d. MMM – E, d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">M.–M. y</greatestDifference>
+							<greatestDifference id="y">M. y – M. y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">d. M. y – d. M. y</greatestDifference>
+							<greatestDifference id="M">d. M. – d. M. y</greatestDifference>
+							<greatestDifference id="y">d. M. y – d. M. y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, d. – E, d. M. y</greatestDifference>
+							<greatestDifference id="M">E, d. M. – E, d. M. y</greatestDifference>
+							<greatestDifference id="y">E, d. M. y – E, d. M. y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM – MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y – MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d.–d. MMM y</greatestDifference>
+							<greatestDifference id="M">d. MMM – d. MMM y</greatestDifference>
+							<greatestDifference id="y">d. MMM y – d. MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, d. MMM – E, d. MMM y</greatestDifference>
+							<greatestDifference id="M">E, d. MMM – E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y – E, d. MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M" draft="contributed">MMMM–MMMM y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMMM y – MMMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1178,6 +1359,15 @@
 							<day type="fri">pet.</day>
 							<day type="sat">sob.</day>
 						</dayWidth>
+						<dayWidth type="short">
+							<day type="sun" draft="contributed">ned.</day>
+							<day type="mon" draft="contributed">pon.</day>
+							<day type="tue" draft="contributed">tor.</day>
+							<day type="wed" draft="contributed">sre.</day>
+							<day type="thu" draft="contributed">čet.</day>
+							<day type="fri" draft="contributed">pet.</day>
+							<day type="sat" draft="contributed">sob.</day>
+						</dayWidth>
 						<dayWidth type="wide">
 							<day type="sun">nedelja</day>
 							<day type="mon">ponedeljek</day>
@@ -1207,6 +1397,15 @@
 							<day type="fri">p</day>
 							<day type="sat">s</day>
 						</dayWidth>
+						<dayWidth type="short">
+							<day type="sun" draft="contributed">ned.</day>
+							<day type="mon" draft="contributed">pon.</day>
+							<day type="tue" draft="contributed">tor.</day>
+							<day type="wed" draft="contributed">sre.</day>
+							<day type="thu" draft="contributed">čet.</day>
+							<day type="fri" draft="contributed">pet.</day>
+							<day type="sat" draft="contributed">sob.</day>
+						</dayWidth>
 					</dayContext>
 				</days>
 				<quarters>
@@ -1228,6 +1427,14 @@
 							<quarter type="2">2. četrtletje</quarter>
 							<quarter type="3">3. četrtletje</quarter>
 							<quarter type="4">4. četrtletje</quarter>
+						</quarterWidth>
+					</quarterContext>
+					<quarterContext type="stand-alone">
+						<quarterWidth type="narrow">
+							<quarter type="1" draft="contributed">1</quarter>
+							<quarter type="2" draft="contributed">2</quarter>
+							<quarter type="3" draft="contributed">3</quarter>
+							<quarter type="4" draft="contributed">4</quarter>
 						</quarterWidth>
 					</quarterContext>
 				</quarters>
@@ -1262,7 +1469,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>d. MMM yyyy</pattern>
+							<pattern>d. MMM y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -1294,9 +1501,31 @@
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
 					<availableFormats>
 						<dateFormatItem id="d" draft="contributed">d</dateFormatItem>
 						<dateFormatItem id="Ed">E, d.</dateFormatItem>
+						<dateFormatItem id="h" draft="contributed">h a</dateFormatItem>
+						<dateFormatItem id="H" draft="contributed">HH</dateFormatItem>
 						<dateFormatItem id="hm" draft="contributed">h:mm a</dateFormatItem>
 						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
 						<dateFormatItem id="hms" draft="contributed">h:mm:ss a</dateFormatItem>
@@ -1314,13 +1543,11 @@
 						<dateFormatItem id="yMd">d. M. y</dateFormatItem>
 						<dateFormatItem id="yMEd">E, d. M. y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
-						<dateFormatItem id="yMMMd" draft="contributed">MMM d, y</dateFormatItem>
+						<dateFormatItem id="yMMMd" draft="contributed">d. MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, d. MMM y</dateFormatItem>
-						<dateFormatItem id="yQ" draft="contributed">Q y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ" draft="contributed">QQQ y</dateFormatItem>
-						<dateFormatItem id="yyQ">Q/yy</dateFormatItem>
-						<dateFormatItem id="yyyyM">M/yyyy</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQQ" draft="contributed">QQQQ y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
@@ -1331,19 +1558,33 @@
 							<greatestDifference id="a">h a – h a</greatestDifference>
 							<greatestDifference id="h">h–h a</greatestDifference>
 						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H" draft="contributed">HH–HH</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="hm">
 							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
 							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
 							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H" draft="contributed">HH.mm–HH.mm</greatestDifference>
+							<greatestDifference id="m" draft="contributed">HH.mm–HH.mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
 							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
 							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
 							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
 						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H" draft="contributed">HH.mm–HH.mm v</greatestDifference>
+							<greatestDifference id="m" draft="contributed">HH.mm–HH.mm v</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="hv">
 							<greatestDifference id="a">h a – h a v</greatestDifference>
 							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H" draft="contributed">HH–HH v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
 							<greatestDifference id="M">M.–M.</greatestDifference>
@@ -1371,18 +1612,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">M.–M. yy</greatestDifference>
-							<greatestDifference id="y">M. yy – M. yy</greatestDifference>
+							<greatestDifference id="M">M.–M. y</greatestDifference>
+							<greatestDifference id="y">M. y – M. y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">d. M. yy – d. M. yy</greatestDifference>
-							<greatestDifference id="M">d. M. – d. M. yy</greatestDifference>
-							<greatestDifference id="y">d. M. yy – d. M. yy</greatestDifference>
+							<greatestDifference id="d">d. M. y – d. M. y</greatestDifference>
+							<greatestDifference id="M">d. M. – d. M. y</greatestDifference>
+							<greatestDifference id="y">d. M. y – d. M. y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, d. – E, d. M. yy</greatestDifference>
-							<greatestDifference id="M">E, d. M. – E, d. M. yy</greatestDifference>
-							<greatestDifference id="y">E, d. M. yy – E, d. M. yy</greatestDifference>
+							<greatestDifference id="d">E, d. – E, d. M. y</greatestDifference>
+							<greatestDifference id="M">E, d. M. – E, d. M. y</greatestDifference>
+							<greatestDifference id="y">E, d. M. y – E, d. M. y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM – MMM y</greatestDifference>
@@ -1404,62 +1645,61 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>Doba</displayName>
-					</field>
-					<field type="year">
-						<displayName>Leto</displayName>
-						<relative type="-1" draft="contributed">Lani</relative>
-						<relative type="0" draft="contributed">Letos</relative>
-						<relative type="1" draft="contributed">Naslednje leto</relative>
-					</field>
-					<field type="month">
-						<displayName>Mesec</displayName>
-						<relative type="-1" draft="contributed">Prejšnji mesec</relative>
-						<relative type="0" draft="contributed">Ta mesec</relative>
-						<relative type="1" draft="contributed">Naslednji mesec</relative>
-					</field>
-					<field type="week">
-						<displayName>Teden</displayName>
-						<relative type="-1" draft="contributed">Prejšnji teden</relative>
-						<relative type="0" draft="contributed">Ta teden</relative>
-						<relative type="1" draft="contributed">Naslednji teden</relative>
-					</field>
-					<field type="day">
-						<displayName>Dan</displayName>
-						<relative type="-3">Pred tremi dnevi</relative>
-						<relative type="-2">Predvčerajšnjim</relative>
-						<relative type="-1">Včeraj</relative>
-						<relative type="0">Danes</relative>
-						<relative type="1">Jutri</relative>
-						<relative type="2">Pojutrišnjem</relative>
-						<relative type="3">Čez tri dni</relative>
-					</field>
-					<field type="weekday">
-						<displayName>Dan v tednu</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>Čas dneva</displayName>
-					</field>
-					<field type="hour">
-						<displayName>Ura</displayName>
-					</field>
-					<field type="minute">
-						<displayName>Minuta</displayName>
-					</field>
-					<field type="second">
-						<displayName>Sekunda</displayName>
-					</field>
-					<field type="zone">
-						<displayName>Območje</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>Doba</displayName>
+			</field>
+			<field type="year">
+				<displayName>Leto</displayName>
+				<relative type="-1" draft="contributed">Lani</relative>
+				<relative type="0" draft="contributed">Letos</relative>
+				<relative type="1" draft="contributed">Naslednje leto</relative>
+			</field>
+			<field type="month">
+				<displayName>Mesec</displayName>
+				<relative type="-1" draft="contributed">Prejšnji mesec</relative>
+				<relative type="0" draft="contributed">Ta mesec</relative>
+				<relative type="1" draft="contributed">Naslednji mesec</relative>
+			</field>
+			<field type="week">
+				<displayName>Teden</displayName>
+				<relative type="-1" draft="contributed">Prejšnji teden</relative>
+				<relative type="0" draft="contributed">Ta teden</relative>
+				<relative type="1" draft="contributed">Naslednji teden</relative>
+			</field>
+			<field type="day">
+				<displayName>Dan</displayName>
+				<relative type="-2">Predvčerajšnjim</relative>
+				<relative type="-1">Včeraj</relative>
+				<relative type="0">Danes</relative>
+				<relative type="1">Jutri</relative>
+				<relative type="2">Pojutrišnjem</relative>
+			</field>
+			<field type="weekday">
+				<displayName>Dan v tednu</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>Čas dneva</displayName>
+			</field>
+			<field type="hour">
+				<displayName>Ura</displayName>
+			</field>
+			<field type="minute">
+				<displayName>Minuta</displayName>
+			</field>
+			<field type="second">
+				<displayName>Sekunda</displayName>
+			</field>
+			<field type="zone">
+				<displayName>Območje</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
+			<gmtZeroFormat draft="contributed">GMT</gmtZeroFormat>
 			<regionFormat draft="contributed">{0} čas</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat draft="contributed">{1} čas ({0})</fallbackRegionFormat>
@@ -1499,14 +1739,17 @@
 			<zone type="Asia/Bahrain">
 				<exemplarCity draft="contributed">Bahrajn</exemplarCity>
 			</zone>
+			<zone type="America/St_Barthelemy">
+				<exemplarCity draft="contributed">Saint Barthélemy</exemplarCity>
+			</zone>
 			<zone type="Atlantic/Bermuda">
 				<exemplarCity draft="contributed">Bermudi</exemplarCity>
 			</zone>
 			<zone type="Asia/Brunei">
 				<exemplarCity draft="contributed">Brunej</exemplarCity>
 			</zone>
-			<zone type="Indian/Cocos">
-				<exemplarCity draft="contributed">Cocos</exemplarCity>
+			<zone type="America/St_Johns">
+				<exemplarCity draft="contributed">St. John’s</exemplarCity>
 			</zone>
 			<zone type="Africa/Kinshasa">
 				<exemplarCity>Kinšasa</exemplarCity>
@@ -1532,8 +1775,8 @@
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity draft="contributed">Zelenortski otoki</exemplarCity>
 			</zone>
-			<zone type="Indian/Christmas">
-				<exemplarCity draft="contributed">Christmas</exemplarCity>
+			<zone type="America/Curacao">
+				<exemplarCity draft="contributed">Curaçao</exemplarCity>
 			</zone>
 			<zone type="Asia/Nicosia">
 				<exemplarCity draft="contributed">Nikozija</exemplarCity>
@@ -1574,17 +1817,11 @@
 			<zone type="Africa/Accra">
 				<exemplarCity draft="contributed">Akra</exemplarCity>
 			</zone>
-			<zone type="America/Guadeloupe">
-				<exemplarCity draft="contributed">Guadeloupe</exemplarCity>
-			</zone>
 			<zone type="Europe/Athens">
 				<exemplarCity draft="contributed">Atene</exemplarCity>
 			</zone>
 			<zone type="America/Guatemala">
 				<exemplarCity draft="contributed">Gvatemala</exemplarCity>
-			</zone>
-			<zone type="Africa/Bissau">
-				<exemplarCity draft="contributed">Bissau</exemplarCity>
 			</zone>
 			<zone type="America/Guyana">
 				<exemplarCity draft="contributed">Gvajana</exemplarCity>
@@ -1633,9 +1870,6 @@
 			</zone>
 			<zone type="Asia/Kuwait">
 				<exemplarCity draft="contributed">Kuvajt</exemplarCity>
-			</zone>
-			<zone type="America/Cayman">
-				<exemplarCity draft="contributed">Cayman</exemplarCity>
 			</zone>
 			<zone type="Asia/Aqtau">
 				<exemplarCity>Aktau</exemplarCity>
@@ -1691,6 +1925,9 @@
 			<zone type="Europe/Lisbon">
 				<exemplarCity draft="contributed">Lizbona</exemplarCity>
 			</zone>
+			<zone type="America/Asuncion">
+				<exemplarCity draft="contributed">Asunción</exemplarCity>
+			</zone>
 			<zone type="Asia/Qatar">
 				<exemplarCity draft="contributed">Katar</exemplarCity>
 			</zone>
@@ -1733,17 +1970,20 @@
 			<zone type="Africa/Mogadishu">
 				<exemplarCity draft="contributed">Mogadišu</exemplarCity>
 			</zone>
+			<zone type="Africa/Sao_Tome">
+				<exemplarCity draft="contributed">São Tomé</exemplarCity>
+			</zone>
 			<zone type="America/El_Salvador">
 				<exemplarCity draft="contributed">Salvador</exemplarCity>
+			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity draft="contributed">Lower Prince's Quarter</exemplarCity>
 			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity draft="contributed">Damask</exemplarCity>
 			</zone>
 			<zone type="Asia/Ashgabat">
 				<exemplarCity draft="contributed">Ašgabat</exemplarCity>
-			</zone>
-			<zone type="Africa/Dar_es_Salaam">
-				<exemplarCity draft="contributed">Dar es Salaam</exemplarCity>
 			</zone>
 			<zone type="Europe/Uzhgorod">
 				<exemplarCity>Užgorod</exemplarCity>
@@ -1772,6 +2012,11 @@
 			<zone type="Asia/Saigon">
 				<exemplarCity draft="contributed">Hošiminh</exemplarCity>
 			</zone>
+			<metazone type="Afghanistan">
+				<long>
+					<standard draft="contributed">Afganistanski čas</standard>
+				</long>
+			</metazone>
 			<metazone type="Africa_Central">
 				<long>
 					<standard>Centralnoafriški čas</standard>
@@ -1784,13 +2029,13 @@
 			</metazone>
 			<metazone type="Africa_Southern">
 				<long>
-					<generic>Južnoafriški čas</generic>
-					<standard>Južnoafriški standardni čas</standard>
+					<standard>Južnoafriški čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Africa_Western">
 				<long>
-					<standard>Zahodnoafriški čas</standard>
+					<generic>Zahodnoafriški čas</generic>
+					<standard>Zahodnoafriški standardni čas</standard>
 					<daylight>Zahodnoafriški poletni čas</daylight>
 				</long>
 			</metazone>
@@ -1798,12 +2043,14 @@
 				<long>
 					<generic draft="contributed">Aljaški čas</generic>
 					<standard draft="contributed">Aljaški standardni čas</standard>
-					<daylight draft="contributed">Aljaska – dnevni čas</daylight>
+					<daylight draft="contributed">Aljaški poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Amazon">
 				<long>
 					<generic draft="contributed">Amazonski čas</generic>
+					<standard draft="contributed">Amazonski standardni čas</standard>
+					<daylight draft="contributed">Amazonski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="America_Central">
@@ -1837,8 +2084,8 @@
 			<metazone type="Anadyr">
 				<long>
 					<generic draft="contributed">Anadirski čas</generic>
-					<standard draft="contributed">Anadirski čas</standard>
-					<daylight draft="contributed">Anadir – poletni čas</daylight>
+					<standard draft="contributed">Anadirski standardni čas</standard>
+					<daylight draft="contributed">Anadirski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Arabian">
@@ -1851,15 +2098,22 @@
 			<metazone type="Argentina">
 				<long>
 					<generic draft="contributed">Argentinski čas</generic>
-					<standard draft="contributed">Argentinski čas</standard>
+					<standard draft="contributed">Argentinski standardni čas</standard>
 					<daylight draft="contributed">Argentinski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Argentina_Western">
 				<long>
 					<generic draft="contributed">Argentinski zahodni čas</generic>
-					<standard draft="contributed">Zahodnoargentinski čas</standard>
+					<standard draft="contributed">Argentinski zahodni standardni čas</standard>
 					<daylight draft="contributed">Argentinski zahodni poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Armenia">
+				<long>
+					<generic draft="contributed">Armenski čas</generic>
+					<standard draft="contributed">Armenski standardni čas</standard>
+					<daylight draft="contributed">Armenski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Atlantic">
@@ -1879,7 +2133,7 @@
 			<metazone type="Australia_CentralWestern">
 				<long>
 					<generic>Avstralski centralni zahodni čas</generic>
-					<standard>Avstralski centralni zahodni standardničas</standard>
+					<standard>Avstralski centralni zahodni standardni čas</standard>
 					<daylight>Avstralski centralni zahodni poletni čas</daylight>
 				</long>
 			</metazone>
@@ -1897,47 +2151,111 @@
 					<daylight>Avstralski zahodni poletni čas</daylight>
 				</long>
 			</metazone>
+			<metazone type="Azerbaijan">
+				<long>
+					<generic draft="contributed">Azerbajdžanski čas</generic>
+					<standard draft="contributed">Azerbajdžanski standardni čas</standard>
+					<daylight draft="contributed">Azerbajdžanski poletni čas</daylight>
+				</long>
+			</metazone>
 			<metazone type="Azores">
 				<long>
-					<standard>Azorski čas</standard>
+					<generic>Azorski čas</generic>
+					<standard>Azorski standardni čas</standard>
 					<daylight>Azorski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Bangladesh">
+				<long>
+					<generic draft="contributed">Bangladeški čas</generic>
+					<standard draft="contributed">Bangladeški standardni čas</standard>
+					<daylight draft="contributed">Bangladeški poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Bhutan">
+				<long>
+					<standard draft="contributed">Butanski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Bolivia">
+				<long>
+					<standard draft="contributed">Bolivijski čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
 				<long>
 					<generic draft="contributed">Brasilski čas</generic>
-					<standard draft="contributed">Brasilski čas</standard>
-					<daylight draft="contributed">Brasilia – poletni čas</daylight>
+					<standard draft="contributed">Brasilski standardni čas</standard>
+					<daylight draft="contributed">Brasilski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Brunei">
+				<long>
+					<standard draft="contributed">Brunejski čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Cape_Verde">
 				<long>
-					<standard>Kapverdski čas</standard>
+					<generic>Kapverdski čas</generic>
+					<standard>Kapverdski standardni čas</standard>
 					<daylight>Kapverdski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Chamorro">
+				<long>
+					<standard draft="contributed">Čamorski standardni čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Chatham">
+				<long>
+					<generic draft="contributed">Čatamski čas</generic>
+					<standard draft="contributed">Čatamski standardni čas</standard>
+					<daylight draft="contributed">Čatamski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Chile">
 				<long>
-					<standard>Čilski čas</standard>
+					<generic>Čilski čas</generic>
+					<standard>Čilski standardni čas</standard>
 					<daylight>Čilski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="China">
 				<long>
+					<generic>Kitajski čas</generic>
 					<standard>Kitajski standardni čas</standard>
+					<daylight>Kitajski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Choibalsan">
 				<long>
 					<generic draft="contributed">Čojbalsanski čas</generic>
-					<standard draft="contributed">Čojbalsanski čas</standard>
-					<daylight draft="contributed">Čojbalsan – poletni čas</daylight>
+					<standard draft="contributed">Čojbalsanski standardni čas</standard>
+					<daylight draft="contributed">Čojbalsanski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Christmas">
+				<long>
+					<standard draft="contributed">Božičnootoški čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Cocos">
+				<long>
+					<standard draft="contributed">Čas: Kokosovi otoki</standard>
 				</long>
 			</metazone>
 			<metazone type="Colombia">
 				<long>
-					<standard>Kolumbijski čas</standard>
+					<generic>Kolumbijski čas</generic>
+					<standard>Kolumbijski standardni čas</standard>
 					<daylight>Kolumbijski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Cook">
+				<long>
+					<generic draft="contributed">Cookovootoški čas</generic>
+					<standard draft="contributed">Cookovootoški standardni čas</standard>
+					<daylight draft="contributed">Cookovootoški srednjepoletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Cuba">
@@ -1947,22 +2265,98 @@
 					<daylight>Kubanski poletni čas</daylight>
 				</long>
 			</metazone>
+			<metazone type="Davis">
+				<long>
+					<standard draft="contributed">Čas: Davis</standard>
+				</long>
+			</metazone>
+			<metazone type="DumontDUrville">
+				<long>
+					<standard draft="contributed">Čas: Dumont-d'Urville</standard>
+				</long>
+			</metazone>
+			<metazone type="East_Timor">
+				<long>
+					<standard draft="contributed">Vzhodnotimorski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Easter">
+				<long>
+					<generic draft="contributed">Čas: Velikonočni otok</generic>
+					<standard draft="contributed">Standardni čas: Velikonočni otok</standard>
+					<daylight draft="contributed">Poletni čas: Velikonočni otok</daylight>
+				</long>
+			</metazone>
+			<metazone type="Ecuador">
+				<long>
+					<standard draft="contributed">Ekvadorski čas</standard>
+				</long>
+			</metazone>
 			<metazone type="Europe_Central">
 				<long>
-					<standard>Srednjeevropski čas</standard>
+					<generic>Srednjeevropski čas</generic>
+					<standard>Srednjeevropski standardni čas</standard>
 					<daylight>Srednjeevropski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Europe_Eastern">
 				<long>
-					<standard>Vzhodnoevropski čas</standard>
+					<generic>Vzhodnoevropski čas</generic>
+					<standard>Vzhodnoevropski standardni čas</standard>
 					<daylight>Vzhodnoevropski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Europe_Western">
 				<long>
-					<standard>Zahodnoevropski čas</standard>
+					<generic>Zahodnoevropski čas</generic>
+					<standard>Zahodnoevropski standardni čas</standard>
 					<daylight>Zahodnoevropski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Falkland">
+				<long>
+					<generic draft="contributed">Čas: Falklandsko otočje</generic>
+					<standard draft="contributed">Standardni čas: Falklandsko otočje</standard>
+					<daylight draft="contributed">Poletni čas: Falklandsko otočje</daylight>
+				</long>
+			</metazone>
+			<metazone type="Fiji">
+				<long>
+					<generic draft="contributed">Fidžijski čas</generic>
+					<standard draft="contributed">Fidžijski standardni čas</standard>
+					<daylight draft="contributed">Fidžijski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="French_Guiana">
+				<long>
+					<standard draft="contributed">Čas: Francoska Gvajana</standard>
+				</long>
+			</metazone>
+			<metazone type="French_Southern">
+				<long>
+					<standard draft="contributed">Francoski južni in antarktični čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Galapagos">
+				<long>
+					<standard draft="contributed">Galapaški čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Gambier">
+				<long>
+					<standard draft="contributed">Gambierski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Georgia">
+				<long>
+					<generic draft="contributed">Gruzijski čas</generic>
+					<standard draft="contributed">Gruzijski standardni čas</standard>
+					<daylight draft="contributed">Gruzijski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Gilbert_Islands">
+				<long>
+					<standard draft="contributed">Čas: Gilbertovi otoki</standard>
 				</long>
 			</metazone>
 			<metazone type="GMT">
@@ -1970,16 +2364,49 @@
 					<standard>Greenwiški srednji čas</standard>
 				</long>
 			</metazone>
+			<metazone type="Greenland_Eastern">
+				<long>
+					<generic draft="contributed">Vzhodnogrenlandski čas</generic>
+					<standard draft="contributed">Vzhodnogrenlandski standardni čas</standard>
+					<daylight draft="contributed">Vzhodnogrenlandski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Greenland_Western">
+				<long>
+					<generic draft="contributed">Zahodnogrenlandski čas</generic>
+					<standard draft="contributed">Zahodnogrenlandski standardni čas</standard>
+					<daylight draft="contributed">Zahodnogrenlandski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Gulf">
+				<long>
+					<standard draft="contributed">Zalivski standardni čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Guyana">
+				<long>
+					<standard draft="contributed">Gvajanski čas</standard>
+				</long>
+			</metazone>
 			<metazone type="Hawaii_Aleutian">
 				<long>
 					<generic draft="contributed">Havajski aleutski čas</generic>
+					<standard draft="contributed">Havajski aleutski standardni čas</standard>
+					<daylight draft="contributed">Havajski aleutski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Hong_Kong">
+				<long>
+					<generic draft="contributed">Hongkonški čas</generic>
+					<standard draft="contributed">Hongkonški standardni čas</standard>
+					<daylight draft="contributed">Hongkonški poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Hovd">
 				<long>
 					<generic draft="contributed">Hovdski čas</generic>
-					<standard draft="contributed">Hovdski čas</standard>
-					<daylight draft="contributed">Hovd – poletni čas</daylight>
+					<standard draft="contributed">Hovdski standardni čas</standard>
+					<daylight draft="contributed">Hovdski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="India">
@@ -1987,70 +2414,103 @@
 					<standard>Indijski standardni čas</standard>
 				</long>
 			</metazone>
+			<metazone type="Indian_Ocean">
+				<long>
+					<standard draft="contributed">Indijskooceanski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Indochina">
+				<long>
+					<standard draft="contributed">Indokitajski čas</standard>
+				</long>
+			</metazone>
 			<metazone type="Indonesia_Central">
 				<long>
-					<generic draft="contributed">Indonezijski osrednji čas</generic>
+					<standard draft="contributed">Indonezijski osrednji čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Indonesia_Eastern">
 				<long>
-					<generic draft="contributed">Indonezijski vzhodni čas</generic>
+					<standard draft="contributed">Indonezijski vzhodni čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Indonesia_Western">
 				<long>
-					<generic draft="contributed">Indonezijski zahodni čas</generic>
+					<standard draft="contributed">Indonezijski zahodni čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Iran">
+				<long>
+					<generic draft="contributed">Iranski čas</generic>
+					<standard draft="contributed">Iranski standardni čas</standard>
+					<daylight draft="contributed">Iranski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Irkutsk">
 				<long>
 					<generic draft="contributed">Irkutški čas</generic>
-					<standard draft="contributed">Irkutški čas</standard>
-					<daylight draft="contributed">Irkutsk – poletni čas</daylight>
+					<standard draft="contributed">Irkutški standardni čas</standard>
+					<daylight draft="contributed">Irkutški poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Israel">
 				<long>
+					<generic>Izraelski čas</generic>
 					<standard>Izraelski standardni čas</standard>
 					<daylight>Izraelski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Japan">
 				<long>
+					<generic>Japonski čas</generic>
 					<standard>Japonski standardni čas</standard>
+					<daylight>Japonski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Kamchatka">
 				<long>
-					<generic draft="contributed">Kamčatski čas</generic>
-					<standard draft="contributed">Petropavlovsk-Kamčatski čas</standard>
-					<daylight draft="contributed">Petropavlovsk-Kamčatski – poletni čas</daylight>
+					<generic draft="contributed">Petropavlovsk-Kamčatski čas</generic>
+					<standard draft="contributed">Petropavlovsk-Kamčatski standardni čas</standard>
+					<daylight draft="contributed">Petropavlovsk-Kamčatski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
-					<generic draft="contributed">Vzhodni kazahstanski čas</generic>
-					<standard draft="contributed">Vzhodni kazahstanski standardni čas</standard>
-					<daylight draft="contributed">Kazahstanski vzhodni poletni čas</daylight>
+					<standard draft="contributed">Vzhodni kazahstanski čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Western">
 				<long>
-					<generic draft="contributed">Zahodni kazahstanski čas</generic>
-					<standard draft="contributed">Zahodni kazahstanski standardni čas</standard>
-					<daylight draft="contributed">Kazahstanski zahodni poletni čas</daylight>
+					<standard draft="contributed">Zahodni kazahstanski čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Korea">
 				<long>
+					<generic>Korejski čas</generic>
 					<standard>Korejski standardni čas</standard>
+					<daylight>Korejski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Kosrae">
+				<long>
+					<standard draft="contributed">Kosrajški čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Krasnoyarsk">
 				<long>
 					<generic draft="contributed">Krasnojarški čas</generic>
-					<standard draft="contributed">Krasnojarški čas</standard>
-					<daylight draft="contributed">Krasnojarsk – poletni čas</daylight>
+					<standard draft="contributed">Krasnojarški standardni čas</standard>
+					<daylight draft="contributed">Krasnojarški poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Kyrgystan">
+				<long>
+					<standard draft="contributed">Kirgizistanski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Line_Islands">
+				<long>
+					<standard draft="contributed">Ekvatorski otoki: Čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -2062,21 +2522,53 @@
 			</metazone>
 			<metazone type="Macquarie">
 				<long>
-					<generic draft="contributed">Macquarieski čas</generic>
+					<standard draft="contributed">Macquarieski čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Magadan">
 				<long>
 					<generic draft="contributed">Magadanski čas</generic>
-					<standard draft="contributed">Magadanski čas</standard>
-					<daylight draft="contributed">Magadan – poletni čas</daylight>
+					<standard draft="contributed">Magadanski standardni čas</standard>
+					<daylight draft="contributed">Magadanski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Malaysia">
+				<long>
+					<standard draft="contributed">Malezijski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Maldives">
+				<long>
+					<standard draft="contributed">Maldivski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Marquesas">
+				<long>
+					<standard draft="contributed">Čas: Markizni otoki</standard>
+				</long>
+			</metazone>
+			<metazone type="Marshall_Islands">
+				<long>
+					<standard draft="contributed">Čas: Marshallovi otoki</standard>
+				</long>
+			</metazone>
+			<metazone type="Mauritius">
+				<long>
+					<generic draft="contributed">Mauricijski čas</generic>
+					<standard draft="contributed">Mauricijski standardni čas</standard>
+					<daylight draft="contributed">Mauricijski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Mawson">
+				<long>
+					<standard draft="contributed">Mawsonski čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Mongolia">
 				<long>
-					<generic draft="contributed">Mongolski čas</generic>
-					<standard draft="contributed">Ulanbatorski čas</standard>
-					<daylight draft="contributed">Ulan Bator – poletni čas</daylight>
+					<generic draft="contributed">Ulanbatorski čas</generic>
+					<standard draft="contributed">Ulanbatorski standardni čas</standard>
+					<daylight draft="contributed">Ulanbatorski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Moscow">
@@ -2086,80 +2578,307 @@
 					<daylight>Moskovski poletni čas</daylight>
 				</long>
 			</metazone>
+			<metazone type="Myanmar">
+				<long>
+					<standard draft="contributed">Mjanmarski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Nauru">
+				<long>
+					<standard draft="contributed">Naurujski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Nepal">
+				<long>
+					<standard draft="contributed">Nepalski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="New_Caledonia">
+				<long>
+					<generic draft="contributed">Novokaledonijski čas</generic>
+					<standard draft="contributed">Novokaledonijski standardni čas</standard>
+					<daylight draft="contributed">Novokaledonijski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="New_Zealand">
+				<long>
+					<generic draft="contributed">Novozelandski čas</generic>
+					<standard draft="contributed">Novozelandski standardni čas</standard>
+					<daylight draft="contributed">Novozelandski poletni čas</daylight>
+				</long>
+			</metazone>
 			<metazone type="Newfoundland">
 				<long>
 					<generic draft="contributed">Novofundlandski čas</generic>
 					<standard draft="contributed">Novofundlandski standardni čas</standard>
-					<daylight draft="contributed">Novofundlandski dnevni čas</daylight>
+					<daylight draft="contributed">Novofundlandski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Niue">
+				<long>
+					<standard draft="contributed">Niuejski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Norfolk">
+				<long>
+					<standard draft="contributed">Čas: Norfolški otoki</standard>
 				</long>
 			</metazone>
 			<metazone type="Noronha">
 				<long>
-					<generic draft="contributed">Noronški čas</generic>
-					<standard draft="contributed">Fernando de Noronški čas</standard>
-					<daylight draft="contributed">Fernando de Noronha – poletni čas</daylight>
+					<generic draft="contributed">Fernando de Noronški čas</generic>
+					<standard draft="contributed">Fernando de Noronški standardni čas</standard>
+					<daylight draft="contributed">Fernando de Noronški poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Novosibirsk">
 				<long>
 					<generic draft="contributed">Novosibirški čas</generic>
-					<standard draft="contributed">Novosibirški čas</standard>
-					<daylight draft="contributed">Novosibirsk – poletni čas</daylight>
+					<standard draft="contributed">Novosibirški standardni čas</standard>
+					<daylight draft="contributed">Novosibirški poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Omsk">
 				<long>
 					<generic draft="contributed">Omški čas</generic>
-					<standard draft="contributed">Omški čas</standard>
-					<daylight draft="contributed">Omsk – poletni čas</daylight>
+					<standard draft="contributed">Omški standardni čas</standard>
+					<daylight draft="contributed">Omški poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Pakistan">
+				<long>
+					<generic draft="contributed">Pakistanski čas</generic>
+					<standard draft="contributed">Pakistanski standardni čas</standard>
+					<daylight draft="contributed">Pakistanski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Palau">
+				<long>
+					<standard draft="contributed">Palavski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Papua_New_Guinea">
+				<long>
+					<standard draft="contributed">Papuanski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Paraguay">
+				<long>
+					<generic draft="contributed">Paragvajski čas</generic>
+					<standard draft="contributed">Paragvajski standardni čas</standard>
+					<daylight draft="contributed">Paragvajski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Peru">
+				<long>
+					<generic draft="contributed">Perujski čas</generic>
+					<standard draft="contributed">Perujski standardni čas</standard>
+					<daylight draft="contributed">Perujski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Philippines">
+				<long>
+					<generic draft="contributed">Filipinski čas</generic>
+					<standard draft="contributed">Filipinski standardni čas</standard>
+					<daylight draft="contributed">Filipinski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Phoenix_Islands">
+				<long>
+					<standard draft="contributed">Čas: Otočje Feniks</standard>
+				</long>
+			</metazone>
+			<metazone type="Pierre_Miquelon">
+				<long>
+					<generic draft="contributed">Čas: Saint Pierre in Miquelon</generic>
+					<standard draft="contributed">Standardni čas: Saint Pierre in Miquelon</standard>
+					<daylight draft="contributed">Poletni čas: Saint Pierre in Miquelon</daylight>
+				</long>
+			</metazone>
+			<metazone type="Pitcairn">
+				<long>
+					<standard draft="contributed">Pitcairnski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Ponape">
+				<long>
+					<standard draft="contributed">Ponapski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Reunion">
+				<long>
+					<standard draft="contributed">Reunionski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Rothera">
+				<long>
+					<standard draft="contributed">Rotherski čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Sakhalin">
 				<long>
 					<generic draft="contributed">Sahalinski čas</generic>
-					<standard draft="contributed">Sahalinski čas</standard>
-					<daylight draft="contributed">Sahalin – poletni čas</daylight>
+					<standard draft="contributed">Sahalinski standardni čas</standard>
+					<daylight draft="contributed">Sahalinski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Samara">
 				<long>
-					<generic draft="contributed">Samarski čas</generic>
-					<standard>Samarski čas</standard>
+					<generic>Samarski čas</generic>
+					<standard>Samarski standardni čas</standard>
 					<daylight>Samarski poletni čas</daylight>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
+			<metazone type="Samoa">
 				<long>
-					<standard>Turški čas</standard>
-					<daylight>Turški poletni čas</daylight>
+					<generic draft="contributed">Samoanski čas</generic>
+					<standard draft="contributed">Samoanski standardni čas</standard>
+					<daylight draft="contributed">Samoanski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Seychelles">
+				<long>
+					<standard draft="contributed">Sejšelski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Singapore">
+				<long>
+					<standard draft="contributed">Singapurski standardni čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Solomon">
+				<long>
+					<standard draft="contributed">Salomonovootoški čas</standard>
+				</long>
+			</metazone>
+			<metazone type="South_Georgia">
+				<long>
+					<standard draft="contributed">Južnogeorgijski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Suriname">
+				<long>
+					<standard>Surinamski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Syowa">
+				<long>
+					<standard draft="contributed">Čas: Syowa</standard>
+				</long>
+			</metazone>
+			<metazone type="Tahiti">
+				<long>
+					<standard draft="contributed">Tahitijski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Taipei">
+				<long>
+					<generic draft="contributed">Tajpejski čas</generic>
+					<standard draft="contributed">Tajpejski standardni čas</standard>
+					<daylight draft="contributed">Tajpejski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Tajikistan">
+				<long>
+					<standard draft="contributed">Tadžikistanski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Tokelau">
+				<long>
+					<standard draft="contributed">Tokelavski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Tonga">
+				<long>
+					<generic draft="contributed">Tongovski čas</generic>
+					<standard draft="contributed">Tongovski standardni čas</standard>
+					<daylight draft="contributed">Tongovski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Truk">
+				<long>
+					<standard draft="contributed">Čas: Otok Chuuk</standard>
+				</long>
+			</metazone>
+			<metazone type="Turkmenistan">
+				<long>
+					<generic draft="contributed">Turkmenistanski čas</generic>
+					<standard draft="contributed">Turkmenistanski standardni čas</standard>
+					<daylight draft="contributed">Turkmenistanski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Tuvalu">
+				<long>
+					<standard draft="contributed">Tuvalujski čas</standard>
+				</long>
+			</metazone>
+			<metazone type="Uruguay">
+				<long>
+					<generic draft="contributed">Urugvajski čas</generic>
+					<standard draft="contributed">Urugvajski standardni čas</standard>
+					<daylight draft="contributed">Urugvajski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Uzbekistan">
+				<long>
+					<generic draft="contributed">Uzbekistanski čas</generic>
+					<standard draft="contributed">Uzbekistanski standardni čas</standard>
+					<daylight draft="contributed">Uzbekistanski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Vanuatu">
+				<long>
+					<generic draft="contributed">Vanuatujski čas</generic>
+					<standard draft="contributed">Vanuatujski standardni čas</standard>
+					<daylight draft="contributed">Vanuatujski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Venezuela">
+				<long>
+					<standard draft="contributed">Venezuelski čas</standard>
 				</long>
 			</metazone>
 			<metazone type="Vladivostok">
 				<long>
 					<generic draft="contributed">Vladivostoški čas</generic>
-					<standard draft="contributed">Vladivostoški čas</standard>
-					<daylight draft="contributed">Vladivostok – poletni čas</daylight>
+					<standard draft="contributed">Vladivostoški standardni čas</standard>
+					<daylight draft="contributed">Vladivostoški poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Volgograd">
 				<long>
-					<generic draft="contributed">Volgograški čas</generic>
-					<standard>Volgograjski čas</standard>
+					<generic>Volgograjski čas</generic>
+					<standard>Volgograjski standardni čas</standard>
 					<daylight>Volgograjski poletni čas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Vostok">
+				<long>
+					<standard draft="contributed">Čas: Vostok</standard>
+				</long>
+			</metazone>
+			<metazone type="Wake">
+				<long>
+					<standard draft="contributed">Čas: Otok Wake</standard>
+				</long>
+			</metazone>
+			<metazone type="Wallis">
+				<long>
+					<standard draft="contributed">Čas: Wallis in Futuna</standard>
 				</long>
 			</metazone>
 			<metazone type="Yakutsk">
 				<long>
 					<generic draft="contributed">Jakutski čas</generic>
-					<standard draft="contributed">Jakutski čas</standard>
-					<daylight draft="contributed">Jakutsk – poletni čas</daylight>
+					<standard draft="contributed">Jakutski standardni čas</standard>
+					<daylight draft="contributed">Jakutski poletni čas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Yekaterinburg">
 				<long>
 					<generic draft="contributed">Jekaterinburški čas</generic>
-					<standard draft="contributed">Jekaterinburški čas</standard>
-					<daylight draft="contributed">Jekaterinburg – poletni čas</daylight>
+					<standard draft="contributed">Jekaterinburški standardni čas</standard>
+					<daylight draft="contributed">Jekaterinburški poletni čas</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -2177,51 +2896,141 @@
 			<infinity>∞</infinity>
 			<nan>NaN</nan>
 		</symbols>
-		<decimalFormats>
+		<decimalFormats numberSystem="latn">
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+			<decimalFormatLength type="long">
+				<decimalFormat>
+					<pattern type="1000" count="one" draft="contributed">0 tisoč</pattern>
+					<pattern type="1000" count="two" draft="contributed">0 tisoč</pattern>
+					<pattern type="1000" count="few" draft="contributed">0 tisoč</pattern>
+					<pattern type="1000" count="other" draft="contributed">0 tisoč</pattern>
+					<pattern type="10000" count="one" draft="contributed">00 tisoč</pattern>
+					<pattern type="10000" count="two" draft="contributed">00 tisoč</pattern>
+					<pattern type="10000" count="few" draft="contributed">00 tisoč</pattern>
+					<pattern type="10000" count="other" draft="contributed">00 tisoč</pattern>
+					<pattern type="100000" count="one" draft="contributed">000 tisoč</pattern>
+					<pattern type="100000" count="two" draft="contributed">000 tisoč</pattern>
+					<pattern type="100000" count="few" draft="contributed">000 tisoč</pattern>
+					<pattern type="100000" count="other" draft="contributed">000 tisoč</pattern>
+					<pattern type="1000000" count="one" draft="contributed">0 milijon</pattern>
+					<pattern type="1000000" count="two" draft="contributed">0 milijona</pattern>
+					<pattern type="1000000" count="few" draft="contributed">0 milijone</pattern>
+					<pattern type="1000000" count="other" draft="contributed">0 milijonov</pattern>
+					<pattern type="10000000" count="one" draft="contributed">00 milijon</pattern>
+					<pattern type="10000000" count="two" draft="contributed">00 milijona</pattern>
+					<pattern type="10000000" count="few" draft="contributed">00 milijoni</pattern>
+					<pattern type="10000000" count="other" draft="contributed">00 milijonov</pattern>
+					<pattern type="100000000" count="one" draft="contributed">000 milijon</pattern>
+					<pattern type="100000000" count="two" draft="contributed">000 milijona</pattern>
+					<pattern type="100000000" count="few" draft="contributed">000 milijoni</pattern>
+					<pattern type="100000000" count="other" draft="contributed">000 milijonov</pattern>
+					<pattern type="1000000000" count="one" draft="contributed">0 milijarda</pattern>
+					<pattern type="1000000000" count="two" draft="contributed">0 milijardi</pattern>
+					<pattern type="1000000000" count="few" draft="contributed">0 milijarde</pattern>
+					<pattern type="1000000000" count="other" draft="contributed">0 milijard</pattern>
+					<pattern type="10000000000" count="one" draft="contributed">00 milijarda</pattern>
+					<pattern type="10000000000" count="two" draft="contributed">00 milijardi</pattern>
+					<pattern type="10000000000" count="few" draft="contributed">00 milijarde</pattern>
+					<pattern type="10000000000" count="other" draft="contributed">00 milijard</pattern>
+					<pattern type="100000000000" count="one" draft="contributed">000 milijarda</pattern>
+					<pattern type="100000000000" count="two" draft="contributed">000 milijardi</pattern>
+					<pattern type="100000000000" count="few" draft="contributed">000 milijarde</pattern>
+					<pattern type="100000000000" count="other" draft="contributed">000 milijard</pattern>
+					<pattern type="1000000000000" count="one" draft="contributed">0 bilijon</pattern>
+					<pattern type="1000000000000" count="two" draft="contributed">0 bilijona</pattern>
+					<pattern type="1000000000000" count="few" draft="contributed">0 bilijoni</pattern>
+					<pattern type="1000000000000" count="other" draft="contributed">0 bilijonov</pattern>
+					<pattern type="10000000000000" count="one" draft="contributed">00 bilijon</pattern>
+					<pattern type="10000000000000" count="two" draft="contributed">00 bilijona</pattern>
+					<pattern type="10000000000000" count="few" draft="contributed">00 bilijoni</pattern>
+					<pattern type="10000000000000" count="other" draft="contributed">00 bilijonov</pattern>
+					<pattern type="100000000000000" count="one" draft="contributed">000 bilijon</pattern>
+					<pattern type="100000000000000" count="two" draft="contributed">000 bilijona</pattern>
+					<pattern type="100000000000000" count="few" draft="contributed">000 bilijoni(</pattern>
+					<pattern type="100000000000000" count="other" draft="contributed">000 bilijonov</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
 			<decimalFormatLength type="short">
 				<decimalFormat>
-					<pattern type="1000" draft="contributed">0.0 K</pattern>
-					<pattern type="1000000" draft="contributed">0.0 M</pattern>
-					<pattern type="10000000" draft="contributed">00 M</pattern>
-					<pattern type="100000000" draft="contributed">000 M</pattern>
-					<pattern type="1000000000" draft="contributed">0.0 B</pattern>
-					<pattern type="10000000000" draft="contributed">00 B</pattern>
-					<pattern type="100000000000" draft="contributed">000B</pattern>
-					<pattern type="1000000000000" draft="contributed">0.0 T</pattern>
-					<pattern type="10000000000000" draft="contributed">00 T</pattern>
-					<pattern type="100000000000000" draft="contributed">000 T</pattern>
+					<pattern type="1000" count="one" draft="contributed">0 tis'.'</pattern>
+					<pattern type="1000" count="two" draft="contributed">0 tis'.'</pattern>
+					<pattern type="1000" count="few" draft="contributed">0 tis'.'</pattern>
+					<pattern type="1000" count="other" draft="contributed">0 tis'.'</pattern>
+					<pattern type="10000" count="one" draft="contributed">00 tis'.'</pattern>
+					<pattern type="10000" count="two" draft="contributed">00 tis'.'</pattern>
+					<pattern type="10000" count="few" draft="contributed">00 tis'.'</pattern>
+					<pattern type="10000" count="other" draft="contributed">00 tis'.'</pattern>
+					<pattern type="100000" count="one" draft="contributed">000 tis'.'</pattern>
+					<pattern type="100000" count="two" draft="contributed">000 tis'.'</pattern>
+					<pattern type="100000" count="few" draft="contributed">000 tis'.'</pattern>
+					<pattern type="100000" count="other" draft="contributed">000 tis'.'</pattern>
+					<pattern type="1000000" count="one" draft="contributed">0 mio'.'</pattern>
+					<pattern type="1000000" count="two" draft="contributed">0 mio'.'</pattern>
+					<pattern type="1000000" count="few" draft="contributed">0 mio'.'</pattern>
+					<pattern type="1000000" count="other" draft="contributed">0 mio'.'</pattern>
+					<pattern type="10000000" count="one" draft="contributed">00 mio'.'</pattern>
+					<pattern type="10000000" count="two" draft="contributed">00 mio'.'</pattern>
+					<pattern type="10000000" count="few" draft="contributed">00 mio'.'</pattern>
+					<pattern type="10000000" count="other" draft="contributed">00 mio'.'</pattern>
+					<pattern type="100000000" count="one" draft="contributed">000 mio'.'</pattern>
+					<pattern type="100000000" count="two" draft="contributed">000 mio'.'</pattern>
+					<pattern type="100000000" count="few" draft="contributed">000 mio'.'</pattern>
+					<pattern type="100000000" count="other" draft="contributed">000 mio'.'</pattern>
+					<pattern type="1000000000" count="one" draft="contributed">0 mrd'.'</pattern>
+					<pattern type="1000000000" count="two" draft="contributed">0 mrd'.'</pattern>
+					<pattern type="1000000000" count="few" draft="contributed">0 mrd'.'</pattern>
+					<pattern type="1000000000" count="other" draft="contributed">0 mrd'.'</pattern>
+					<pattern type="10000000000" count="one" draft="contributed">00 mrd'.'</pattern>
+					<pattern type="10000000000" count="two" draft="contributed">00 mrd'.'</pattern>
+					<pattern type="10000000000" count="few" draft="contributed">00 mrd'.'</pattern>
+					<pattern type="10000000000" count="other" draft="contributed">00 mrd'.'</pattern>
+					<pattern type="100000000000" count="one" draft="contributed">000 mrd'.'</pattern>
+					<pattern type="100000000000" count="two" draft="contributed">000 mrd'.'</pattern>
+					<pattern type="100000000000" count="few" draft="contributed">000 mrd'.'</pattern>
+					<pattern type="100000000000" count="other" draft="contributed">000 mrd'.'</pattern>
+					<pattern type="1000000000000" count="one" draft="contributed">0 bil'.'</pattern>
+					<pattern type="1000000000000" count="two" draft="contributed">0 bil'.'</pattern>
+					<pattern type="1000000000000" count="few" draft="contributed">0 bil'.'</pattern>
+					<pattern type="1000000000000" count="other" draft="contributed">0 bil'.'</pattern>
+					<pattern type="10000000000000" count="one" draft="contributed">00 bil'.'</pattern>
+					<pattern type="10000000000000" count="two" draft="contributed">00 bil'.'</pattern>
+					<pattern type="10000000000000" count="few" draft="contributed">00 bil'.'</pattern>
+					<pattern type="10000000000000" count="other" draft="contributed">00 bil'.'</pattern>
+					<pattern type="100000000000000" count="one" draft="contributed">000 bil'.'</pattern>
+					<pattern type="100000000000000" count="two" draft="contributed">000 bil'.'</pattern>
+					<pattern type="100000000000000" count="few" draft="contributed">000 bil'.'</pattern>
+					<pattern type="100000000000000" count="other" draft="contributed">000 bil'.'</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 		</decimalFormats>
-		<scientificFormats>
+		<scientificFormats numberSystem="latn">
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
-		<percentFormats>
+		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
-		<currencyFormats>
+		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat>
-					<pattern>#,##0.00 ¤</pattern>
+					<pattern>¤#,##0.00;(¤#,##0.00)</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
-			<unitPattern count="few" draft="provisional">{0} {1}</unitPattern>
-			<unitPattern count="one" draft="provisional">{0} {1}</unitPattern>
-			<unitPattern count="other" draft="provisional">{0} {1}</unitPattern>
-			<unitPattern count="two" draft="provisional">{0} {1}</unitPattern>
+			<unitPattern count="one" draft="contributed">{0} {1}</unitPattern>
+			<unitPattern count="two" draft="contributed">{0} {1}</unitPattern>
+			<unitPattern count="few" draft="contributed">{0} {1}</unitPattern>
+			<unitPattern count="other" draft="contributed">{0} {1}</unitPattern>
 		</currencyFormats>
 		<currencies>
 			<currency type="ADP">
@@ -2271,10 +3080,10 @@
 			</currency>
 			<currency type="AUD">
 				<displayName>avstralski dolar</displayName>
-				<displayName count="few" draft="provisional">avstralski dolarji</displayName>
-				<displayName count="one" draft="provisional">avstralski dolar</displayName>
-				<displayName count="other" draft="provisional">avstralskih dolarjev</displayName>
-				<displayName count="two" draft="provisional">avstralska dolarja</displayName>
+				<displayName count="one" draft="contributed">avstralski dolar</displayName>
+				<displayName count="two" draft="contributed">avstralska dolarja</displayName>
+				<displayName count="few" draft="contributed">avstralski dolarji</displayName>
+				<displayName count="other" draft="contributed">avstralskih dolarjev</displayName>
 			</currency>
 			<currency type="AWG">
 				<displayName>arubski florin</displayName>
@@ -2290,10 +3099,10 @@
 			</currency>
 			<currency type="BAM">
 				<displayName>bosansko-hercegovska konvertibilna marka</displayName>
-				<displayName count="few" draft="provisional">bosansko-hercegovske konvertibilne marke</displayName>
-				<displayName count="one" draft="provisional">bosansko-hercegovska konvertibilna marka</displayName>
-				<displayName count="other" draft="provisional">bosansko-hercegovskih konvertibilnih mark</displayName>
-				<displayName count="two" draft="provisional">bosansko-hercegovski konvertibilni marki</displayName>
+				<displayName count="one" draft="contributed">bosansko-hercegovska konvertibilna marka</displayName>
+				<displayName count="two" draft="contributed">bosansko-hercegovski konvertibilni marki</displayName>
+				<displayName count="few" draft="contributed">bosansko-hercegovske konvertibilne marke</displayName>
+				<displayName count="other" draft="contributed">bosansko-hercegovskih konvertibilnih mark</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>barbadoški dolar</displayName>
@@ -2306,10 +3115,10 @@
 			</currency>
 			<currency type="BEF">
 				<displayName>belgijski frank</displayName>
-				<displayName count="few" draft="provisional">belgijski franki</displayName>
 				<displayName count="one" draft="provisional">belgijski frank</displayName>
-				<displayName count="other" draft="provisional">belgijskih frankov</displayName>
 				<displayName count="two" draft="provisional">belgijska franka</displayName>
+				<displayName count="few" draft="provisional">belgijski franki</displayName>
+				<displayName count="other" draft="provisional">belgijskih frankov</displayName>
 			</currency>
 			<currency type="BEL">
 				<displayName>belgijski finančni frank</displayName>
@@ -2421,10 +3230,6 @@
 			</currency>
 			<currency type="CUC">
 				<displayName>kubanski konvertibilni peso</displayName>
-				<displayName count="few">CUC</displayName>
-				<displayName count="one">CUC</displayName>
-				<displayName count="other">CUC</displayName>
-				<displayName count="two">CUC</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName>kubanski peso</displayName>
@@ -2443,20 +3248,20 @@
 			</currency>
 			<currency type="DEM">
 				<displayName>nemška marka</displayName>
-				<displayName count="few" draft="provisional">nemške marke</displayName>
 				<displayName count="one" draft="provisional">nemška marka</displayName>
-				<displayName count="other" draft="provisional">nemških mark</displayName>
 				<displayName count="two" draft="provisional">nemški marki</displayName>
+				<displayName count="few" draft="provisional">nemške marke</displayName>
+				<displayName count="other" draft="provisional">nemških mark</displayName>
 			</currency>
 			<currency type="DJF">
 				<displayName>džibutski frank</displayName>
 			</currency>
 			<currency type="DKK">
 				<displayName>danska krona</displayName>
-				<displayName count="few" draft="provisional">danske krone</displayName>
-				<displayName count="one" draft="provisional">danska krona</displayName>
-				<displayName count="other" draft="provisional">danskih kron</displayName>
-				<displayName count="two" draft="provisional">danski kroni</displayName>
+				<displayName count="one" draft="contributed">danska krona</displayName>
+				<displayName count="two" draft="contributed">danski kroni</displayName>
+				<displayName count="few" draft="contributed">danske krone</displayName>
+				<displayName count="other" draft="contributed">danskih kron</displayName>
 			</currency>
 			<currency type="DOP">
 				<displayName>dominikanski peso</displayName>
@@ -2493,10 +3298,10 @@
 			</currency>
 			<currency type="EUR">
 				<displayName>evro</displayName>
-				<displayName count="few" draft="provisional">evri</displayName>
-				<displayName count="one" draft="provisional">evro</displayName>
-				<displayName count="other" draft="provisional">evrov</displayName>
-				<displayName count="two" draft="provisional">evra</displayName>
+				<displayName count="one" draft="contributed">evro</displayName>
+				<displayName count="two" draft="contributed">evra</displayName>
+				<displayName count="few" draft="contributed">evri</displayName>
+				<displayName count="other" draft="contributed">evrov</displayName>
 			</currency>
 			<currency type="FIM">
 				<displayName>finska marka</displayName>
@@ -2512,9 +3317,10 @@
 			</currency>
 			<currency type="GBP">
 				<displayName>britanski funt</displayName>
-				<displayName count="few" draft="provisional">britanski funti</displayName>
-				<displayName count="one" draft="provisional">britanski funt</displayName>
-				<displayName count="other" draft="provisional">britanskih funtov</displayName>
+				<displayName count="one" draft="contributed">britanski funt</displayName>
+				<displayName count="two" draft="contributed">britanskih funtov</displayName>
+				<displayName count="few" draft="contributed">britanski funti</displayName>
+				<displayName count="other" draft="contributed">britanskih funtov</displayName>
 			</currency>
 			<currency type="GEK">
 				<displayName>gruzijski bon lari</displayName>
@@ -2536,10 +3342,6 @@
 			</currency>
 			<currency type="GNF">
 				<displayName>gvinejski frank</displayName>
-				<displayName count="few">GNF</displayName>
-				<displayName count="one">GNF</displayName>
-				<displayName count="other">GNF</displayName>
-				<displayName count="two">GNF</displayName>
 			</currency>
 			<currency type="GNS">
 				<displayName>gvinejski sili</displayName>
@@ -2865,17 +3667,17 @@
 			</currency>
 			<currency type="SIT">
 				<displayName>slovenski tolar</displayName>
-				<displayName count="few" draft="provisional">slovenski tolarji</displayName>
 				<displayName count="one" draft="provisional">slovenski tolar</displayName>
-				<displayName count="other" draft="provisional">slovenskih tolarjev</displayName>
 				<displayName count="two" draft="provisional">slovenska tolarja</displayName>
+				<displayName count="few" draft="provisional">slovenski tolarji</displayName>
+				<displayName count="other" draft="provisional">slovenskih tolarjev</displayName>
 			</currency>
 			<currency type="SKK">
 				<displayName>slovaška krona</displayName>
-				<displayName count="few" draft="provisional">slovaške krone</displayName>
 				<displayName count="one" draft="provisional">slovaška krona</displayName>
-				<displayName count="other" draft="provisional">slovaških kron</displayName>
 				<displayName count="two" draft="provisional">slovaški kroni</displayName>
+				<displayName count="few" draft="provisional">slovaške krone</displayName>
+				<displayName count="other" draft="provisional">slovaških kron</displayName>
 			</currency>
 			<currency type="SLL">
 				<displayName>sieraleonski leone</displayName>
@@ -2888,6 +3690,13 @@
 			</currency>
 			<currency type="SRG">
 				<displayName>surinamski gulden</displayName>
+			</currency>
+			<currency type="SSP">
+				<displayName draft="contributed">južnosudanski funt</displayName>
+				<displayName count="one" draft="contributed">južnosudanski funt</displayName>
+				<displayName count="two" draft="contributed">južnosudanska funta</displayName>
+				<displayName count="few" draft="contributed">južnosudanski funti</displayName>
+				<displayName count="other" draft="contributed">južnosudanskih funtov</displayName>
 			</currency>
 			<currency type="STD">
 				<displayName>saotomejska dobra</displayName>
@@ -2918,10 +3727,6 @@
 			</currency>
 			<currency type="TMT">
 				<displayName>turkmenistanski novi manat</displayName>
-				<displayName count="few">TMT</displayName>
-				<displayName count="one">TMT</displayName>
-				<displayName count="other">TMT</displayName>
-				<displayName count="two">TMT</displayName>
 			</currency>
 			<currency type="TND">
 				<displayName>tunizijski dinar</displayName>
@@ -2961,10 +3766,10 @@
 			</currency>
 			<currency type="USD">
 				<displayName>ameriški dolar</displayName>
-				<displayName count="few" draft="provisional">ameriški dolarji</displayName>
-				<displayName count="one" draft="provisional">ameriški dolar</displayName>
-				<displayName count="other" draft="provisional">ameriških dolarjev</displayName>
-				<displayName count="two" draft="provisional">ameriška dolarja</displayName>
+				<displayName count="one" draft="contributed">ameriški dolar</displayName>
+				<displayName count="two" draft="contributed">ameriška dolarja</displayName>
+				<displayName count="few" draft="contributed">ameriški dolarji</displayName>
+				<displayName count="other" draft="contributed">ameriških dolarjev</displayName>
 				<symbol>$</symbol>
 			</currency>
 			<currency type="USN">
@@ -2983,10 +3788,10 @@
 				<displayName>uzbeški sum</displayName>
 			</currency>
 			<currency type="VEB">
-				<displayName>venezuelski bolivar</displayName>
+				<displayName>venezuelski bolivar (1871-2008)</displayName>
 			</currency>
 			<currency type="VEF">
-				<displayName>venezuelski bolivar fuerte</displayName>
+				<displayName>venezuelski bolivar</displayName>
 			</currency>
 			<currency type="VND">
 				<displayName>vientnamski dong</displayName>
@@ -3045,9 +3850,6 @@
 			<currency type="XPT">
 				<displayName>platina</displayName>
 			</currency>
-			<currency type="XRE">
-				<displayName>XRE</displayName>
-			</currency>
 			<currency type="XTS">
 				<displayName>koda za potrebe testiranja</displayName>
 			</currency>
@@ -3076,6 +3878,9 @@
 				<displayName>južnoafriški rand</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>zambijska kvača (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>zambijska kvača</displayName>
 			</currency>
 			<currency type="ZRN">
@@ -3089,201 +3894,175 @@
 			</currency>
 			<currency type="ZWL">
 				<displayName>zimbabvejski dolar (2009)</displayName>
-				<displayName count="few" draft="provisional">ZWL</displayName>
 				<displayName count="one" draft="provisional">ZWL</displayName>
-				<displayName count="other" draft="provisional">ZWL</displayName>
 				<displayName count="two" draft="provisional">ZWL</displayName>
+				<displayName count="few" draft="provisional">ZWL</displayName>
+				<displayName count="other" draft="provisional">ZWL</displayName>
 			</currency>
 		</currencies>
 	</numbers>
 	<units>
 		<unit type="day">
-			<unitPattern count="few">{0} dnevi</unitPattern>
-			<unitPattern count="few" alt="short">{0} d</unitPattern>
 			<unitPattern count="one">{0} dan</unitPattern>
 			<unitPattern count="one" alt="short">{0} d</unitPattern>
-			<unitPattern count="other">{0} dni</unitPattern>
-			<unitPattern count="other" alt="short">{0} d</unitPattern>
 			<unitPattern count="two">{0} dni</unitPattern>
 			<unitPattern count="two" alt="short">{0} d</unitPattern>
+			<unitPattern count="few">{0} dnevi</unitPattern>
+			<unitPattern count="few" alt="short">{0} d</unitPattern>
+			<unitPattern count="other">{0} dni</unitPattern>
+			<unitPattern count="other" alt="short">{0} d</unitPattern>
 		</unit>
 		<unit type="day-future">
-			<unitPattern count="0" draft="contributed">Čez 0 dni</unitPattern>
-			<unitPattern count="1" draft="contributed">Čez 1 dan</unitPattern>
-			<unitPattern count="few" draft="contributed">Čez {0} dni</unitPattern>
 			<unitPattern count="one" draft="contributed">Čez {0} dan</unitPattern>
-			<unitPattern count="other" draft="contributed">Čez {0} dni</unitPattern>
 			<unitPattern count="two" draft="contributed">Čez {0} dni</unitPattern>
+			<unitPattern count="few" draft="contributed">Čez {0} dni</unitPattern>
+			<unitPattern count="other" draft="contributed">Čez {0} dni</unitPattern>
 		</unit>
 		<unit type="day-past">
-			<unitPattern count="0" draft="contributed">Pred 0 dnevi</unitPattern>
-			<unitPattern count="1" draft="contributed">Pred 1 dnevom</unitPattern>
-			<unitPattern count="few" draft="contributed">Pred {0} dnevi</unitPattern>
 			<unitPattern count="one" draft="contributed">Pred {0} dnevom</unitPattern>
-			<unitPattern count="other" draft="contributed">Pred {0} dnevi</unitPattern>
 			<unitPattern count="two" draft="contributed">Pred {0} dnevoma</unitPattern>
+			<unitPattern count="few" draft="contributed">Pred {0} dnevi</unitPattern>
+			<unitPattern count="other" draft="contributed">Pred {0} dnevi</unitPattern>
 		</unit>
 		<unit type="hour">
-			<unitPattern count="few">{0} ure</unitPattern>
-			<unitPattern count="few" alt="short">{0} h</unitPattern>
 			<unitPattern count="one">{0} ura</unitPattern>
 			<unitPattern count="one" alt="short">{0} h</unitPattern>
-			<unitPattern count="other">{0} ur</unitPattern>
-			<unitPattern count="other" alt="short">{0} h</unitPattern>
 			<unitPattern count="two">{0} uri</unitPattern>
 			<unitPattern count="two" alt="short">{0} h</unitPattern>
+			<unitPattern count="few">{0} ure</unitPattern>
+			<unitPattern count="few" alt="short">{0} h</unitPattern>
+			<unitPattern count="other">{0} ur</unitPattern>
+			<unitPattern count="other" alt="short">{0} h</unitPattern>
 		</unit>
 		<unit type="hour-future">
-			<unitPattern count="0" draft="contributed">Čez 0 h</unitPattern>
-			<unitPattern count="1" draft="contributed">Čez 1 h</unitPattern>
-			<unitPattern count="few" draft="contributed">Čez {0} h</unitPattern>
 			<unitPattern count="one" draft="contributed">Čez {0} h</unitPattern>
-			<unitPattern count="other" draft="contributed">Čez {0} h</unitPattern>
 			<unitPattern count="two" draft="contributed">Čez {0} h</unitPattern>
+			<unitPattern count="few" draft="contributed">Čez {0} h</unitPattern>
+			<unitPattern count="other" draft="contributed">Čez {0} h</unitPattern>
 		</unit>
 		<unit type="hour-past">
-			<unitPattern count="0" draft="contributed">Pred 0 h</unitPattern>
-			<unitPattern count="1" draft="contributed">Pred 1 h</unitPattern>
-			<unitPattern count="few" draft="contributed">Pred {0} h</unitPattern>
 			<unitPattern count="one" draft="contributed">Pred {0} h</unitPattern>
-			<unitPattern count="other" draft="contributed">Pred {0} h</unitPattern>
 			<unitPattern count="two" draft="contributed">Pred {0} h</unitPattern>
+			<unitPattern count="few" draft="contributed">Pred {0} h</unitPattern>
+			<unitPattern count="other" draft="contributed">Pred {0} h</unitPattern>
 		</unit>
 		<unit type="minute">
-			<unitPattern count="few">{0} minute</unitPattern>
-			<unitPattern count="few" alt="short">{0} min</unitPattern>
 			<unitPattern count="one">{0} minuta</unitPattern>
 			<unitPattern count="one" alt="short">{0} min</unitPattern>
-			<unitPattern count="other">{0} minut</unitPattern>
-			<unitPattern count="other" alt="short">{0} min</unitPattern>
 			<unitPattern count="two">{0} minuti</unitPattern>
 			<unitPattern count="two" alt="short">{0} min</unitPattern>
+			<unitPattern count="few">{0} minute</unitPattern>
+			<unitPattern count="few" alt="short">{0} min</unitPattern>
+			<unitPattern count="other">{0} minut</unitPattern>
+			<unitPattern count="other" alt="short">{0} min</unitPattern>
 		</unit>
 		<unit type="minute-future">
-			<unitPattern count="0" draft="contributed">Čez 0 min.</unitPattern>
-			<unitPattern count="1" draft="contributed">Čez 1 min.</unitPattern>
-			<unitPattern count="few" draft="contributed">Čez {0} min.</unitPattern>
 			<unitPattern count="one" draft="contributed">Čez {0} min.</unitPattern>
-			<unitPattern count="other" draft="contributed">Čez {0} min.</unitPattern>
 			<unitPattern count="two" draft="contributed">Čez {0} min.</unitPattern>
+			<unitPattern count="few" draft="contributed">Čez {0} min.</unitPattern>
+			<unitPattern count="other" draft="contributed">Čez {0} min.</unitPattern>
 		</unit>
 		<unit type="minute-past">
-			<unitPattern count="0" draft="contributed">Pred 0 min.</unitPattern>
-			<unitPattern count="1" draft="contributed">Pred 1 min.</unitPattern>
-			<unitPattern count="few" draft="contributed">Pred {0} min.</unitPattern>
 			<unitPattern count="one" draft="contributed">Pred {0} min.</unitPattern>
-			<unitPattern count="other" draft="contributed">Pred {0} min.</unitPattern>
 			<unitPattern count="two" draft="contributed">Pred {0} min.</unitPattern>
+			<unitPattern count="few" draft="contributed">Pred {0} min.</unitPattern>
+			<unitPattern count="other" draft="contributed">Pred {0} min.</unitPattern>
 		</unit>
 		<unit type="month">
-			<unitPattern count="few">{0} meseci</unitPattern>
-			<unitPattern count="few" alt="short">{0} m</unitPattern>
 			<unitPattern count="one">{0} mesec</unitPattern>
 			<unitPattern count="one" alt="short">{0} m</unitPattern>
-			<unitPattern count="other">{0} mesecev</unitPattern>
-			<unitPattern count="other" alt="short">{0} m</unitPattern>
 			<unitPattern count="two">{0} meseca</unitPattern>
 			<unitPattern count="two" alt="short">{0} m</unitPattern>
+			<unitPattern count="few">{0} meseci</unitPattern>
+			<unitPattern count="few" alt="short">{0} m</unitPattern>
+			<unitPattern count="other">{0} mesecev</unitPattern>
+			<unitPattern count="other" alt="short">{0} m</unitPattern>
 		</unit>
 		<unit type="month-future">
-			<unitPattern count="0" draft="contributed">Čez 0 mesecev</unitPattern>
-			<unitPattern count="1" draft="contributed">Čez 1 mesec</unitPattern>
-			<unitPattern count="few" draft="contributed">Čez {0} mesece</unitPattern>
 			<unitPattern count="one" draft="contributed">Čez {0} mesec</unitPattern>
-			<unitPattern count="other" draft="contributed">Čez {0} mesecev</unitPattern>
 			<unitPattern count="two" draft="contributed">Čez {0} meseca</unitPattern>
+			<unitPattern count="few" draft="contributed">Čez {0} mesece</unitPattern>
+			<unitPattern count="other" draft="contributed">Čez {0} mesecev</unitPattern>
 		</unit>
 		<unit type="month-past">
-			<unitPattern count="0" draft="contributed">Pred 0 meseci</unitPattern>
-			<unitPattern count="1" draft="contributed">Pred 1 mesecem</unitPattern>
-			<unitPattern count="few" draft="contributed">Pred {0} meseci</unitPattern>
 			<unitPattern count="one" draft="contributed">Pred {0} mesecem</unitPattern>
-			<unitPattern count="other" draft="contributed">Pred {0} meseci</unitPattern>
 			<unitPattern count="two" draft="contributed">Pred {0} meseci</unitPattern>
+			<unitPattern count="few" draft="contributed">Pred {0} meseci</unitPattern>
+			<unitPattern count="other" draft="contributed">Pred {0} meseci</unitPattern>
 		</unit>
 		<unit type="second">
-			<unitPattern count="few">{0} sekunde</unitPattern>
-			<unitPattern count="few" alt="short">{0} s</unitPattern>
 			<unitPattern count="one">{0} sekunda</unitPattern>
 			<unitPattern count="one" alt="short">{0} s</unitPattern>
-			<unitPattern count="other">{0} sekund</unitPattern>
-			<unitPattern count="other" alt="short">{0} s</unitPattern>
 			<unitPattern count="two">{0} sekundi</unitPattern>
 			<unitPattern count="two" alt="short">{0} s</unitPattern>
+			<unitPattern count="few">{0} sekunde</unitPattern>
+			<unitPattern count="few" alt="short">{0} s</unitPattern>
+			<unitPattern count="other">{0} sekund</unitPattern>
+			<unitPattern count="other" alt="short">{0} s</unitPattern>
 		</unit>
 		<unit type="second-future">
-			<unitPattern count="0" draft="contributed">Čez 0 sekund</unitPattern>
-			<unitPattern count="1" draft="contributed">Čez 1 sekundo</unitPattern>
-			<unitPattern count="few" draft="contributed">Čez {0} sekunde</unitPattern>
 			<unitPattern count="one" draft="contributed">Čez {0} sekundo</unitPattern>
-			<unitPattern count="other" draft="contributed">Čez {0} sekundi</unitPattern>
 			<unitPattern count="two" draft="contributed">Čez {0} sekundi</unitPattern>
+			<unitPattern count="few" draft="contributed">Čez {0} sekunde</unitPattern>
+			<unitPattern count="other" draft="contributed">Čez {0} sekundi</unitPattern>
 		</unit>
 		<unit type="second-past">
-			<unitPattern count="0" draft="contributed">Pred 0 sekundami</unitPattern>
-			<unitPattern count="1" draft="contributed">Pred 1 sekundo</unitPattern>
-			<unitPattern count="few" draft="contributed">Pred {0} sekundami</unitPattern>
 			<unitPattern count="one" draft="contributed">Pred {0} sekundo</unitPattern>
-			<unitPattern count="other" draft="contributed">Pred {0} sekundami</unitPattern>
 			<unitPattern count="two" draft="contributed">Pred {0} sekundama</unitPattern>
+			<unitPattern count="few" draft="contributed">Pred {0} sekundami</unitPattern>
+			<unitPattern count="other" draft="contributed">Pred {0} sekundami</unitPattern>
 		</unit>
 		<unit type="week">
-			<unitPattern count="few">{0} tedni</unitPattern>
-			<unitPattern count="few" alt="short">{0} t</unitPattern>
 			<unitPattern count="one">{0} teden</unitPattern>
 			<unitPattern count="one" alt="short">{0} t</unitPattern>
-			<unitPattern count="other">{0} tednov</unitPattern>
-			<unitPattern count="other" alt="short">{0} t</unitPattern>
 			<unitPattern count="two">{0} tedna</unitPattern>
 			<unitPattern count="two" alt="short">{0} t</unitPattern>
+			<unitPattern count="few">{0} tedni</unitPattern>
+			<unitPattern count="few" alt="short">{0} t</unitPattern>
+			<unitPattern count="other">{0} tednov</unitPattern>
+			<unitPattern count="other" alt="short">{0} t</unitPattern>
 		</unit>
 		<unit type="week-future">
-			<unitPattern count="0" draft="contributed">Čez 0 tednov</unitPattern>
-			<unitPattern count="1" draft="contributed">Čez 1 teden</unitPattern>
-			<unitPattern count="few" draft="contributed">Čez {0} tedne</unitPattern>
 			<unitPattern count="one" draft="contributed">Čez {0} teden</unitPattern>
-			<unitPattern count="other" draft="contributed">Čez {0} tednov</unitPattern>
 			<unitPattern count="two" draft="contributed">Čez {0} tedna</unitPattern>
+			<unitPattern count="few" draft="contributed">Čez {0} tedne</unitPattern>
+			<unitPattern count="other" draft="contributed">Čez {0} tednov</unitPattern>
 		</unit>
 		<unit type="week-past">
-			<unitPattern count="0" draft="contributed">Pred 0 tedni</unitPattern>
-			<unitPattern count="1" draft="contributed">Pred 1 tednom</unitPattern>
-			<unitPattern count="few" draft="contributed">Pred {0} tedni</unitPattern>
 			<unitPattern count="one" draft="contributed">Pred {0} tednom</unitPattern>
-			<unitPattern count="other" draft="contributed">Pred {0} tedni</unitPattern>
 			<unitPattern count="two" draft="contributed">Pred {0} tednoma</unitPattern>
+			<unitPattern count="few" draft="contributed">Pred {0} tedni</unitPattern>
+			<unitPattern count="other" draft="contributed">Pred {0} tedni</unitPattern>
 		</unit>
 		<unit type="year">
-			<unitPattern count="few">{0} leta</unitPattern>
-			<unitPattern count="few" alt="short">{0} l</unitPattern>
 			<unitPattern count="one">{0} leto</unitPattern>
 			<unitPattern count="one" alt="short">{0} l</unitPattern>
-			<unitPattern count="other">{0} let</unitPattern>
-			<unitPattern count="other" alt="short">{0} l</unitPattern>
 			<unitPattern count="two">{0} leti</unitPattern>
 			<unitPattern count="two" alt="short">{0} l</unitPattern>
+			<unitPattern count="few">{0} leta</unitPattern>
+			<unitPattern count="few" alt="short">{0} l</unitPattern>
+			<unitPattern count="other">{0} let</unitPattern>
+			<unitPattern count="other" alt="short">{0} l</unitPattern>
 		</unit>
 		<unit type="year-future">
-			<unitPattern count="0" draft="contributed">Čez 0 let</unitPattern>
-			<unitPattern count="1" draft="contributed">Čez 1 leto</unitPattern>
-			<unitPattern count="few" draft="contributed">Čez {0} leta</unitPattern>
 			<unitPattern count="one" draft="contributed">Čez {0} leto</unitPattern>
-			<unitPattern count="other" draft="contributed">Čez {0} let</unitPattern>
 			<unitPattern count="two" draft="contributed">Čez {0} leti</unitPattern>
+			<unitPattern count="few" draft="contributed">Čez {0} leta</unitPattern>
+			<unitPattern count="other" draft="contributed">Čez {0} let</unitPattern>
 		</unit>
 		<unit type="year-past">
-			<unitPattern count="0" draft="contributed">Pred 0 leti</unitPattern>
-			<unitPattern count="1" draft="contributed">Pred 1 letom</unitPattern>
-			<unitPattern count="few" draft="contributed">Pred {0} leti</unitPattern>
 			<unitPattern count="one" draft="contributed">Pred {0} letom</unitPattern>
-			<unitPattern count="other" draft="contributed">Pred {0} leti</unitPattern>
 			<unitPattern count="two" draft="contributed">Pred {0} leti</unitPattern>
+			<unitPattern count="few" draft="contributed">Pred {0} leti</unitPattern>
+			<unitPattern count="other" draft="contributed">Pred {0} leti</unitPattern>
 		</unit>
 	</units>
 	<listPatterns>
 		<listPattern>
 			<listPatternPart type="2">{0} in {1}</listPatternPart>
 			<listPatternPart type="end">{0} in {1}</listPatternPart>
+			<listPatternPart type="middle" draft="contributed">{0}, {1}</listPatternPart>
+			<listPatternPart type="start" draft="contributed">{0}, {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
 	<posix>

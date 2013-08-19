@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 4982 $" />
-		<generation date="$Date: 2010-06-11 16:42:37 -0500 (Fri, 11 Jun 2010) $" />
+		<version number="$Revision: 8242 $" />
+		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $" />
 		<language type="hi" />
 	</identity>
 	<collations validSubLocales="hi_IN">
 		<collation type="standard"
 			references="McGregor: Oxford Hindi-English Dictionary ISBN:019864339X Gatzlaff-Hälsig: Handwörterbuch Hindi-Deutsch ISBN:3875481771 http://www.eki.ee/wgrs/rom1_hi.pdf">
-			<settings normalization="on" />
+			<settings normalization="on" reorder="Deva Beng Guru Gujr Orya Taml Telu Knda Mlym Sinh"/>
 			<rules>
 				<!--
 					The following tailoring is an adjustment of the DUCET collation
@@ -26,13 +31,5 @@
 				<p>ः</p>
 			</rules>
 		</collation>
-		<collation type="direct">
-			<!-- Not sure whether or not we stilll need the direct rules or not.  Leaving them here until we know for sure.
-			-->
-			<rules>
-				<reset><last_non_ignorable/></reset>
-				<pc>ँंःअआइईउऊऋऌऍऎएऐऑऒओऔकखगघङचछजझञटठडढणतथदधनऩपफबभमयरऱलळऴवशषसह़ऽािीुूृॄॅॆेैॉॊोौ्ॐ॒॑॓॔क़ख़ग़ज़ड़ढ़फ़य़ॠॡॢॣ।॥०१२३४५६७८९॰</pc>
-			</rules>
-		</collation>
-</collations>
+	</collations>
 </ldml>

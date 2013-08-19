@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5798 $"/>
-		<generation date="$Date: 2011-05-02 01:05:34 -0500 (Mon, 02 May 2011) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="byn"/>
 	</identity>
 	<localeDisplayNames>
@@ -182,7 +186,6 @@
 			<territory type="CM" draft="unconfirmed">ካሜሩን</territory>
 			<territory type="CN" draft="unconfirmed">ቻይና</territory>
 			<territory type="CO" draft="unconfirmed">ኮሎምቢያ</territory>
-			<territory type="CS" draft="unconfirmed">ሰርቢያ</territory>
 			<territory type="CV" draft="unconfirmed">ኬፕ ቬርዴ</territory>
 			<territory type="CY" draft="unconfirmed">ሳይፕረስ</territory>
 			<territory type="CZ" draft="unconfirmed">ቼክ ሪፑብሊክ</territory>
@@ -294,6 +297,30 @@
 	</characters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern draft="unconfirmed">EEEE፡ dd MMMM ግርጋ y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern draft="unconfirmed">dd MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern draft="unconfirmed">dd-MMM-y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern draft="unconfirmed">dd/MM/yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -438,7 +465,12 @@
 		</calendars>
 	</dates>
 	<numbers>
-		<currencyFormats>
+		<defaultNumberingSystem>latn</defaultNumberingSystem>
+		<otherNumberingSystems>
+			<native>latn</native>
+			<traditional>ethi</traditional>
+		</otherNumberingSystems>
+		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat>
 					<pattern draft="unconfirmed">¤#,##0.00</pattern>
@@ -479,3 +511,4 @@
 		</currencies>
 	</numbers>
 </ldml>
+

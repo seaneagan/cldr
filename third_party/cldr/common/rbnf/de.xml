@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
     <identity>
-        <version number="$Revision: 4839 $"/>
-        <generation date="$Date: 2010-04-02 20:00:23 -0500 (Fri, 02 Apr 2010) $"/>
+        <version number="$Revision: 8242 $"/>
+        <generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
         <language type="de"/>
     </identity>
     <rbnf>
@@ -55,7 +60,7 @@
                 <rbnfrule value="2000000000000000">←%spellout-cardinal-feminine← Billiarden[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000000000">=#,##0=;</rbnfrule>
             </ruleset>
-            <ruleset type="spellout-cardinal-neutre">
+            <ruleset type="spellout-cardinal-neuter">
                 <rbnfrule value="0">=%spellout-cardinal-masculine=;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-cardinal-masculine">

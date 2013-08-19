@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5879 $"/>
-		<generation date="$Date: 2011-05-10 13:52:32 -0500 (Tue, 10 May 2011) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="zh"/>
 		<script type="Hant"/>
 		<territory type="HK"/>
@@ -12,6 +16,7 @@
 		<languages>
 			<language type="az" alt="short" draft="contributed">阿澤里</language>
 			<language type="de_CH" draft="contributed">瑞士德語</language>
+			<language type="gsw" draft="contributed">德文 (瑞士)</language>
 			<language type="it" draft="contributed">意大利文</language>
 			<language type="lol" draft="contributed">蒙古語</language>
 			<language type="pt_BR" draft="contributed">巴西葡萄牙語</language>
@@ -20,6 +25,7 @@
 		<scripts>
 			<script type="Arab" alt="variant" draft="contributed">波斯阿拉伯語</script>
 			<script type="Cyrl" draft="contributed">西里爾語字母</script>
+			<script type="Deva" draft="contributed">梵文</script>
 			<script type="Hang">韓文字母</script>
 			<script type="Hant" alt="stand-alone" draft="contributed">繁體漢字</script>
 		</scripts>
@@ -28,6 +34,7 @@
 			<territory type="019" draft="contributed">美洲地區</territory>
 			<territory type="029" draft="contributed">加勒比</territory>
 			<territory type="EA" draft="contributed">瑟塔與梅利拉</territory>
+			<territory type="XK">科索沃</territory>
 		</territories>
 		<variants>
 			<variant type="1901" draft="contributed">傳統德國拼字法</variant>
@@ -94,6 +101,11 @@
 			<measurementSystemName type="US" draft="contributed">美國</measurementSystemName>
 		</measurementSystemNames>
 	</localeDisplayNames>
+	<characters>
+		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
+		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
+		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
+	</characters>
 	<dates>
 		<calendars>
 			<calendar type="buddhist">
@@ -104,32 +116,61 @@
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
-			<calendar type="chinese">
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>Gy年M月d日EEEE</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>Gy年M月d日</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>Gy年M月d日</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>d/M/yGGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
 				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1}{0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1}{0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
 					<availableFormats>
-						<dateFormatItem id="yMEd" draft="contributed">y年M月d日，E</dateFormatItem>
+						<dateFormatItem id="Ed" draft="contributed">d E</dateFormatItem>
+						<dateFormatItem id="Md" draft="contributed">d/M</dateFormatItem>
+						<dateFormatItem id="MEd" draft="contributed">E, d/M</dateFormatItem>
+						<dateFormatItem id="yyyyM" draft="contributed">M/yGGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMd" draft="contributed">d/M/yGGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMEd" draft="contributed">E, d/M/yGGGGG</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
-				<months>
-					<monthContext type="stand-alone">
-						<monthWidth type="abbreviated">
-							<month type="1" draft="contributed">1月</month>
-							<month type="2" draft="contributed">2月</month>
-							<month type="3" draft="contributed">3月</month>
-							<month type="4" draft="contributed">4月</month>
-							<month type="5" draft="contributed">5月</month>
-							<month type="6" draft="contributed">6月</month>
-							<month type="7" draft="contributed">7月</month>
-							<month type="8" draft="contributed">8月</month>
-							<month type="9" draft="contributed">9月</month>
-							<month type="10" draft="contributed">10月</month>
-							<month type="11" draft="contributed">11月</month>
-							<month type="12" draft="contributed">12月</month>
-						</monthWidth>
-					</monthContext>
-				</months>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -148,7 +189,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>yy年M月d日</pattern>
+							<pattern>d/M/yy</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -191,23 +232,12 @@
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
-						<dateFormatItem id="EEEd" draft="contributed">d EEE</dateFormatItem>
-						<dateFormatItem id="Md" draft="contributed">M-d</dateFormatItem>
-						<dateFormatItem id="MEd" draft="contributed">E, M-d</dateFormatItem>
-						<dateFormatItem id="yyyyM" draft="provisional">yyyy/M</dateFormatItem>
+						<dateFormatItem id="Ed" draft="contributed">d E</dateFormatItem>
+						<dateFormatItem id="Md" draft="contributed">d/M</dateFormatItem>
+						<dateFormatItem id="MEd" draft="contributed">E, d/M</dateFormatItem>
+						<dateFormatItem id="yM" draft="provisional">M/y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="year">
-						<relative type="-1" draft="contributed">上年</relative>
-						<relative type="0" draft="contributed">本年</relative>
-						<relative type="1" draft="contributed">下年</relative>
-					</field>
-					<field type="month">
-						<relative type="-1" draft="contributed">上月</relative>
-						<relative type="1" draft="contributed">下月</relative>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="roc">
 				<dateTimeFormats>
@@ -218,10 +248,18 @@
 				</dateTimeFormats>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="year">
+				<relative type="-1" draft="contributed">上年</relative>
+				<relative type="0" draft="contributed">本年</relative>
+				<relative type="1" draft="contributed">下年</relative>
+			</field>
+			<field type="month">
+				<relative type="-1" draft="contributed">上月</relative>
+				<relative type="1" draft="contributed">下月</relative>
+			</field>
+		</fields>
 		<timeZoneNames>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity draft="contributed">比尤拉，北達科他州</exemplarCity>
-			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity draft="contributed">耶烈萬</exemplarCity>
 			</zone>
@@ -260,9 +298,6 @@
 			</zone>
 			<zone type="Africa/Libreville">
 				<exemplarCity draft="contributed">利布維</exemplarCity>
-			</zone>
-			<zone type="Europe/Guernsey">
-				<exemplarCity draft="contributed">德國</exemplarCity>
 			</zone>
 			<zone type="Africa/Malabo">
 				<exemplarCity draft="contributed">馬拉波</exemplarCity>
@@ -336,6 +371,9 @@
 			<zone type="Africa/Dar_es_Salaam">
 				<exemplarCity draft="contributed">達累斯薩拉姆</exemplarCity>
 			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity draft="contributed">比尤拉，北達科他州</exemplarCity>
+			</zone>
 			<zone type="America/St_Vincent">
 				<exemplarCity draft="contributed">聖文森特</exemplarCity>
 			</zone>
@@ -345,55 +383,10 @@
 			<zone type="Africa/Lusaka">
 				<exemplarCity draft="contributed">盧薩卡</exemplarCity>
 			</zone>
-			<metazone type="Hawaii_Aleutian">
-				<long>
-					<generic draft="contributed">夏威夷阿留申時間</generic>
-				</long>
-			</metazone>
-			<metazone type="Irkutsk">
-				<long>
-					<generic draft="contributed">伊爾庫茨克時間</generic>
-				</long>
-			</metazone>
-			<metazone type="Kamchatka">
-				<long>
-					<generic draft="contributed">堪察加時間</generic>
-				</long>
-			</metazone>
-			<metazone type="Kazakhstan_Eastern">
-				<long>
-					<daylight draft="contributed">哈薩克斯坦東部夏令時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kazakhstan_Western">
-				<long>
-					<daylight draft="contributed">哈薩克斯坦西部夏令時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Macquarie">
-				<long>
-					<generic draft="contributed">麥格理時間</generic>
-				</long>
-			</metazone>
-			<metazone type="Noronha">
-				<long>
-					<generic draft="contributed">諾羅尼亞時間</generic>
-				</long>
-			</metazone>
-			<metazone type="Omsk">
-				<long>
-					<generic draft="contributed">鄂木斯克時間</generic>
-				</long>
-			</metazone>
-			<metazone type="Sakhalin">
-				<long>
-					<generic draft="contributed">薩哈林時間</generic>
-				</long>
-			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
-		<currencyFormats>
+		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat>
 					<pattern>¤#,##0.00;(¤#,##0.00)</pattern>
@@ -449,21 +442,15 @@
 	</numbers>
 	<units>
 		<unit type="day-future">
-			<unitPattern count="0" draft="contributed">0 日後</unitPattern>
-			<unitPattern count="1" draft="contributed">1 日後</unitPattern>
 			<unitPattern count="other" draft="contributed">{0} 日後</unitPattern>
 		</unit>
 		<unit type="day-past">
-			<unitPattern count="0" draft="contributed">0 日前</unitPattern>
-			<unitPattern count="1" draft="contributed">1 日前</unitPattern>
 			<unitPattern count="other" draft="contributed">{0} 日前</unitPattern>
 		</unit>
 		<unit type="hour">
 			<unitPattern count="other">{0}時</unitPattern>
 		</unit>
 		<unit type="month-past">
-			<unitPattern count="0" draft="contributed">0 月前</unitPattern>
-			<unitPattern count="1" draft="contributed">1 月前</unitPattern>
 			<unitPattern count="other" draft="contributed">{0} 月前</unitPattern>
 		</unit>
 		<unit type="week">

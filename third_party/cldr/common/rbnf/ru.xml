@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
     <identity>
-        <version number="$Revision: 5774 $"/>
-        <generation date="$Date: 2011-04-29 22:40:41 -0500 (Fri, 29 Apr 2011) $"/>
+        <version number="$Revision: 8242 $"/>
+        <generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
         <language type="ru"/>
     </identity>
     <rbnf>
@@ -67,7 +72,7 @@
                 <rbnfrule value="5000000000000000">←%spellout-cardinal-masculine← биллиардов[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000000000">=#,##0=;</rbnfrule>
             </ruleset>
-            <ruleset type="spellout-cardinal-neutre">
+            <ruleset type="spellout-cardinal-neuter">
                 <rbnfrule value="-x">минус →→;</rbnfrule>
                 <rbnfrule value="x.x">←← запятая →→;</rbnfrule>
                 <rbnfrule value="0">ноль;</rbnfrule>

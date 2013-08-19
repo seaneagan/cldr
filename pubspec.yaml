@@ -5,6 +5,8 @@ description: Mechanisms to extract data from Cldr.
 homepage: http://github.com/seaneagan/cldr
 dependencies:
   args: any
+  crypto: any
+  http: any
   logging: any
   path: any
 dev_dependencies:

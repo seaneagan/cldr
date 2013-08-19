@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 5806 $"/>
-		<generation date="$Date: 2011-05-02 13:42:02 -0500 (Mon, 02 May 2011) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="en"/>
 	</identity>
-	<fallback/>
 	<localeDisplayNames>
 		<localeDisplayPattern>
 			<localePattern>{0} ({1})</localePattern>
@@ -36,8 +39,9 @@
 			<language type="anp">Angika</language>
 			<language type="apa">Apache Language</language>
 			<language type="ar">Arabic</language>
+			<language type="ar_001">Modern Standard Arabic</language>
 			<language type="arc">Aramaic</language>
-			<language type="arn">Araucanian</language>
+			<language type="arn">Mapuche</language>
 			<language type="arp">Arapaho</language>
 			<language type="art">Artificial Language</language>
 			<language type="arw">Arawak</language>
@@ -58,17 +62,21 @@
 			<language type="ban">Balinese</language>
 			<language type="bas">Basaa</language>
 			<language type="bat">Baltic Language</language>
+			<language type="bax">Bamun</language>
+			<language type="bbj">Ghomala</language>
 			<language type="be">Belarusian</language>
 			<language type="bej">Beja</language>
 			<language type="bem">Bemba</language>
 			<language type="ber">Berber</language>
 			<language type="bez">Bena</language>
+			<language type="bfd">Bafut</language>
 			<language type="bg">Bulgarian</language>
 			<language type="bh">Bihari</language>
 			<language type="bho">Bhojpuri</language>
 			<language type="bi">Bislama</language>
 			<language type="bik">Bikol</language>
 			<language type="bin">Bini</language>
+			<language type="bkm">Kom</language>
 			<language type="bla">Siksika</language>
 			<language type="bm">Bambara</language>
 			<language type="bn">Bengali</language>
@@ -78,10 +86,13 @@
 			<language type="bra">Braj</language>
 			<language type="brx">Bodo</language>
 			<language type="bs">Bosnian</language>
+			<language type="bss">Akoose</language>
 			<language type="btk">Batak</language>
 			<language type="bua">Buriat</language>
 			<language type="bug">Buginese</language>
+			<language type="bum">Bulu</language>
 			<language type="byn">Blin</language>
+			<language type="byv">Medumba</language>
 			<language type="ca">Catalan</language>
 			<language type="cad">Caddo</language>
 			<language type="cai">Central American Indian Language</language>
@@ -103,6 +114,7 @@
 			<language type="chp">Chipewyan</language>
 			<language type="chr">Cherokee</language>
 			<language type="chy">Cheyenne</language>
+			<language type="ckb">Sorani Kurdish</language>
 			<language type="cmc">Chamic Language</language>
 			<language type="co">Corsican</language>
 			<language type="cop">Coptic</language>
@@ -140,6 +152,7 @@
 			<language type="dyo">Jola-Fonyi</language>
 			<language type="dyu">Dyula</language>
 			<language type="dz">Dzongkha</language>
+			<language type="dzg">Dazaga</language>
 			<language type="ebu">Embu</language>
 			<language type="ee">Ewe</language>
 			<language type="efi">Efik</language>
@@ -156,7 +169,7 @@
 			<language type="eo">Esperanto</language>
 			<language type="es">Spanish</language>
 			<language type="es_419">Latin American Spanish</language>
-			<language type="es_ES">Iberian Spanish</language>
+			<language type="es_ES">European Spanish</language>
 			<language type="et">Estonian</language>
 			<language type="eu">Basque</language>
 			<language type="ewo">Ewondo</language>
@@ -220,6 +233,7 @@
 			<language type="hz">Herero</language>
 			<language type="ia">Interlingua</language>
 			<language type="iba">Iban</language>
+			<language type="ibb">Ibibio</language>
 			<language type="id">Indonesian</language>
 			<language type="ie">Interlingue</language>
 			<language type="ig">Igbo</language>
@@ -238,6 +252,7 @@
 			<language type="iu">Inuktitut</language>
 			<language type="ja">Japanese</language>
 			<language type="jbo">Lojban</language>
+			<language type="jgo">Ngomba</language>
 			<language type="jmc">Machame</language>
 			<language type="jpr">Judeo-Persian</language>
 			<language type="jrb">Judeo-Arabic</language>
@@ -251,6 +266,7 @@
 			<language type="kar">Karen</language>
 			<language type="kaw">Kawi</language>
 			<language type="kbd">Kabardian</language>
+			<language type="kbl">Kanembu</language>
 			<language type="kcg">Tyap</language>
 			<language type="kde">Makonde</language>
 			<language type="kea">Kabuverdianu</language>
@@ -263,6 +279,7 @@
 			<language type="ki">Kikuyu</language>
 			<language type="kj">Kuanyama</language>
 			<language type="kk">Kazakh</language>
+			<language type="kkj">Kako</language>
 			<language type="kl">Kalaallisut</language>
 			<language type="kln">Kalenjin</language>
 			<language type="km">Khmer</language>
@@ -296,6 +313,7 @@
 			<language type="lez">Lezghian</language>
 			<language type="lg">Ganda</language>
 			<language type="li">Limburgish</language>
+			<language type="lkt">Lakota</language>
 			<language type="ln">Lingala</language>
 			<language type="lo">Lao</language>
 			<language type="lol">Mongo</language>
@@ -306,16 +324,18 @@
 			<language type="lui">Luiseno</language>
 			<language type="lun">Lunda</language>
 			<language type="luo">Luo</language>
-			<language type="lus">Lushai</language>
+			<language type="lus">Mizo</language>
 			<language type="luy">Luyia</language>
 			<language type="lv">Latvian</language>
 			<language type="mad">Madurese</language>
+			<language type="maf">Mafa</language>
 			<language type="mag">Magahi</language>
 			<language type="mai">Maithili</language>
 			<language type="mak">Makasar</language>
 			<language type="man">Mandingo</language>
 			<language type="map">Austronesian Language</language>
 			<language type="mas">Masai</language>
+			<language type="mde">Maba</language>
 			<language type="mdf">Moksha</language>
 			<language type="mdr">Mandar</language>
 			<language type="men">Mende</language>
@@ -324,6 +344,7 @@
 			<language type="mg">Malagasy</language>
 			<language type="mga">Middle Irish</language>
 			<language type="mgh">Makhuwa-Meetto</language>
+			<language type="mgo">Meta'</language>
 			<language type="mh">Marshallese</language>
 			<language type="mi">Maori</language>
 			<language type="mic">Micmac</language>
@@ -349,6 +370,7 @@
 			<language type="mwl">Mirandese</language>
 			<language type="mwr">Marwari</language>
 			<language type="my">Burmese</language>
+			<language type="mye">Myene</language>
 			<language type="myn">Mayan Language</language>
 			<language type="myv">Erzya</language>
 			<language type="na">Nauru</language>
@@ -369,6 +391,7 @@
 			<language type="nl_BE">Flemish</language>
 			<language type="nmg">Kwasio</language>
 			<language type="nn">Norwegian Nynorsk</language>
+			<language type="nnh">Ngiemboon</language>
 			<language type="no">Norwegian</language>
 			<language type="nog">Nogai</language>
 			<language type="non">Old Norse</language>
@@ -411,7 +434,7 @@
 			<language type="ps" alt="variant">Pushto</language>
 			<language type="pt">Portuguese</language>
 			<language type="pt_BR">Brazilian Portuguese</language>
-			<language type="pt_PT">Iberian Portuguese</language>
+			<language type="pt_PT">European Portuguese</language>
 			<language type="qu">Quechua</language>
 			<language type="raj">Rajasthani</language>
 			<language type="rap">Rapanui</language>
@@ -436,6 +459,7 @@
 			<language type="saq">Samburu</language>
 			<language type="sas">Sasak</language>
 			<language type="sat">Santali</language>
+			<language type="sba">Ngambay</language>
 			<language type="sbp">Sangu</language>
 			<language type="sc">Sardinian</language>
 			<language type="scn">Sicilian</language>
@@ -453,6 +477,7 @@
 			<language type="sh">Serbo-Croatian</language>
 			<language type="shi">Tachelhit</language>
 			<language type="shn">Shan</language>
+			<language type="shu">Chadian Arabic</language>
 			<language type="si">Sinhala</language>
 			<language type="sid">Sidamo</language>
 			<language type="sio">Siouan Language</language>
@@ -508,7 +533,7 @@
 			<language type="tli">Tlingit</language>
 			<language type="tmh">Tamashek</language>
 			<language type="tn">Tswana</language>
-			<language type="to">Tonga</language>
+			<language type="to">Tongan</language>
 			<language type="tog">Nyasa Tonga</language>
 			<language type="tpi">Tok Pisin</language>
 			<language type="tr">Turkish</language>
@@ -524,10 +549,10 @@
 			<language type="twq">Tasawaq</language>
 			<language type="ty">Tahitian</language>
 			<language type="tyv">Tuvinian</language>
-			<language type="tzm">Central Morocco Tamazight</language>
+			<language type="tzm">Central Atlas Tamazight</language>
 			<language type="udm">Udmurt</language>
-			<language type="ug">Uighur</language>
-			<language type="ug" alt="variant">Uyghur</language>
+			<language type="ug">Uyghur</language>
+			<language type="ug" alt="variant">Uighur</language>
 			<language type="uga">Ugaritic</language>
 			<language type="uk">Ukrainian</language>
 			<language type="umb">Umbundu</language>
@@ -543,7 +568,7 @@
 			<language type="wa">Walloon</language>
 			<language type="wae">Walser</language>
 			<language type="wak">Wakashan Language</language>
-			<language type="wal">Walamo</language>
+			<language type="wal">Wolaytta</language>
 			<language type="war">Waray</language>
 			<language type="was">Washo</language>
 			<language type="wen">Sorbian Language</language>
@@ -554,6 +579,7 @@
 			<language type="yao">Yao</language>
 			<language type="yap">Yapese</language>
 			<language type="yav">Yangben</language>
+			<language type="ybb">Yemba</language>
 			<language type="yi">Yiddish</language>
 			<language type="yo">Yoruba</language>
 			<language type="ypk">Yupik Language</language>
@@ -572,6 +598,7 @@
 			<language type="zza">Zaza</language>
 		</languages>
 		<scripts>
+			<script type="Afak">Afaka</script>
 			<script type="Arab">Arabic</script>
 			<script type="Arab" alt="variant">Perso-Arabic</script>
 			<script type="Armi">Imperial Aramaic</script>
@@ -579,6 +606,7 @@
 			<script type="Avst">Avestan</script>
 			<script type="Bali">Balinese</script>
 			<script type="Bamu">Bamum</script>
+			<script type="Bass">Bassa Vah</script>
 			<script type="Batk">Batak</script>
 			<script type="Beng">Bengali</script>
 			<script type="Blis">Blissymbols</script>
@@ -599,6 +627,7 @@
 			<script type="Cyrs">Old Church Slavonic Cyrillic</script>
 			<script type="Deva">Devanagari</script>
 			<script type="Dsrt">Deseret</script>
+			<script type="Dupl">Duployan shorthand</script>
 			<script type="Egyd">Egyptian demotic</script>
 			<script type="Egyh">Egyptian hieratic</script>
 			<script type="Egyp">Egyptian hieroglyphs</script>
@@ -620,19 +649,23 @@
 			<script type="Hant" alt="stand-alone">Traditional Han</script>
 			<script type="Hebr">Hebrew</script>
 			<script type="Hira">Hiragana</script>
+			<script type="Hluw">Anatolian Hieroglyphs</script>
 			<script type="Hmng">Pahawh Hmong</script>
-			<script type="Hrkt">Katakana or Hiragana</script>
+			<script type="Hrkt">Japanese syllabaries</script>
 			<script type="Hung">Old Hungarian</script>
 			<script type="Inds">Indus</script>
 			<script type="Ital">Old Italic</script>
 			<script type="Java">Javanese</script>
 			<script type="Jpan">Japanese</script>
+			<script type="Jurc">Jurchen</script>
 			<script type="Kali">Kayah Li</script>
 			<script type="Kana">Katakana</script>
 			<script type="Khar">Kharoshthi</script>
 			<script type="Khmr">Khmer</script>
+			<script type="Khoj">Khojki</script>
 			<script type="Knda">Kannada</script>
 			<script type="Kore">Korean</script>
+			<script type="Kpel">Kpelle</script>
 			<script type="Kthi">Kaithi</script>
 			<script type="Lana">Lanna</script>
 			<script type="Laoo">Lao</script>
@@ -644,25 +677,32 @@
 			<script type="Lina">Linear A</script>
 			<script type="Linb">Linear B</script>
 			<script type="Lisu">Fraser</script>
+			<script type="Loma">Loma</script>
 			<script type="Lyci">Lycian</script>
 			<script type="Lydi">Lydian</script>
 			<script type="Mand">Mandaean</script>
 			<script type="Mani">Manichaean</script>
 			<script type="Maya">Mayan hieroglyphs</script>
+			<script type="Mend">Mende</script>
 			<script type="Merc">Meroitic Cursive</script>
 			<script type="Mero">Meroitic</script>
 			<script type="Mlym">Malayalam</script>
 			<script type="Mong">Mongolian</script>
 			<script type="Moon">Moon</script>
+			<script type="Mroo">Mro</script>
 			<script type="Mtei">Meitei Mayek</script>
 			<script type="Mymr">Myanmar</script>
+			<script type="Narb">Old North Arabian</script>
+			<script type="Nbat">Nabataean</script>
 			<script type="Nkgb">Naxi Geba</script>
 			<script type="Nkoo">N’Ko</script>
+			<script type="Nshu">Nüshu</script>
 			<script type="Ogam">Ogham</script>
 			<script type="Olck">Ol Chiki</script>
 			<script type="Orkh">Orkhon</script>
 			<script type="Orya">Oriya</script>
 			<script type="Osma">Osmanya</script>
+			<script type="Palm">Palmyrene</script>
 			<script type="Perm">Old Permic</script>
 			<script type="Phag">Phags-pa</script>
 			<script type="Phli">Inscriptional Pahlavi</script>
@@ -680,7 +720,10 @@
 			<script type="Saur">Saurashtra</script>
 			<script type="Sgnw">SignWriting</script>
 			<script type="Shaw">Shavian</script>
+			<script type="Shrd">Sharada</script>
+			<script type="Sind">Khudawadi</script>
 			<script type="Sinh">Sinhala</script>
+			<script type="Sora">Sora Sompeng</script>
 			<script type="Sund">Sundanese</script>
 			<script type="Sylo">Syloti Nagri</script>
 			<script type="Syrc">Syriac</script>
@@ -688,9 +731,11 @@
 			<script type="Syrj">Western Syriac</script>
 			<script type="Syrn">Eastern Syriac</script>
 			<script type="Tagb">Tagbanwa</script>
+			<script type="Takr">Takri</script>
 			<script type="Tale">Tai Le</script>
 			<script type="Talu">New Tai Lue</script>
 			<script type="Taml">Tamil</script>
+			<script type="Tang">Tangut</script>
 			<script type="Tavt">Tai Viet</script>
 			<script type="Telu">Telugu</script>
 			<script type="Teng">Tengwar</script>
@@ -699,10 +744,12 @@
 			<script type="Thaa">Thaana</script>
 			<script type="Thai">Thai</script>
 			<script type="Tibt">Tibetan</script>
+			<script type="Tirh">Tirhuta</script>
 			<script type="Ugar">Ugaritic</script>
 			<script type="Vaii">Vai</script>
 			<script type="Visp">Visible Speech</script>
 			<script type="Wara">Varang Kshiti</script>
+			<script type="Wole">Woleai</script>
 			<script type="Xpeo">Old Persian</script>
 			<script type="Xsux">Sumero-Akkadian Cuneiform</script>
 			<script type="Yiii">Yi</script>
@@ -733,11 +780,10 @@
 			<territory type="034">Southern Asia</territory>
 			<territory type="035">South-Eastern Asia</territory>
 			<territory type="039">Southern Europe</territory>
-			<territory type="053">Australia and New Zealand</territory>
+			<territory type="053">Australasia</territory>
 			<territory type="054">Melanesia</territory>
 			<territory type="057">Micronesian Region</territory>
 			<territory type="061">Polynesia</territory>
-			<territory type="062">South-Central Asia</territory>
 			<territory type="142">Asia</territory>
 			<territory type="143">Central Asia</territory>
 			<territory type="145">Western Asia</territory>
@@ -745,10 +791,7 @@
 			<territory type="151">Eastern Europe</territory>
 			<territory type="154">Northern Europe</territory>
 			<territory type="155">Western Europe</territory>
-			<territory type="172">Commonwealth of Independent States</territory>
-			<territory type="200">Czechoslovakia</territory>
 			<territory type="419">Latin America</territory>
-			<territory type="830">Channel Islands</territory>
 			<territory type="AC">Ascension Island</territory>
 			<territory type="AD">Andorra</territory>
 			<territory type="AE">United Arab Emirates</territory>
@@ -780,7 +823,7 @@
 			<territory type="BM">Bermuda</territory>
 			<territory type="BN">Brunei</territory>
 			<territory type="BO">Bolivia</territory>
-			<territory type="BQ">British Antarctic Territory</territory>
+			<territory type="BQ">Caribbean Netherlands</territory>
 			<territory type="BR">Brazil</territory>
 			<territory type="BS">Bahamas</territory>
 			<territory type="BT">Bhutan</territory>
@@ -805,14 +848,12 @@
 			<territory type="CO">Colombia</territory>
 			<territory type="CP">Clipperton Island</territory>
 			<territory type="CR">Costa Rica</territory>
-			<territory type="CS">Serbia and Montenegro</territory>
-			<territory type="CT">Canton and Enderbury Islands</territory>
 			<territory type="CU">Cuba</territory>
 			<territory type="CV">Cape Verde</territory>
+			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Christmas Island</territory>
 			<territory type="CY">Cyprus</territory>
 			<territory type="CZ">Czech Republic</territory>
-			<territory type="DD">East Germany</territory>
 			<territory type="DE">Germany</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Djibouti</territory>
@@ -835,11 +876,10 @@
 			<territory type="FK" alt="variant">Falkland Islands [Islas Malvinas]</territory>
 			<territory type="FM">Micronesia</territory>
 			<territory type="FO">Faroe Islands</territory>
-			<territory type="FQ">French Southern and Antarctic Territories</territory>
 			<territory type="FR">France</territory>
-			<territory type="FX">Metropolitan France</territory>
 			<territory type="GA">Gabon</territory>
 			<territory type="GB">United Kingdom</territory>
+			<territory type="GB" alt="short">U.K.</territory>
 			<territory type="GD">Grenada</territory>
 			<territory type="GE">Georgia</territory>
 			<territory type="GF">French Guiana</territory>
@@ -879,7 +919,6 @@
 			<territory type="JM">Jamaica</territory>
 			<territory type="JO">Jordan</territory>
 			<territory type="JP">Japan</territory>
-			<territory type="JT">Johnston Island</territory>
 			<territory type="KE">Kenya</territory>
 			<territory type="KG">Kyrgyzstan</territory>
 			<territory type="KH">Cambodia</territory>
@@ -909,7 +948,6 @@
 			<territory type="MF">Saint Martin</territory>
 			<territory type="MG">Madagascar</territory>
 			<territory type="MH">Marshall Islands</territory>
-			<territory type="MI">Midway Islands</territory>
 			<territory type="MK">Macedonia</territory>
 			<territory type="MK" alt="variant">Macedonia [FYROM]</territory>
 			<territory type="ML">Mali</territory>
@@ -937,14 +975,11 @@
 			<territory type="NL">Netherlands</territory>
 			<territory type="NO">Norway</territory>
 			<territory type="NP">Nepal</territory>
-			<territory type="NQ">Dronning Maud Land</territory>
 			<territory type="NR">Nauru</territory>
-			<territory type="NT">Neutral Zone</territory>
 			<territory type="NU">Niue</territory>
 			<territory type="NZ">New Zealand</territory>
 			<territory type="OM">Oman</territory>
 			<territory type="PA">Panama</territory>
-			<territory type="PC">Pacific Islands Trust Territory</territory>
 			<territory type="PE">Peru</territory>
 			<territory type="PF">French Polynesia</territory>
 			<territory type="PG">Papua New Guinea</territory>
@@ -955,11 +990,10 @@
 			<territory type="PN">Pitcairn Islands</territory>
 			<territory type="PR">Puerto Rico</territory>
 			<territory type="PS">Palestinian Territories</territory>
+			<territory type="PS" alt="short">Palestine</territory>
 			<territory type="PT">Portugal</territory>
-			<territory type="PU">U.S. Miscellaneous Pacific Islands</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paraguay</territory>
-			<territory type="PZ">Panama Canal Zone</territory>
 			<territory type="QA">Qatar</territory>
 			<territory type="QO">Outlying Oceania</territory>
 			<territory type="RE">Réunion</territory>
@@ -982,9 +1016,10 @@
 			<territory type="SN">Senegal</territory>
 			<territory type="SO">Somalia</territory>
 			<territory type="SR">Suriname</territory>
+			<territory type="SS">South Sudan</territory>
 			<territory type="ST">São Tomé and Príncipe</territory>
-			<territory type="SU">Union of Soviet Socialist Republics</territory>
 			<territory type="SV">El Salvador</territory>
+			<territory type="SX">Sint Maarten</territory>
 			<territory type="SY">Syria</territory>
 			<territory type="SZ">Swaziland</territory>
 			<territory type="TA">Tristan da Cunha</territory>
@@ -1007,22 +1042,21 @@
 			<territory type="TZ">Tanzania</territory>
 			<territory type="UA">Ukraine</territory>
 			<territory type="UG">Uganda</territory>
-			<territory type="UM">U.S. Minor Outlying Islands</territory>
+			<territory type="UM">U.S. Outlying Islands</territory>
 			<territory type="US">United States</territory>
+			<territory type="US" alt="short">U.S.</territory>
 			<territory type="UY">Uruguay</territory>
 			<territory type="UZ">Uzbekistan</territory>
 			<territory type="VA">Vatican City</territory>
 			<territory type="VC">Saint Vincent and the Grenadines</territory>
-			<territory type="VD">North Vietnam</territory>
 			<territory type="VE">Venezuela</territory>
 			<territory type="VG">British Virgin Islands</territory>
 			<territory type="VI">U.S. Virgin Islands</territory>
 			<territory type="VN">Vietnam</territory>
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Wallis and Futuna</territory>
-			<territory type="WK">Wake Island</territory>
 			<territory type="WS">Samoa</territory>
-			<territory type="YD">People’s Democratic Republic of Yemen</territory>
+			<territory type="XK">Kosovo</territory>
 			<territory type="YE">Yemen</territory>
 			<territory type="YT">Mayotte</territory>
 			<territory type="ZA">South Africa</territory>
@@ -1043,23 +1077,30 @@
 			<variant type="AREVMDA">Western Armenian</variant>
 			<variant type="BAKU1926">Unified Turkic Latin Alphabet</variant>
 			<variant type="BISKE">San Giorgio/Bila dialect</variant>
+			<variant type="BOHORIC">Bohorič alphabet</variant>
 			<variant type="BOONT">Boontling</variant>
+			<variant type="DAJNKO">Dajnko alphabet</variant>
+			<variant type="EMODENG">Early Modern English</variant>
 			<variant type="FONIPA">IPA Phonetics</variant>
 			<variant type="FONUPA">UPA Phonetics</variant>
 			<variant type="HEPBURN">Hepburn romanization</variant>
 			<variant type="HEPLOC">Hepburn romanization, Library of Congress method</variant>
 			<variant type="KKCOR">Common Orthography</variant>
+			<variant type="KSCOR">Standard Orthography</variant>
 			<variant type="LIPAW">The Lipovaz dialect of Resian</variant>
+			<variant type="METELKO">Metelko alphabet</variant>
 			<variant type="MONOTON">Monotonic</variant>
 			<variant type="NDYUKA">Ndyuka dialect</variant>
 			<variant type="NEDIS">Natisone dialect</variant>
 			<variant type="NJIVA">Gniva/Njiva dialect</variant>
+			<variant type="NULIK">Modern Volapük</variant>
 			<variant type="OSOJS">Oseacco/Osojane dialect</variant>
 			<variant type="PAMAKA">Pamaka dialect</variant>
 			<variant type="PINYIN">Pinyin Romanization</variant>
 			<variant type="POLYTON">Polytonic</variant>
 			<variant type="POSIX">Computer</variant>
 			<variant type="REVISED">Revised Orthography</variant>
+			<variant type="RIGIK">Classic Volapük</variant>
 			<variant type="ROZAJ">Resian</variant>
 			<variant type="SAAHO">Saho</variant>
 			<variant type="SCOTLAND">Scottish Standard English</variant>
@@ -1081,6 +1122,7 @@
 			<key type="collation">Sort Order</key>
 			<key type="colNormalization">Normalized Sorting</key>
 			<key type="colNumeric">Numeric Sorting</key>
+			<key type="colReorder">Script/Block Reordering</key>
 			<key type="colStrength">Sorting Strength</key>
 			<key type="currency">Currency</key>
 			<key type="numbers">Numbers</key>
@@ -1094,18 +1136,23 @@
 			<type type="arabext" key="numbers">Extended Arabic-Indic Digits</type>
 			<type type="armn" key="numbers">Armenian Numerals</type>
 			<type type="armnlow" key="numbers">Armenian Lowercase Numerals</type>
+			<type type="bali" key="numbers">Balinese Digits</type>
 			<type type="beng" key="numbers">Bengali Digits</type>
 			<type type="big5han" key="collation">Traditional Chinese Sort Order - Big5</type>
+			<type type="brah" key="numbers">Brahmi Digits</type>
 			<type type="buddhist" key="calendar">Buddhist Calendar</type>
+			<type type="cakm" key="numbers">Chakma Digits</type>
+			<type type="cham" key="numbers">Cham Digits</type>
 			<type type="chinese" key="calendar">Chinese Calendar</type>
 			<type type="coptic" key="calendar">Coptic Calendar</type>
+			<type type="dangi" key="calendar">Dangi Calendar</type>
 			<type type="deva" key="numbers">Devanagari Digits</type>
 			<type type="dictionary" key="collation">Dictionary Sort Order</type>
-			<type type="direct" key="collation">Direct Sort Order</type>
 			<type type="ducet" key="collation">Default Unicode Sort Order</type>
 			<type type="ethi" key="numbers">Ethiopic Numerals</type>
 			<type type="ethiopic" key="calendar">Ethiopic Calendar</type>
 			<type type="ethiopic-amete-alem" key="calendar">Ethiopic Amete Alem Calendar</type>
+			<type type="finance" key="numbers">Financial Numerals</type>
 			<type type="fullwide" key="numbers">Full Width Digits</type>
 			<type type="gb2312han" key="collation">Simplified Chinese Sort Order - GB2312</type>
 			<type type="geor" key="numbers">Georgian Numerals</type>
@@ -1125,17 +1172,28 @@
 			<type type="indian" key="calendar">Indian National Calendar</type>
 			<type type="islamic" key="calendar">Islamic Calendar</type>
 			<type type="islamic-civil" key="calendar">Islamic-Civil Calendar</type>
+			<type type="iso8601" key="calendar">ISO-8601 Calendar</type>
 			<type type="japanese" key="calendar">Japanese Calendar</type>
+			<type type="java" key="numbers">Javanese Digits</type>
 			<type type="jpan" key="numbers">Japanese Numerals</type>
 			<type type="jpanfin" key="numbers">Japanese Financial Numerals</type>
+			<type type="kali" key="numbers">Kayah Li Digits</type>
 			<type type="khmr" key="numbers">Khmer Digits</type>
 			<type type="knda" key="numbers">Kannada Digits</type>
+			<type type="lana" key="numbers">Tai Tham Hora Digits</type>
+			<type type="lanatham" key="numbers">Tai Tham Tham Digits</type>
 			<type type="laoo" key="numbers">Lao Digits</type>
 			<type type="latn" key="numbers">Western Digits</type>
+			<type type="lepc" key="numbers">Lepcha Digits</type>
+			<type type="limb" key="numbers">Limbu Digits</type>
 			<type type="lower" key="colCaseFirst">Sort Lowercase First</type>
 			<type type="mlym" key="numbers">Malayalam Digits</type>
 			<type type="mong" key="numbers">Mongolian Digits</type>
+			<type type="mtei" key="numbers">Meetei Mayek Digits</type>
 			<type type="mymr" key="numbers">Myanmar Digits</type>
+			<type type="mymrshan" key="numbers">Myanmar Shan Digits</type>
+			<type type="native" key="numbers">Native Digits</type>
+			<type type="nkoo" key="numbers">N'Ko Digits</type>
 			<type type="no" key="colBackwards">Sort Accents Normally</type>
 			<type type="no" key="colCaseFirst">Sort Normal Case Order</type>
 			<type type="no" key="colCaseLevel">Sort Case Insensitive</type>
@@ -1143,20 +1201,32 @@
 			<type type="no" key="colNormalization">Sort Without Normalization</type>
 			<type type="no" key="colNumeric">Sort Digits Individually</type>
 			<type type="non-ignorable" key="colAlternate">Sort Symbols</type>
+			<type type="olck" key="numbers">Ol Chiki Digits</type>
 			<type type="orya" key="numbers">Oriya Digits</type>
+			<type type="osma" key="numbers">Osmanya Digits</type>
 			<type type="persian" key="calendar">Persian Calendar</type>
 			<type type="phonebook" key="collation">Phonebook Sort Order</type>
+			<type type="phonetic" key="collation">Phonetic Sort Order</type>
 			<type type="pinyin" key="collation">Pinyin Sort Order</type>
+			<type type="posix" key="va">POSIX Compliant Locale</type>
 			<type type="primary" key="colStrength">Sort Base Letters Only</type>
 			<type type="quaternary" key="colStrength">Sort Accents/Case/Width/Kana</type>
 			<type type="reformed" key="collation">Reformed Sort Order</type>
 			<type type="roc" key="calendar">Minguo Calendar</type>
 			<type type="roman" key="numbers">Roman Numerals</type>
 			<type type="romanlow" key="numbers">Roman Lowercase Numerals</type>
+			<type type="saur" key="numbers">Saurashtra Digits</type>
 			<type type="search" key="collation">General-Purpose Search</type>
+			<type type="searchjl" key="collation">Search By Hangul Initial Consonant</type>
 			<type type="secondary" key="colStrength">Sort Accents</type>
 			<type type="shifted" key="colAlternate">Sort Ignoring Symbols</type>
+			<type type="shrd" key="numbers">Sharada Digits</type>
+			<type type="sora" key="numbers">Sora Sompeng Digits</type>
+			<type type="standard" key="collation">Standard Sort Order</type>
 			<type type="stroke" key="collation">Stroke Sort Order</type>
+			<type type="sund" key="numbers">Sundanese Digits</type>
+			<type type="takr" key="numbers">Takri Digits</type>
+			<type type="talu" key="numbers">New Tai Lue Digits</type>
 			<type type="taml" key="numbers">Traditional Tamil Numerals</type>
 			<type type="tamldec" key="numbers">Tamil Digits</type>
 			<type type="telu" key="numbers">Telugu Digits</type>
@@ -1164,13 +1234,16 @@
 			<type type="thai" key="numbers">Thai Digits</type>
 			<type type="tibt" key="numbers">Tibetan Digits</type>
 			<type type="traditional" key="collation">Traditional Sort Order</type>
+			<type type="traditional" key="numbers">Traditional Numerals</type>
 			<type type="unihan" key="collation">Radical-Stroke Sort Order</type>
 			<type type="upper" key="colCaseFirst">Sort Uppercase First</type>
+			<type type="vaii" key="numbers">Vai Digits</type>
 			<type type="yes" key="colBackwards">Sort Accents Reversed</type>
 			<type type="yes" key="colCaseLevel">Sort Case Sensitive</type>
 			<type type="yes" key="colHiraganaQuaternary">Sort Kana Differently</type>
 			<type type="yes" key="colNormalization">Sort Unicode Normalized</type>
 			<type type="yes" key="colNumeric">Sort Digits Numerically</type>
+			<type type="zhuyin" key="collation">Zhuyin Sort Order</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN">BGN</transformName>
@@ -1198,12 +1271,8 @@
 	<characters>
 		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="currencySymbol">[a b c č d e f g h i j k l ł m n o º p q r s t u v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] @ * / \&amp; # † ‡ ′ ″ §]</exemplarCharacters>
-		<stopwords>
-			<stopwordList type="collation">a an the</stopwordList>
-		</stopwords>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -1214,8 +1283,243 @@
 	<dates>
 		<calendars>
 			<calendar type="buddhist">
+				<eras>
+					<eraAbbr>
+						<era type="0">BE</era>
+					</eraAbbr>
+				</eras>
+			</calendar>
+			<calendar type="chinese">
+				<months>
+					<monthContext type="format">
+						<monthWidth type="abbreviated">
+							<month type="1">Mo1</month>
+							<month type="2">Mo2</month>
+							<month type="3">Mo3</month>
+							<month type="4">Mo4</month>
+							<month type="5">Mo5</month>
+							<month type="6">Mo6</month>
+							<month type="7">Mo7</month>
+							<month type="8">Mo8</month>
+							<month type="9">Mo9</month>
+							<month type="10">Mo10</month>
+							<month type="11">Mo11</month>
+							<month type="12">Mo12</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">Month1</month>
+							<month type="2">Month2</month>
+							<month type="3">Month3</month>
+							<month type="4">Month4</month>
+							<month type="5">Month5</month>
+							<month type="6">Month6</month>
+							<month type="7">Month7</month>
+							<month type="8">Month8</month>
+							<month type="9">Month9</month>
+							<month type="10">Month10</month>
+							<month type="11">Month11</month>
+							<month type="12">Month12</month>
+						</monthWidth>
+					</monthContext>
+				</months>
+				<cyclicNameSets>
+					<cyclicNameSet type="zodiacs">
+						<cyclicNameContext type="format">
+							<cyclicNameWidth type="abbreviated">
+								<cyclicName type="1">Rat</cyclicName>
+								<cyclicName type="2">Ox</cyclicName>
+								<cyclicName type="3">Tiger</cyclicName>
+								<cyclicName type="4">Rabbit</cyclicName>
+								<cyclicName type="5">Dragon</cyclicName>
+								<cyclicName type="6">Snake</cyclicName>
+								<cyclicName type="7">Horse</cyclicName>
+								<cyclicName type="8">Goat</cyclicName>
+								<cyclicName type="9">Monkey</cyclicName>
+								<cyclicName type="10">Rooster</cyclicName>
+								<cyclicName type="11">Dog</cyclicName>
+								<cyclicName type="12">Pig</cyclicName>
+							</cyclicNameWidth>
+						</cyclicNameContext>
+					</cyclicNameSet>
+				</cyclicNameSets>
 				<dateFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, MMMM d, U</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>MMMM d, U</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>MMM d, U</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>M/d/yy</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} 'at' {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} 'at' {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
+						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
+						<dateFormatItem id="Ehms">E h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="EHms">E HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Gy">U</dateFormatItem>
+						<dateFormatItem id="GyMMM">MMM U</dateFormatItem>
+						<dateFormatItem id="GyMMMd">MMM d, U</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E, MMM d, U</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M/d</dateFormatItem>
+						<dateFormatItem id="MEd">E, M/d</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">U</dateFormatItem>
+						<dateFormatItem id="yMd">M/d/y</dateFormatItem>
+						<dateFormatItem id="yyyy">U</dateFormatItem>
+						<dateFormatItem id="yyyyM">M/y</dateFormatItem>
+						<dateFormatItem id="yyyyMd">M/d/y</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">E, M/d/y</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">MMM U</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">MMM d, U</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">E, MMM d, U</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">QQQ U</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">QQQQ U</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">M/d – M/d</greatestDifference>
+							<greatestDifference id="M">M/d – M/d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, M/d – E, M/d</greatestDifference>
+							<greatestDifference id="M">E, M/d – E, M/d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM–MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">MMM d–d</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, MMM d – E, MMM d</greatestDifference>
+							<greatestDifference id="M">E, MMM d – E, MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">U–U</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">M/d/y – M/d/y</greatestDifference>
+							<greatestDifference id="M">M/d/y – M/d/y</greatestDifference>
+							<greatestDifference id="y">M/d/y – M/d/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, M/d/y – E, M/d/y</greatestDifference>
+							<greatestDifference id="M">E, M/d/y – E, M/d/y</greatestDifference>
+							<greatestDifference id="y">E, M/d/y – E, M/d/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM–MMM U</greatestDifference>
+							<greatestDifference id="y">MMM U – MMM U</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">MMM d–d, U</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d, U</greatestDifference>
+							<greatestDifference id="y">MMM d, U – MMM d, U</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, MMM d – E, MMM d, U</greatestDifference>
+							<greatestDifference id="M">E, MMM d – E, MMM d, U</greatestDifference>
+							<greatestDifference id="y">E, MMM d, U – E, MMM d, U</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM–MMMM U</greatestDifference>
+							<greatestDifference id="y">MMMM U – MMMM U</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
+			<calendar type="generic">
+				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
 							<pattern>EEEE, MMMM d, y G</pattern>
@@ -1233,16 +1537,44 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>M/d/yy GGGGG</pattern>
+							<pattern>M/d/y GGGGG</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<dateTimeFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} 'at' {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} 'at' {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="EEEd">d EEE</dateFormatItem>
+						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
+						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
+						<dateFormatItem id="Ehms">E h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="EHms">E HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="Gy">y G</dateFormatItem>
+						<dateFormatItem id="GyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMd">MMM d, y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E, MMM d, y G</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
 						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
@@ -1255,15 +1587,124 @@
 						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y G</dateFormatItem>
-						<dateFormatItem id="yM">M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yMd">M/d/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yMEd">EEE, M/d/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yMMMd">MMM d, y G</dateFormatItem>
-						<dateFormatItem id="yMMMEd">EEE, MMM d, y G</dateFormatItem>
-						<dateFormatItem id="yQ">Q y G</dateFormatItem>
-						<dateFormatItem id="yQQQ">QQQ y G</dateFormatItem>
+						<dateFormatItem id="yyyy">y G</dateFormatItem>
+						<dateFormatItem id="yyyyM">M/y GGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMd">M/d/y GGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">E, M/d/y GGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">MMM d, y G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">E, MMM d, y G</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">QQQQ y G</dateFormatItem>
 					</availableFormats>
+					<appendItems>
+						<appendItem request="Day">{0} ({2}: {1})</appendItem>
+						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
+						<appendItem request="Era">{0} {1}</appendItem>
+						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
+						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
+						<appendItem request="Month">{0} ({2}: {1})</appendItem>
+						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
+						<appendItem request="Second">{0} ({2}: {1})</appendItem>
+						<appendItem request="Timezone">{0} {1}</appendItem>
+						<appendItem request="Week">{0} ({2}: {1})</appendItem>
+						<appendItem request="Year">{0} {1}</appendItem>
+					</appendItems>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">M/d – M/d</greatestDifference>
+							<greatestDifference id="M">M/d – M/d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, M/d – E, M/d</greatestDifference>
+							<greatestDifference id="M">E, M/d – E, M/d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM–MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">MMM d–d</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, MMM d – E, MMM d</greatestDifference>
+							<greatestDifference id="M">E, MMM d – E, MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">M/y – M/y GGGGG</greatestDifference>
+							<greatestDifference id="y">M/y – M/y GGGGG</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">M/d/y – M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="M">M/d/y – M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="y">M/d/y – M/d/y GGGGG</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="M">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="y">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM–MMM y G</greatestDifference>
+							<greatestDifference id="y">MMM y – MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">MMM d–d, y G</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d, y G</greatestDifference>
+							<greatestDifference id="y">MMM d, y – MMM d, y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, MMM d – E, MMM d, y G</greatestDifference>
+							<greatestDifference id="M">E, MMM d – E, MMM d, y G</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d, y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y G</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
@@ -1325,6 +1766,15 @@
 							<day type="thu">Thu</day>
 							<day type="fri">Fri</day>
 							<day type="sat">Sat</day>
+						</dayWidth>
+						<dayWidth type="short">
+							<day type="sun">Su</day>
+							<day type="mon">Mo</day>
+							<day type="tue">Tu</day>
+							<day type="wed">We</day>
+							<day type="thu">Th</day>
+							<day type="fri">Fr</day>
+							<day type="sat">Sa</day>
 						</dayWidth>
 						<dayWidth type="wide">
 							<day type="sun">Sunday</day>
@@ -1449,27 +1899,37 @@
 				<dateTimeFormats>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
-							<pattern>{1} {0}</pattern>
+							<pattern>{1} 'at' {0}</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="long">
 						<dateTimeFormat>
-							<pattern>{1} {0}</pattern>
+							<pattern>{1} 'at' {0}</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="medium">
 						<dateTimeFormat>
-							<pattern>{1} {0}</pattern>
+							<pattern>{1}, {0}</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="short">
 						<dateTimeFormat>
-							<pattern>{1} {0}</pattern>
+							<pattern>{1}, {0}</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="EEEd">d EEE</dateFormatItem>
+						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
+						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
+						<dateFormatItem id="Ehms">E h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="EHms">E HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Gy">y G</dateFormatItem>
+						<dateFormatItem id="GyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMd">MMM d, y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E, MMM d, y G</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
 						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
@@ -1484,13 +1944,26 @@
 						<dateFormatItem id="y">y</dateFormatItem>
 						<dateFormatItem id="yM">M/y</dateFormatItem>
 						<dateFormatItem id="yMd">M/d/y</dateFormatItem>
-						<dateFormatItem id="yMEd">EEE, M/d/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, M/d/y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">MMM d, y</dateFormatItem>
-						<dateFormatItem id="yMMMEd">EEE, MMM d, y</dateFormatItem>
-						<dateFormatItem id="yQ">Q y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, MMM d, y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 					</availableFormats>
+					<appendItems>
+						<appendItem request="Day">{0} ({2}: {1})</appendItem>
+						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
+						<appendItem request="Era">{0} {1}</appendItem>
+						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
+						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
+						<appendItem request="Month">{0} ({2}: {1})</appendItem>
+						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
+						<appendItem request="Second">{0} ({2}: {1})</appendItem>
+						<appendItem request="Timezone">{0} {1}</appendItem>
+						<appendItem request="Week">{0} ({2}: {1})</appendItem>
+						<appendItem request="Year">{0} {1}</appendItem>
+					</appendItems>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
 						<intervalFormatItem id="d">
@@ -1500,19 +1973,33 @@
 							<greatestDifference id="a">h a – h a</greatestDifference>
 							<greatestDifference id="h">h–h a</greatestDifference>
 						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="hm">
 							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
 							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
 							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
 							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
 							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
 							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
 						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="hv">
 							<greatestDifference id="a">h a – h a v</greatestDifference>
 							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
 							<greatestDifference id="M">M–M</greatestDifference>
@@ -1540,18 +2027,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">M/yy – M/yy</greatestDifference>
-							<greatestDifference id="y">M/yy – M/yy</greatestDifference>
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">M/d/yy – M/d/yy</greatestDifference>
-							<greatestDifference id="M">M/d/yy – M/d/yy</greatestDifference>
-							<greatestDifference id="y">M/d/yy – M/d/yy</greatestDifference>
+							<greatestDifference id="d">M/d/y – M/d/y</greatestDifference>
+							<greatestDifference id="M">M/d/y – M/d/y</greatestDifference>
+							<greatestDifference id="y">M/d/y – M/d/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, M/d/yy – E, M/d/yy</greatestDifference>
-							<greatestDifference id="M">E, M/d/yy – E, M/d/yy</greatestDifference>
-							<greatestDifference id="y">E, M/d/yy – E, M/d/yy</greatestDifference>
+							<greatestDifference id="d">E, M/d/y – E, M/d/y</greatestDifference>
+							<greatestDifference id="M">E, M/d/y – E, M/d/y</greatestDifference>
+							<greatestDifference id="y">E, M/d/y – E, M/d/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y</greatestDifference>
@@ -1573,164 +2060,26 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>Era</displayName>
-					</field>
-					<field type="year">
-						<displayName>Year</displayName>
-						<relative type="-1">Last year</relative>
-						<relative type="0">This year</relative>
-						<relative type="1">Next year</relative>
-					</field>
-					<field type="month">
-						<displayName>Month</displayName>
-						<relative type="-1">Last month</relative>
-						<relative type="0">This month</relative>
-						<relative type="1">Next month</relative>
-					</field>
-					<field type="week">
-						<displayName>Week</displayName>
-						<relative type="-1">Last week</relative>
-						<relative type="0">This week</relative>
-						<relative type="1">Next week</relative>
-					</field>
-					<field type="day">
-						<displayName>Day</displayName>
-						<relative type="-1">Yesterday</relative>
-						<relative type="0">Today</relative>
-						<relative type="1">Tomorrow</relative>
-					</field>
-					<field type="weekday">
-						<displayName>Day of the Week</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>AM/PM</displayName>
-					</field>
-					<field type="hour">
-						<displayName>Hour</displayName>
-					</field>
-					<field type="minute">
-						<displayName>Minute</displayName>
-					</field>
-					<field type="second">
-						<displayName>Second</displayName>
-					</field>
-					<field type="zone">
-						<displayName>Time Zone</displayName>
-					</field>
-				</fields>
+			</calendar>
+			<calendar type="hebrew">
+				<eras>
+					<eraAbbr>
+						<era type="0">AM</era>
+					</eraAbbr>
+				</eras>
 			</calendar>
 			<calendar type="islamic">
-				<months>
-					<default choice="format"/>
-					<monthContext type="format">
-						<default choice="wide"/>
-						<monthWidth type="abbreviated">
-							<month type="1">Muh.</month>
-							<month type="2">Saf.</month>
-							<month type="3">Rab. I</month>
-							<month type="4">Rab. II</month>
-							<month type="5">Jum. I</month>
-							<month type="6">Jum. II</month>
-							<month type="7">Raj.</month>
-							<month type="8">Sha.</month>
-							<month type="9">Ram.</month>
-							<month type="10">Shaw.</month>
-							<month type="11">Dhuʻl-Q.</month>
-							<month type="12">Dhuʻl-H.</month>
-						</monthWidth>
-						<monthWidth type="wide">
-							<month type="1">Muharram</month>
-							<month type="2">Safar</month>
-							<month type="3">Rabiʻ I</month>
-							<month type="4">Rabiʻ II</month>
-							<month type="5">Jumada I</month>
-							<month type="6">Jumada II</month>
-							<month type="7">Rajab</month>
-							<month type="8">Shaʻban</month>
-							<month type="9">Ramadan</month>
-							<month type="10">Shawwal</month>
-							<month type="11">Dhuʻl-Qiʻdah</month>
-							<month type="12">Dhuʻl-Hijjah</month>
-						</monthWidth>
-					</monthContext>
-					<monthContext type="stand-alone">
-						<monthWidth type="narrow">
-							<month type="1">1</month>
-							<month type="2">2</month>
-							<month type="3">3</month>
-							<month type="4">4</month>
-							<month type="5">5</month>
-							<month type="6">6</month>
-							<month type="7">7</month>
-							<month type="8">8</month>
-							<month type="9">9</month>
-							<month type="10">10</month>
-							<month type="11">11</month>
-							<month type="12">12</month>
-						</monthWidth>
-					</monthContext>
-				</months>
 				<eras>
 					<eraAbbr>
 						<era type="0">AH</era>
 					</eraAbbr>
 				</eras>
-				<dateFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>EEEE, MMMM d, y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>MMMM d, y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>MMM d, y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>M/d/yy G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-				</dateFormats>
-				<dateTimeFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="EEEd">d EEE</dateFormatItem>
-						<dateFormatItem id="hm">h:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">M/d</dateFormatItem>
-						<dateFormatItem id="MEd">E, M/d</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
-						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="yyyy">y G</dateFormatItem>
-						<dateFormatItem id="yyyyM">M/y G</dateFormatItem>
-						<dateFormatItem id="yyyyMd">M/d/y G</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">EEE, M/d/y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">MMM d, y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">EEE, MMM d, y G</dateFormatItem>
-						<dateFormatItem id="yyyyQ">Q y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-					</availableFormats>
-				</dateTimeFormats>
 			</calendar>
 			<calendar type="japanese">
+				<!-- need some non-empty element here to make inheritance work,
+					 this copy of generic dateFormats above is smaller than root japanese eras
+				-->
 				<dateFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
 					<dateFormatLength type="full">
 						<dateFormat>
 							<pattern>EEEE, MMMM d, y G</pattern>
@@ -1748,95 +2097,67 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>M/d/yy GGGGG</pattern>
+							<pattern>M/d/y GGGGG</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
-				<dateTimeFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="EEEd">d EEE</dateFormatItem>
-						<dateFormatItem id="Gy">y G</dateFormatItem>
-						<dateFormatItem id="hm">h:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">M/d</dateFormatItem>
-						<dateFormatItem id="MEd">E, M/d</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
-						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">y G</dateFormatItem>
-						<dateFormatItem id="yyyy">y G</dateFormatItem>
-						<dateFormatItem id="yyyyM">M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMd">M/d/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">EEE, M/d/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">MMM d, y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">EEE, MMM d, y G</dateFormatItem>
-						<dateFormatItem id="yyyyQ">Q y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-					</availableFormats>
-				</dateTimeFormats>
 			</calendar>
 			<calendar type="roc">
-				<dateFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>EEEE, MMMM d, y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>MMMM d, y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>MMM d, y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>M/d/yy GGGGG</pattern>
-						</dateFormat>
-					</dateFormatLength>
-				</dateFormats>
-				<dateTimeFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="EEEd">d EEE</dateFormatItem>
-						<dateFormatItem id="Gy">y G</dateFormatItem>
-						<dateFormatItem id="hm">h:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">M/d</dateFormatItem>
-						<dateFormatItem id="MEd">E, M/d</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
-						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">y G</dateFormatItem>
-						<dateFormatItem id="yyyy">y G</dateFormatItem>
-						<dateFormatItem id="yyyyM">M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMd">M/d/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">EEE, M/d/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">MMM d, y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">EEE, MMM d, y G</dateFormatItem>
-						<dateFormatItem id="yyyyQ">Q y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-					</availableFormats>
-				</dateTimeFormats>
+				<eras>
+					<eraAbbr>
+						<era type="0">Before R.O.C.</era>
+						<era type="1">Minguo</era>
+					</eraAbbr>
+				</eras>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>Era</displayName>
+			</field>
+			<field type="year">
+				<displayName>Year</displayName>
+				<relative type="-1">Last year</relative>
+				<relative type="0">This year</relative>
+				<relative type="1">Next year</relative>
+			</field>
+			<field type="month">
+				<displayName>Month</displayName>
+				<relative type="-1">Last month</relative>
+				<relative type="0">This month</relative>
+				<relative type="1">Next month</relative>
+			</field>
+			<field type="week">
+				<displayName>Week</displayName>
+				<relative type="-1">Last week</relative>
+				<relative type="0">This week</relative>
+				<relative type="1">Next week</relative>
+			</field>
+			<field type="day">
+				<displayName>Day</displayName>
+				<relative type="-1">Yesterday</relative>
+				<relative type="0">Today</relative>
+				<relative type="1">Tomorrow</relative>
+			</field>
+			<field type="weekday">
+				<displayName>Day of the Week</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>AM/PM</displayName>
+			</field>
+			<field type="hour">
+				<displayName>Hour</displayName>
+			</field>
+			<field type="minute">
+				<displayName>Minute</displayName>
+			</field>
+			<field type="second">
+				<displayName>Second</displayName>
+			</field>
+			<field type="zone">
+				<displayName>Time Zone</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -1846,30 +2167,24 @@
 			<zone type="Etc/Unknown">
 				<exemplarCity>Unknown City</exemplarCity>
 			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>Curaçao</exemplarCity>
-			</zone>
 			<zone type="Antarctica/DumontDUrville">
 				<exemplarCity>Dumont d’Urville</exemplarCity>
 			</zone>
 			<zone type="America/St_Barthelemy">
 				<exemplarCity>Saint Barthélemy</exemplarCity>
 			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>Curaçao</exemplarCity>
+			</zone>
 			<zone type="Europe/London">
 				<long>
 					<daylight>British Summer Time</daylight>
 				</long>
-				<short>
-					<daylight>BST</daylight>
-				</short>
 			</zone>
 			<zone type="Europe/Dublin">
 				<long>
 					<daylight>Irish Summer Time</daylight>
 				</long>
-				<short>
-					<daylight>IST (Irish)</daylight>
-				</short>
 			</zone>
 			<zone type="America/Asuncion">
 				<exemplarCity>Asunción</exemplarCity>
@@ -1880,12 +2195,20 @@
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity>São Tomé</exemplarCity>
 			</zone>
+			<zone type="Pacific/Honolulu">
+				<short>
+					<generic>HST</generic>
+					<standard>HST</standard>
+					<daylight>HDT</daylight>
+				</short>
+			</zone>
 			<zone type="Asia/Saigon">
 				<exemplarCity>Ho Chi Minh City</exemplarCity>
 			</zone>
 			<metazone type="Acre">
 				<long>
-					<standard>Acre Time</standard>
+					<generic>Acre Time</generic>
+					<standard>Acre Standard Time</standard>
 					<daylight>Acre Summer Time</daylight>
 				</long>
 			</metazone>
@@ -1906,20 +2229,14 @@
 			</metazone>
 			<metazone type="Africa_Southern">
 				<long>
-					<generic>South Africa Time</generic>
 					<standard>South Africa Standard Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Africa_Western">
 				<long>
-					<standard>West Africa Time</standard>
+					<generic>West Africa Time</generic>
+					<standard>West Africa Standard Time</standard>
 					<daylight>West Africa Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<standard>Aktyubinsk Time</standard>
-					<daylight>Aktyubinsk Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Alaska">
@@ -1928,24 +2245,23 @@
 					<standard>Alaska Standard Time</standard>
 					<daylight>Alaska Daylight Time</daylight>
 				</long>
-				<commonlyUsed>true</commonlyUsed>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic>Alaska-Hawaii Time</generic>
-					<standard>Alaska-Hawaii Standard Time</standard>
-					<daylight>Alaska-Hawaii Daylight Time</daylight>
-				</long>
+				<short>
+					<generic>AKT</generic>
+					<standard>AKST</standard>
+					<daylight>AKDT</daylight>
+				</short>
 			</metazone>
 			<metazone type="Almaty">
 				<long>
-					<standard>Almaty Time</standard>
+					<generic>Almaty Time</generic>
+					<standard>Almaty Standard Time</standard>
 					<daylight>Almaty Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Amazon">
 				<long>
-					<standard>Amazon Time</standard>
+					<generic>Amazon Time</generic>
+					<standard>Amazon Standard Time</standard>
 					<daylight>Amazon Summer Time</daylight>
 				</long>
 			</metazone>
@@ -1955,7 +2271,11 @@
 					<standard>Central Standard Time</standard>
 					<daylight>Central Daylight Time</daylight>
 				</long>
-				<commonlyUsed>true</commonlyUsed>
+				<short>
+					<generic>CT</generic>
+					<standard>CST</standard>
+					<daylight>CDT</daylight>
+				</short>
 			</metazone>
 			<metazone type="America_Eastern">
 				<long>
@@ -1963,7 +2283,11 @@
 					<standard>Eastern Standard Time</standard>
 					<daylight>Eastern Daylight Time</daylight>
 				</long>
-				<commonlyUsed>true</commonlyUsed>
+				<short>
+					<generic>ET</generic>
+					<standard>EST</standard>
+					<daylight>EDT</daylight>
+				</short>
 			</metazone>
 			<metazone type="America_Mountain">
 				<long>
@@ -1971,7 +2295,11 @@
 					<standard>Mountain Standard Time</standard>
 					<daylight>Mountain Daylight Time</daylight>
 				</long>
-				<commonlyUsed>true</commonlyUsed>
+				<short>
+					<generic>MT</generic>
+					<standard>MST</standard>
+					<daylight>MDT</daylight>
+				</short>
 			</metazone>
 			<metazone type="America_Pacific">
 				<long>
@@ -1979,23 +2307,30 @@
 					<standard>Pacific Standard Time</standard>
 					<daylight>Pacific Daylight Time</daylight>
 				</long>
-				<commonlyUsed>true</commonlyUsed>
+				<short>
+					<generic>PT</generic>
+					<standard>PST</standard>
+					<daylight>PDT</daylight>
+				</short>
 			</metazone>
 			<metazone type="Anadyr">
 				<long>
-					<standard>Anadyr Time</standard>
+					<generic>Anadyr Time</generic>
+					<standard>Anadyr Standard Time</standard>
 					<daylight>Anadyr Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Aqtau">
 				<long>
-					<standard>Aqtau Time</standard>
+					<generic>Aqtau Time</generic>
+					<standard>Aqtau Standard Time</standard>
 					<daylight>Aqtau Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Aqtobe">
 				<long>
-					<standard>Aqtobe Time</standard>
+					<generic>Aqtobe Time</generic>
+					<standard>Aqtobe Standard Time</standard>
 					<daylight>Aqtobe Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2005,37 +2340,26 @@
 					<standard>Arabian Standard Time</standard>
 					<daylight>Arabian Daylight Time</daylight>
 				</long>
-				<short>
-					<generic>AT (Arabian)</generic>
-					<standard>AST (Arabian)</standard>
-					<daylight>ADT (Arabian)</daylight>
-				</short>
 			</metazone>
 			<metazone type="Argentina">
 				<long>
-					<standard>Argentina Time</standard>
+					<generic>Argentina Time</generic>
+					<standard>Argentina Standard Time</standard>
 					<daylight>Argentina Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Argentina_Western">
 				<long>
-					<standard>Western Argentina Time</standard>
+					<generic>Western Argentina Time</generic>
+					<standard>Western Argentina Standard Time</standard>
+					<daylight>Western Argentina Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Armenia">
 				<long>
-					<standard>Armenia Time</standard>
+					<generic>Armenia Time</generic>
+					<standard>Armenia Standard Time</standard>
 					<daylight>Armenia Summer Time</daylight>
-				</long>
-				<short>
-					<standard>AMT (Armenia)</standard>
-					<daylight>AMST (Armenia)</daylight>
-				</short>
-			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<standard>Ashkhabad Time</standard>
-					<daylight>Ashkhabad Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Atlantic">
@@ -2049,7 +2373,6 @@
 					<standard>AST</standard>
 					<daylight>ADT</daylight>
 				</short>
-				<commonlyUsed>true</commonlyUsed>
 			</metazone>
 			<metazone type="Australia_Central">
 				<long>
@@ -2081,33 +2404,23 @@
 			</metazone>
 			<metazone type="Azerbaijan">
 				<long>
-					<standard>Azerbaijan Time</standard>
+					<generic>Azerbaijan Time</generic>
+					<standard>Azerbaijan Standard Time</standard>
 					<daylight>Azerbaijan Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Azores">
 				<long>
-					<standard>Azores Time</standard>
+					<generic>Azores Time</generic>
+					<standard>Azores Standard Time</standard>
 					<daylight>Azores Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Baku">
-				<long>
-					<standard>Baku Time</standard>
-					<daylight>Baku Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bangladesh">
 				<long>
-					<standard>Bangladesh Time</standard>
+					<generic>Bangladesh Time</generic>
+					<standard>Bangladesh Standard Time</standard>
 					<daylight>Bangladesh Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic>Bering Time</generic>
-					<standard>Bering Standard Time</standard>
-					<daylight>Bering Daylight Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -2120,15 +2433,10 @@
 					<standard>Bolivia Time</standard>
 				</long>
 			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<standard>Borneo Time</standard>
-					<daylight>Borneo Summer Time</daylight>
-				</long>
-			</metazone>
 			<metazone type="Brasilia">
 				<long>
-					<standard>Brasilia Time</standard>
+					<generic>Brasilia Time</generic>
+					<standard>Brasilia Standard Time</standard>
 					<daylight>Brasilia Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2139,7 +2447,8 @@
 			</metazone>
 			<metazone type="Cape_Verde">
 				<long>
-					<standard>Cape Verde Time</standard>
+					<generic>Cape Verde Time</generic>
+					<standard>Cape Verde Standard Time</standard>
 					<daylight>Cape Verde Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2150,24 +2459,20 @@
 			</metazone>
 			<metazone type="Chamorro">
 				<long>
-					<generic>Chamorro Time</generic>
 					<standard>Chamorro Standard Time</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard>Changbai Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
 				<long>
+					<generic>Chatham Time</generic>
 					<standard>Chatham Standard Time</standard>
 					<daylight>Chatham Daylight Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Chile">
 				<long>
-					<standard>Chile Time</standard>
+					<generic>Chile Time</generic>
+					<standard>Chile Standard Time</standard>
 					<daylight>Chile Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2177,15 +2482,11 @@
 					<standard>China Standard Time</standard>
 					<daylight>China Daylight Time</daylight>
 				</long>
-				<short>
-					<generic>CT (China)</generic>
-					<standard>CST (China)</standard>
-					<daylight>CDT (China)</daylight>
-				</short>
 			</metazone>
 			<metazone type="Choibalsan">
 				<long>
-					<standard>Choibalsan Time</standard>
+					<generic>Choibalsan Time</generic>
+					<standard>Choibalsan Standard Time</standard>
 					<daylight>Choibalsan Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2201,13 +2502,15 @@
 			</metazone>
 			<metazone type="Colombia">
 				<long>
-					<standard>Colombia Time</standard>
+					<generic>Colombia Time</generic>
+					<standard>Colombia Standard Time</standard>
 					<daylight>Colombia Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Cook">
 				<long>
-					<standard>Cook Islands Time</standard>
+					<generic>Cook Islands Time</generic>
+					<standard>Cook Islands Standard Time</standard>
 					<daylight>Cook Islands Half Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2216,16 +2519,6 @@
 					<generic>Cuba Time</generic>
 					<standard>Cuba Standard Time</standard>
 					<daylight>Cuba Daylight Time</daylight>
-				</long>
-				<short>
-					<generic>CT (Cuba)</generic>
-					<standard>CST (Cuba)</standard>
-					<daylight>CDT (Cuba)</daylight>
-				</short>
-			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard>Dacca Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Davis">
@@ -2238,17 +2531,6 @@
 					<standard>Dumont-d’Urville Time</standard>
 				</long>
 			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<standard>Dushanbe Time</standard>
-					<daylight>Dushanbe Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard>Dutch Guiana Time</standard>
-				</long>
-			</metazone>
 			<metazone type="East_Timor">
 				<long>
 					<standard>East Timor Time</standard>
@@ -2256,7 +2538,8 @@
 			</metazone>
 			<metazone type="Easter">
 				<long>
-					<standard>Easter Island Time</standard>
+					<generic>Easter Island Time</generic>
+					<standard>Easter Island Standard Time</standard>
 					<daylight>Easter Island Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2267,31 +2550,36 @@
 			</metazone>
 			<metazone type="Europe_Central">
 				<long>
-					<standard>Central European Time</standard>
+					<generic>Central European Time</generic>
+					<standard>Central European Standard Time</standard>
 					<daylight>Central European Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Europe_Eastern">
 				<long>
-					<standard>Eastern European Time</standard>
+					<generic>Eastern European Time</generic>
+					<standard>Eastern European Standard Time</standard>
 					<daylight>Eastern European Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Europe_Western">
 				<long>
-					<standard>Western European Time</standard>
+					<generic>Western European Time</generic>
+					<standard>Western European Standard Time</standard>
 					<daylight>Western European Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Falkland">
 				<long>
-					<standard>Falkland Islands Time</standard>
+					<generic>Falkland Islands Time</generic>
+					<standard>Falkland Islands Standard Time</standard>
 					<daylight>Falkland Islands Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Fiji">
 				<long>
-					<standard>Fiji Time</standard>
+					<generic>Fiji Time</generic>
+					<standard>Fiji Standard Time</standard>
 					<daylight>Fiji Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2303,12 +2591,6 @@
 			<metazone type="French_Southern">
 				<long>
 					<standard>French Southern and Antarctic Time</standard>
-				</long>
-			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<standard>Frunze Time</standard>
-					<daylight>Frunze Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Galapagos">
@@ -2323,7 +2605,8 @@
 			</metazone>
 			<metazone type="Georgia">
 				<long>
-					<standard>Georgia Time</standard>
+					<generic>Georgia Time</generic>
+					<standard>Georgia Standard Time</standard>
 					<daylight>Georgia Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2336,23 +2619,21 @@
 				<long>
 					<standard>Greenwich Mean Time</standard>
 				</long>
-				<commonlyUsed>true</commonlyUsed>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<standard>Central Greenland Time</standard>
-					<daylight>Central Greenland Summer Time</daylight>
-				</long>
+				<short>
+					<standard>GMT</standard>
+				</short>
 			</metazone>
 			<metazone type="Greenland_Eastern">
 				<long>
-					<standard>East Greenland Time</standard>
+					<generic>East Greenland Time</generic>
+					<standard>East Greenland Standard Time</standard>
 					<daylight>East Greenland Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Western">
 				<long>
-					<standard>West Greenland Time</standard>
+					<generic>West Greenland Time</generic>
+					<standard>West Greenland Standard Time</standard>
 					<daylight>West Greenland Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2360,13 +2641,9 @@
 				<long>
 					<standard>Guam Standard Time</standard>
 				</long>
-				<short>
-					<standard>GST (Guam)</standard>
-				</short>
 			</metazone>
 			<metazone type="Gulf">
 				<long>
-					<generic>Gulf Time</generic>
 					<standard>Gulf Standard Time</standard>
 				</long>
 			</metazone>
@@ -2377,19 +2654,27 @@
 			</metazone>
 			<metazone type="Hawaii_Aleutian">
 				<long>
+					<generic>Hawaii-Aleutian Time</generic>
 					<standard>Hawaii-Aleutian Standard Time</standard>
+					<daylight>Hawaii-Aleutian Daylight Time</daylight>
 				</long>
-				<commonlyUsed>true</commonlyUsed>
+				<short>
+					<generic>HAT</generic>
+					<standard>HAST</standard>
+					<daylight>HADT</daylight>
+				</short>
 			</metazone>
 			<metazone type="Hong_Kong">
 				<long>
-					<standard>Hong Kong Time</standard>
+					<generic>Hong Kong Time</generic>
+					<standard>Hong Kong Standard Time</standard>
 					<daylight>Hong Kong Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Hovd">
 				<long>
-					<standard>Hovd Time</standard>
+					<generic>Hovd Time</generic>
+					<standard>Hovd Standard Time</standard>
 					<daylight>Hovd Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2425,13 +2710,15 @@
 			</metazone>
 			<metazone type="Iran">
 				<long>
+					<generic>Iran Time</generic>
 					<standard>Iran Standard Time</standard>
 					<daylight>Iran Daylight Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Irkutsk">
 				<long>
-					<standard>Irkutsk Time</standard>
+					<generic>Irkutsk Time</generic>
+					<standard>Irkutsk Standard Time</standard>
 					<daylight>Irkutsk Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2441,9 +2728,6 @@
 					<standard>Israel Standard Time</standard>
 					<daylight>Israel Daylight Time</daylight>
 				</long>
-				<short>
-					<standard>IST (Israel)</standard>
-				</short>
 			</metazone>
 			<metazone type="Japan">
 				<long>
@@ -2454,36 +2738,19 @@
 			</metazone>
 			<metazone type="Kamchatka">
 				<long>
-					<standard>Petropavlovsk-Kamchatski Time</standard>
+					<generic>Petropavlovsk-Kamchatski Time</generic>
+					<standard>Petropavlovsk-Kamchatski Standard Time</standard>
 					<daylight>Petropavlovsk-Kamchatski Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard>Karachi Time</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard>Kashgar Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
-					<generic>East Kazakhstan Time</generic>
-					<standard>East Kazakhstan Standard Time</standard>
+					<standard>East Kazakhstan Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Western">
 				<long>
-					<generic>West Kazakhstan Time</generic>
-					<standard>West Kazakhstan Standard Time</standard>
-				</long>
-			</metazone>
-			<metazone type="Kizilorda">
-				<long>
-					<standard>Kizilorda Time</standard>
-					<daylight>Kizilorda Summer Time</daylight>
+					<standard>West Kazakhstan Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Korea">
@@ -2500,19 +2767,9 @@
 			</metazone>
 			<metazone type="Krasnoyarsk">
 				<long>
-					<standard>Krasnoyarsk Time</standard>
+					<generic>Krasnoyarsk Time</generic>
+					<standard>Krasnoyarsk Standard Time</standard>
 					<daylight>Krasnoyarsk Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<standard>Kuybyshev Time</standard>
-					<daylight>Kuybyshev Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard>Kwajalein Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Kyrgystan">
@@ -2530,11 +2787,6 @@
 					<standard>Line Islands Time</standard>
 				</long>
 			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard>Long-Shu Time</standard>
-				</long>
-			</metazone>
 			<metazone type="Lord_Howe">
 				<long>
 					<generic>Lord Howe Time</generic>
@@ -2544,7 +2796,8 @@
 			</metazone>
 			<metazone type="Macau">
 				<long>
-					<standard>Macau Time</standard>
+					<generic>Macau Time</generic>
+					<standard>Macau Standard Time</standard>
 					<daylight>Macau Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2555,13 +2808,9 @@
 			</metazone>
 			<metazone type="Magadan">
 				<long>
-					<standard>Magadan Time</standard>
+					<generic>Magadan Time</generic>
+					<standard>Magadan Standard Time</standard>
 					<daylight>Magadan Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard>Malaya Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -2586,7 +2835,8 @@
 			</metazone>
 			<metazone type="Mauritius">
 				<long>
-					<standard>Mauritius Time</standard>
+					<generic>Mauritius Time</generic>
+					<standard>Mauritius Standard Time</standard>
 					<daylight>Mauritius Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2597,7 +2847,8 @@
 			</metazone>
 			<metazone type="Mongolia">
 				<long>
-					<standard>Ulan Bator Time</standard>
+					<generic>Ulan Bator Time</generic>
+					<standard>Ulan Bator Standard Time</standard>
 					<daylight>Ulan Bator Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2625,7 +2876,8 @@
 			</metazone>
 			<metazone type="New_Caledonia">
 				<long>
-					<standard>New Caledonia Time</standard>
+					<generic>New Caledonia Time</generic>
+					<standard>New Caledonia Standard Time</standard>
 					<daylight>New Caledonia Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2650,12 +2902,13 @@
 			</metazone>
 			<metazone type="Norfolk">
 				<long>
-					<standard>Norfolk Islands Time</standard>
+					<standard>Norfolk Island Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Noronha">
 				<long>
-					<standard>Fernando de Noronha Time</standard>
+					<generic>Fernando de Noronha Time</generic>
+					<standard>Fernando de Noronha Standard Time</standard>
 					<daylight>Fernando de Noronha Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2666,19 +2919,22 @@
 			</metazone>
 			<metazone type="Novosibirsk">
 				<long>
-					<standard>Novosibirsk Time</standard>
+					<generic>Novosibirsk Time</generic>
+					<standard>Novosibirsk Standard Time</standard>
 					<daylight>Novosibirsk Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Omsk">
 				<long>
-					<standard>Omsk Time</standard>
+					<generic>Omsk Time</generic>
+					<standard>Omsk Standard Time</standard>
 					<daylight>Omsk Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Pakistan">
 				<long>
-					<standard>Pakistan Time</standard>
+					<generic>Pakistan Time</generic>
+					<standard>Pakistan Standard Time</standard>
 					<daylight>Pakistan Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2694,19 +2950,22 @@
 			</metazone>
 			<metazone type="Paraguay">
 				<long>
-					<standard>Paraguay Time</standard>
+					<generic>Paraguay Time</generic>
+					<standard>Paraguay Standard Time</standard>
 					<daylight>Paraguay Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Peru">
 				<long>
-					<standard>Peru Time</standard>
+					<generic>Peru Time</generic>
+					<standard>Peru Standard Time</standard>
 					<daylight>Peru Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Philippines">
 				<long>
-					<standard>Philippine Time</standard>
+					<generic>Philippine Time</generic>
+					<standard>Philippine Standard Time</standard>
 					<daylight>Philippine Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2717,9 +2976,9 @@
 			</metazone>
 			<metazone type="Pierre_Miquelon">
 				<long>
-					<generic>Pierre and Miquelon Time</generic>
-					<standard>Pierre and Miquelon Standard Time</standard>
-					<daylight>Pierre and Miquelon Daylight Time</daylight>
+					<generic>Saint Pierre and Miquelon Time</generic>
+					<standard>Saint Pierre and Miquelon Standard Time</standard>
+					<daylight>Saint Pierre and Miquelon Daylight Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Pitcairn">
@@ -2734,7 +2993,8 @@
 			</metazone>
 			<metazone type="Qyzylorda">
 				<long>
-					<standard>Qyzylorda Time</standard>
+					<generic>Qyzylorda Time</generic>
+					<standard>Qyzylorda Standard Time</standard>
 					<daylight>Qyzylorda Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2750,36 +3010,28 @@
 			</metazone>
 			<metazone type="Sakhalin">
 				<long>
-					<standard>Sakhalin Time</standard>
+					<generic>Sakhalin Time</generic>
+					<standard>Sakhalin Standard Time</standard>
 					<daylight>Sakhalin Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Samara">
 				<long>
-					<standard>Samara Time</standard>
+					<generic>Samara Time</generic>
+					<standard>Samara Standard Time</standard>
 					<daylight>Samara Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<standard>Samarkand Time</standard>
-					<daylight>Samarkand Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic>Samoa Time</generic>
 					<standard>Samoa Standard Time</standard>
+					<daylight>Samoa Daylight Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard>Seychelles Time</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<standard>Shevchenko Time</standard>
-					<daylight>Shevchenko Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -2796,19 +3048,10 @@
 				<long>
 					<standard>South Georgia Time</standard>
 				</long>
-				<short>
-					<standard>GST (S. Georgia)</standard>
-				</short>
 			</metazone>
 			<metazone type="Suriname">
 				<long>
 					<standard>Suriname Time</standard>
-				</long>
-			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<standard>Sverdlovsk Time</standard>
-					<daylight>Sverdlovsk Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Syowa">
@@ -2827,27 +3070,10 @@
 					<standard>Taipei Standard Time</standard>
 					<daylight>Taipei Daylight Time</daylight>
 				</long>
-				<short>
-					<generic>CT (Taipei)</generic>
-					<standard>CST (Taipei)</standard>
-					<daylight>CDT (Taipei)</daylight>
-				</short>
 			</metazone>
 			<metazone type="Tajikistan">
 				<long>
 					<standard>Tajikistan Time</standard>
-				</long>
-			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<standard>Tashkent Time</standard>
-					<daylight>Tashkent Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<standard>Tbilisi Time</standard>
-					<daylight>Tbilisi Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Tokelau">
@@ -2857,7 +3083,8 @@
 			</metazone>
 			<metazone type="Tonga">
 				<long>
-					<standard>Tonga Time</standard>
+					<generic>Tonga Time</generic>
+					<standard>Tonga Standard Time</standard>
 					<daylight>Tonga Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2866,15 +3093,10 @@
 					<standard>Chuuk Time</standard>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<standard>Turkey Time</standard>
-					<daylight>Turkey Summer Time</daylight>
-				</long>
-			</metazone>
 			<metazone type="Turkmenistan">
 				<long>
-					<standard>Turkmenistan Time</standard>
+					<generic>Turkmenistan Time</generic>
+					<standard>Turkmenistan Standard Time</standard>
 					<daylight>Turkmenistan Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2883,32 +3105,24 @@
 					<standard>Tuvalu Time</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<standard>Uralʹsk Time</standard>
-					<daylight>Uralʹsk Summer Time</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
-					<standard>Uruguay Time</standard>
+					<generic>Uruguay Time</generic>
+					<standard>Uruguay Standard Time</standard>
 					<daylight>Uruguay Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard>Urumqi Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
 				<long>
-					<standard>Uzbekistan Time</standard>
+					<generic>Uzbekistan Time</generic>
+					<standard>Uzbekistan Standard Time</standard>
 					<daylight>Uzbekistan Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Vanuatu">
 				<long>
-					<standard>Vanuatu Time</standard>
+					<generic>Vanuatu Time</generic>
+					<standard>Vanuatu Standard Time</standard>
 					<daylight>Vanuatu Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2919,13 +3133,15 @@
 			</metazone>
 			<metazone type="Vladivostok">
 				<long>
-					<standard>Vladivostok Time</standard>
+					<generic>Vladivostok Time</generic>
+					<standard>Vladivostok Standard Time</standard>
 					<daylight>Vladivostok Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Volgograd">
 				<long>
-					<standard>Volgograd Time</standard>
+					<generic>Volgograd Time</generic>
+					<standard>Volgograd Standard Time</standard>
 					<daylight>Volgograd Summer Time</daylight>
 				</long>
 			</metazone>
@@ -2946,27 +3162,16 @@
 			</metazone>
 			<metazone type="Yakutsk">
 				<long>
-					<standard>Yakutsk Time</standard>
+					<generic>Yakutsk Time</generic>
+					<standard>Yakutsk Standard Time</standard>
 					<daylight>Yakutsk Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Yekaterinburg">
 				<long>
-					<standard>Yekaterinburg Time</standard>
+					<generic>Yekaterinburg Time</generic>
+					<standard>Yekaterinburg Standard Time</standard>
 					<daylight>Yekaterinburg Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<standard>Yerevan Time</standard>
-					<daylight>Yerevan Summer Time</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic>Yukon Time</generic>
-					<standard>Yukon Standard Time</standard>
-					<daylight>Yukon Daylight Time</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -2984,44 +3189,84 @@
 			<infinity>∞</infinity>
 			<nan>NaN</nan>
 		</symbols>
-		<decimalFormats>
+		<decimalFormats numberSystem="latn">
 			<decimalFormatLength>
 				<decimalFormat>
 					<pattern>#,##0.###</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
+			<decimalFormatLength type="long">
+				<decimalFormat>
+					<pattern type="1000" count="one">0 thousand</pattern>
+					<pattern type="1000" count="other">0 thousand</pattern>
+					<pattern type="10000" count="one">00 thousand</pattern>
+					<pattern type="10000" count="other">00 thousand</pattern>
+					<pattern type="100000" count="one">000 thousand</pattern>
+					<pattern type="100000" count="other">000 thousand</pattern>
+					<pattern type="1000000" count="one">0 million</pattern>
+					<pattern type="1000000" count="other">0 million</pattern>
+					<pattern type="10000000" count="one">00 million</pattern>
+					<pattern type="10000000" count="other">00 million</pattern>
+					<pattern type="100000000" count="one">000 million</pattern>
+					<pattern type="100000000" count="other">000 million</pattern>
+					<pattern type="1000000000" count="one">0 billion</pattern>
+					<pattern type="1000000000" count="other">0 billion</pattern>
+					<pattern type="10000000000" count="one">00 billion</pattern>
+					<pattern type="10000000000" count="other">00 billion</pattern>
+					<pattern type="100000000000" count="one">000 billion</pattern>
+					<pattern type="100000000000" count="other">000 billion</pattern>
+					<pattern type="1000000000000" count="one">0 trillion</pattern>
+					<pattern type="1000000000000" count="other">0 trillion</pattern>
+					<pattern type="10000000000000" count="one">00 trillion</pattern>
+					<pattern type="10000000000000" count="other">00 trillion</pattern>
+					<pattern type="100000000000000" count="one">000 trillion</pattern>
+					<pattern type="100000000000000" count="other">000 trillion</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
 			<decimalFormatLength type="short">
 				<decimalFormat>
-					<pattern type="1000">0.0K</pattern>
-					<pattern type="10000">00K</pattern>
-					<pattern type="100000">000K</pattern>
-					<pattern type="1000000">0.0M</pattern>
-					<pattern type="10000000">00M</pattern>
-					<pattern type="100000000">000M</pattern>
-					<pattern type="1000000000">0.0B</pattern>
-					<pattern type="10000000000">00B</pattern>
-					<pattern type="100000000000">000B</pattern>
-					<pattern type="1000000000000">0.0T</pattern>
-					<pattern type="10000000000000">00T</pattern>
-					<pattern type="100000000000000">000T</pattern>
+					<pattern type="1000" count="one">0K</pattern>
+					<pattern type="1000" count="other">0K</pattern>
+					<pattern type="10000" count="one">00K</pattern>
+					<pattern type="10000" count="other">00K</pattern>
+					<pattern type="100000" count="one">000K</pattern>
+					<pattern type="100000" count="other">000K</pattern>
+					<pattern type="1000000" count="one">0M</pattern>
+					<pattern type="1000000" count="other">0M</pattern>
+					<pattern type="10000000" count="one">00M</pattern>
+					<pattern type="10000000" count="other">00M</pattern>
+					<pattern type="100000000" count="one">000M</pattern>
+					<pattern type="100000000" count="other">000M</pattern>
+					<pattern type="1000000000" count="one">0B</pattern>
+					<pattern type="1000000000" count="other">0B</pattern>
+					<pattern type="10000000000" count="one">00B</pattern>
+					<pattern type="10000000000" count="other">00B</pattern>
+					<pattern type="100000000000" count="one">000B</pattern>
+					<pattern type="100000000000" count="other">000B</pattern>
+					<pattern type="1000000000000" count="one">0T</pattern>
+					<pattern type="1000000000000" count="other">0T</pattern>
+					<pattern type="10000000000000" count="one">00T</pattern>
+					<pattern type="10000000000000" count="other">00T</pattern>
+					<pattern type="100000000000000" count="one">000T</pattern>
+					<pattern type="100000000000000" count="other">000T</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 		</decimalFormats>
-		<scientificFormats>
+		<scientificFormats numberSystem="latn">
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
-		<percentFormats>
+		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
 					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
-		<currencyFormats>
+		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat>
 					<pattern>¤#,##0.00;(¤#,##0.00)</pattern>
@@ -4157,6 +4402,11 @@
 				<displayName count="one">Surinamese guilder</displayName>
 				<displayName count="other">Surinamese guilders</displayName>
 			</currency>
+			<currency type="SSP">
+				<displayName>South Sudanese Pound</displayName>
+				<displayName count="one">South Sudanese pound</displayName>
+				<displayName count="other">South Sudanese pounds</displayName>
+			</currency>
 			<currency type="STD">
 				<displayName>São Tomé and Príncipe Dobra</displayName>
 				<displayName count="one">São Tomé and Príncipe dobra</displayName>
@@ -4340,11 +4590,13 @@
 			</currency>
 			<currency type="XAG">
 				<displayName>Silver</displayName>
-				<displayName count="one">Silver</displayName>
+				<displayName count="one">troy ounce of silver</displayName>
+				<displayName count="other">troy ounces of silver</displayName>
 			</currency>
 			<currency type="XAU">
 				<displayName>Gold</displayName>
-				<displayName count="one">Gold</displayName>
+				<displayName count="one">troy ounce of gold</displayName>
+				<displayName count="other">troy ounces of gold</displayName>
 			</currency>
 			<currency type="XBA">
 				<displayName>European Composite Unit</displayName>
@@ -4398,7 +4650,8 @@
 			</currency>
 			<currency type="XPD">
 				<displayName>Palladium</displayName>
-				<displayName count="one">Palladium</displayName>
+				<displayName count="one">troy ounce of palladium</displayName>
+				<displayName count="other">troy ounces of palladium</displayName>
 			</currency>
 			<currency type="XPF">
 				<displayName>CFP Franc</displayName>
@@ -4407,19 +4660,33 @@
 			</currency>
 			<currency type="XPT">
 				<displayName>Platinum</displayName>
-				<displayName count="one">Platinum</displayName>
+				<displayName count="one">troy ounce of platinum</displayName>
+				<displayName count="other">troy ounces of platinum</displayName>
 			</currency>
 			<currency type="XRE">
 				<displayName>RINET Funds</displayName>
-				<displayName count="one">RINET Funds</displayName>
+				<displayName count="one">RINET Funds unit</displayName>
+				<displayName count="other">RINET Funds units</displayName>
+			</currency>
+			<currency type="XSU">
+				<displayName>Sucre</displayName>
+				<displayName count="one">Sucre</displayName>
+				<displayName count="other">Sucres</displayName>
 			</currency>
 			<currency type="XTS">
 				<displayName>Testing Currency Code</displayName>
-				<displayName count="one">Testing Currency Code</displayName>
+				<displayName count="one">Testing Currency unit</displayName>
+				<displayName count="other">Testing Currency units</displayName>
+			</currency>
+			<currency type="XUA">
+				<displayName>ADB Unit of Account</displayName>
+				<displayName count="one">ADB unit of account</displayName>
+				<displayName count="other">ADB units of account</displayName>
 			</currency>
 			<currency type="XXX">
 				<displayName>Unknown Currency</displayName>
-				<displayName count="one">unknown currency</displayName>
+				<displayName count="one">(unknown unit of currency)</displayName>
+				<displayName count="other">(unknown currency)</displayName>
 			</currency>
 			<currency type="YDD">
 				<displayName>Yemeni Dinar</displayName>
@@ -4462,6 +4729,11 @@
 				<displayName count="other">South African rand</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Zambian Kwacha (1968-2012)</displayName>
+				<displayName count="one">Zambian kwacha (1968-2012)</displayName>
+				<displayName count="other">Zambian kwachas (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Zambian Kwacha</displayName>
 				<displayName count="one">Zambian kwacha</displayName>
 				<displayName count="other">Zambian kwachas</displayName>
