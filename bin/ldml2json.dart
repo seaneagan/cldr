@@ -29,7 +29,8 @@ main() {
   addHelp(parser);
   parser.addOption(
       'out',
-      help: 'The path in which to output the data.');
+      help: '''The path in which to output the data.
+(defaults to "<this_package>/third_party/cldr/json")''');
   parser.addOption(
       'config',
       help: 'The path to the Ldml2JsonConverter config file.');
@@ -45,10 +46,13 @@ main() {
     return;
   }
   var out = results['out'];
+  if(out == null) {
+    out = cldrJson;
+  }
   var config = results['config'];
   var cldr = results['cldr'];
   if(cldr == null) {
-    cldr = cldr_install;
+    cldr = cldrInstall;
   }
 
   new Ldml2Json(cldr, out, config).convert();

@@ -4,7 +4,7 @@
 
 /// Contains things which aren't really specific to this package,
 /// but don't currently exist in any common libraries.
-library intl.util;
+library cldr.util;
 
 import 'dart:async';
 import 'dart:io';
@@ -35,3 +35,22 @@ void _deleteFileSystemEntitySync(fse) {
     fse.deleteSync();
   }
 }
+
+// Uppercase or lowercase the first charater of a String.
+String withCapitalization(String s, bool capitalized) {
+  var firstLetter = s[0];
+  firstLetter = capitalized ?
+      firstLetter.toUpperCase() :
+      firstLetter.toLowerCase();
+  return firstLetter + s.substring(1);
+}
+
+// Convert a camel case String to underscore separated.
+// e.g. "fooBar" -> "foo_bar" or "FOO_BAR" (capitalized == true)
+//String camelCaseToUnderscores(String camelCase, bool capitalized) {
+//  var camel = withCapitalization(camelCase, true).splitMapJoin(
+//      new Regexp(r'[A-Z]([a-z]+|[A-Z]+)?'),
+//      onMatch: (_) => "",
+//      onNonMatch: (String segment) => withCapitalization(segment, true));
+//  return withCapitalization(camel, capitalized);
+//}

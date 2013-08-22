@@ -10,4 +10,5 @@ dependencies:
   logging: any
   path: any
 dev_dependencies:
+  codegen: any
   unittest: any

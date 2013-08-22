@@ -46,7 +46,7 @@ main() {
     return;
   }
   var path = results['path'];
-  if(path == null) path = cldr_install;
+  if(path == null) path = cldrInstall;
   var version = results['version'];
 
   _installCldr(version, path);

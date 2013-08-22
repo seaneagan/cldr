@@ -8,12 +8,22 @@ import 'dart:io';
 import 'package:path/path.dart';
 import 'package:unittest/unittest.dart';
 import 'package:cldr/cldr.dart';
+import 'package:cldr/src/data_set_impl.dart';
 
 main() {
 
   group('JsonExtractor', () {
 
-    void expectExtractionResult(Map<String, dynamic> result) {
+    Directory tempDir;
+    String jsonRoot;
+    JsonExtractor extractor;
+
+    /// Expect the same dummy data for each type of DataSet for brevity
+    /// and to demonstrate the abstraction provided.
+    void expectExtractionResult(DataSet dataSet) {
+
+      var result = extractor.extract(dataSet);
+
       expect(result, {
         "en": {
           "bar": 1
@@ -24,12 +34,10 @@ main() {
       });
     }
 
-    Directory tempDir;
-    String jsonRoot;
-
     setUp(() {
       tempDir = new Directory('').createTempSync();
       jsonRoot = join(tempDir.path, 'json');
+      extractor = new JsonExtractor(jsonRoot);
     });
 
     tearDown(() {
@@ -86,8 +94,7 @@ main() {
 }
 ''');
 
-      var extractor = new JsonExtractor.main(jsonRoot, 'foo');
-      expectExtractionResult(extractor.extract());
+      expectExtractionResult(new MainDataSet('foo'));
     });
 
     test('supplemental', () {
@@ -115,10 +122,71 @@ main() {
   }
 }''');
 
-      var extractor = new JsonExtractor.supplemental(jsonRoot, 'foo');
-      expectExtractionResult(extractor.extract());
+      expectExtractionResult(new SupplementalDataSet('foo'));
 
     });
+
+    test('calendar', () {
+
+      _writeFileSync(
+          join(jsonRoot, 'main', 'en', 'ca-foo.json'),
+          r'''
+{
+  "main": {
+    "en": {
+      "identity": {
+        "version": {
+          "@cldrVersion": "23.1",
+          "@number": "$Revision: 5798 $"
+        },
+        "generation": {
+          "@date": "$Date: 2011-05-02 01:05:34 -0500 (Mon, 02 May 2011) $"
+        },
+        "language": "en"
+      },
+      "dates": {
+        "calendars": {
+          "foo": {
+            "bar": 1
+          }
+        }
+      }
+    }
+  }
+}
+''');
+
+      _writeFileSync(
+          join(jsonRoot, 'main', 'ko', 'ca-foo.json'),
+          r'''
+{
+  "main": {
+    "ko": {
+      "identity": {
+        "version": {
+          "@cldrVersion": "23.1",
+          "@number": "$Revision: 5798 $"
+        },
+        "generation": {
+          "@date": "$Date: 2011-05-02 01:05:34 -0500 (Mon, 02 May 2011) $"
+        },
+        "language": "ko"
+      },
+      "dates": {
+        "calendars": {
+          "foo": {
+            "bar": 2
+          }
+        }
+      }
+    }
+  }
+}
+''');
+
+      expectExtractionResult(new CalendarDataSet('foo'));
+    });
+
   });
 }
 

@@ -13,6 +13,8 @@
 ///         <this package>/bin/ldml2json.dart
 /// 1.  Use [JsonExtractor] to extract data from [Ldml2Json] output files.
 ///
+/// This library is meant to be imported with a prefix as necessary.
+///
 /// [cldr]: http://cldr.unicode.org
 library cldr;
 
