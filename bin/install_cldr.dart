@@ -5,10 +5,9 @@
 library cldr.bin.install_cldr;
 
 import 'dart:io';
-import 'dart:async';
 import 'package:args/args.dart';
 import 'src/util.dart';
-import 'src/zip_installer.dart';
+import 'package:cldr/src/cldr_installation.dart';
 
 /// Installs Cldr zips needed by Ldml2Json.
 ///
@@ -36,33 +35,18 @@ main() {
   parser.addOption(
       'version',
       help: 'The Cldr version to install.',
-      defaultsTo: _cldrLatest);
+      defaultsTo: CldrInstallation.latestVersion);
 
   // Process args.
   var results = parser.parse(new Options().arguments);
   if(results['help']) {
-    print(fullUsage(parser, description:
+    print(getFullUsage(parser, description:
         'Installs Cldr zips needed by Ldml2Json.'));
     return;
   }
   var path = results['path'];
-  if(path == null) path = cldrInstall;
+  if(path == null) path = defaultCldrInstallPath;
   var version = results['version'];
 
-  _installCldr(version, path);
+  new CldrInstallation(path).install(version);
 }
-
-_installCldr(String version, String path) {
-  var zips = ['core', 'tools'].map((zip) => _getCldrZipUri(version, zip));
-  Future.forEach(zips, (zip) => new ZipInstaller(zip, path).install());
-}
-
-// TODO: Use correct method to concat Uri pieces.
-String _getCldrZipUri(String version, String zip) => _cldrDownloadRoot + version + '/' + '$zip.zip';
-
-/// The [latest][cldr_latest] Cldr version.
-/// [cldr_latest]: http://cldr.unicode.org/index/downloads/latest
-String _cldrLatest = 'latest';
-
-/// The Cldr download root.
-final String _cldrDownloadRoot = 'http://www.unicode.org/Public/cldr/';

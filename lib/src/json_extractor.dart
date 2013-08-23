@@ -4,7 +4,7 @@
 
 part of cldr;
 
-/// Mechanism to extract data from [Ldml2Json] output.
+/// Mechanism to extract data from existing [Ldml2Json] output.
 class JsonExtractor {
 
   static final logger = getLogger("cldr.JsonExtractor");
@@ -14,11 +14,17 @@ class JsonExtractor {
 
   JsonExtractor(this.jsonRoot);
 
-  /// Extracts parsed json from [Ldml2Json] output file(s) and returns it.
+  /// Extracts and parses json from [Ldml2Json] output and returns it.
   Map<String, dynamic> extract(DataSet dataSet) => dataSet.extract(jsonRoot);
 }
 
 /// Represents a set of data within Cldr that can be extracted.
+///
+/// Available DataSets to extract can be found in the
+/// [data sets library].
+///
+/// [data sets library]: package:cldr/data_sets.dart
 abstract class DataSet {
+  /// Extracts this DataSet from [Ldml2Json] output at [jsonRoot].
   Map<String, dynamic> extract(String jsonRoot);
 }

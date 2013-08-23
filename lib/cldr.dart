@@ -6,22 +6,24 @@
 ///
 /// It is a multi-step process:
 ///
-/// 1.  Install Cldr by running:
+/// 1.  Install [Cldr core and tools][cldr_downloads] by running:
 ///     <this_package>/bin/install_cldr.dart
 /// 1.  Use [Ldml2Json] to convert Ldml data files to Json files.
 ///   * A convenience script for this is provided at:
 ///         <this package>/bin/ldml2json.dart
 /// 1.  Use [JsonExtractor] to extract data from [Ldml2Json] output files.
 ///
-/// This library is meant to be imported with a prefix as necessary.
+/// This library is meant to be imported with a prefix (such as "cldr")
+/// as necessary.
 ///
 /// [cldr]: http://cldr.unicode.org
+/// [cldr_downloads]: http://unicode.org/Public/cldr/latest
 library cldr;
 
 import 'dart:io';
 import 'dart:async';
-import 'dart:json' as json;
 import 'package:path/path.dart';
+import 'src/cldr_installation.dart';
 import 'src/util.dart';
 
 part 'src/ldml2json.dart';

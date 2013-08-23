@@ -5,10 +5,12 @@ description: Mechanisms to extract data from Cldr.
 homepage: http://github.com/seaneagan/cldr
 dependencies:
   args: any
+  codegen: any
   crypto: any
   http: any
   logging: any
   path: any
 dev_dependencies:
-  codegen: any
   unittest: any
+
+#TODO: Remove crypto dependency once http://dartbug.com/11358 is fixed.

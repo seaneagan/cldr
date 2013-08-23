@@ -8,20 +8,21 @@ import 'dart:io';
 import 'package:path/path.dart';
 import 'package:unittest/unittest.dart';
 import 'package:cldr/cldr.dart';
+import '../bin/src/util.dart';
 
 main() {
 
   group('Ldml2Json', () {
 
     Directory tempDir;
-    String cldrPath;
     String outPath;
     String configPath;
     File existingFile;
+    //
+    final cldrPath = defaultCldrInstallPath;
 
     setUp(() {
       tempDir = new Directory('').createTempSync();
-      cldrPath = join('..', 'third_party', 'cldr');
       outPath = new Directory(join(tempDir.path, 'out')).path;
       var config = '''
 section=units ; path=//cldr/main/[^/]++/units/.*
@@ -43,31 +44,30 @@ section=plurals ; path=//cldr/supplemental/plurals/.*
 
       var ldml2Json = new Ldml2Json(cldrPath, outPath, configPath);
 
-      return ldml2Json.convert().then((Directory out) {
+      var out = ldml2Json.convert();
 
-        void expectOutputFile(File file, String cldrSubdirectory) {
-          expect(file, predicate(
-              (file) => file.existsSync(),
-              "Output files under '$cldrSubdirectory' is created"));
-        }
+      void expectOutputFile(File file, String cldrSubdirectory) {
+        expect(file, predicate(
+            (file) => file.existsSync(),
+            "Output files under '$cldrSubdirectory' is created"));
+      }
 
-        expect(
-            out.path,
-            outPath,
-            reason: 'Correct output directory is returned');
+      expect(
+          out.path,
+          outPath,
+          reason: 'Correct output directory is returned');
 
-        expectOutputFile(
-            new File(join(outPath, 'main', 'en', 'units.json')),
-            'main');
+      expectOutputFile(
+          new File(join(outPath, 'main', 'en', 'units.json')),
+          'main');
 
-        expectOutputFile(
-            new File(join(outPath, 'supplemental', 'plurals.json')),
-            'supplemental');
+      expectOutputFile(
+          new File(join(outPath, 'supplemental', 'plurals.json')),
+          'supplemental');
 
-        expect(existingFile, predicate(
-            (file) => !file.existsSync(),
-            "Existing files are removed"));
-      });
+      expect(existingFile, predicate(
+          (file) => !file.existsSync(),
+          "Existing files are removed"));
     });
   });
 }

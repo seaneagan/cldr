@@ -35,13 +35,13 @@ main() {
   // Process args.
   var results = parser.parse(new Options().arguments);
   if(results['help']) {
-    print(fullUsage(parser,
+    print(getFullUsage(parser,
         description: "Generates the '$_libraryName' library."));
     return;
   }
   var jsonPath = results['json_path'];
   if(jsonPath == null) {
-    jsonPath = cldrJson;
+    jsonPath = defaultLdml2JsonOutputPath;
   }
 
   _generateDataSetsLibrary(jsonPath);

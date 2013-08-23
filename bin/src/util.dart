@@ -7,14 +7,20 @@ library cldr.bin.util;
 import 'dart:io';
 import 'package:args/args.dart';
 import 'package:path/path.dart';
+import 'package:codegen/codegen.dart';
 
-final cldrInstall = join(_packageRoot, 'third_party', 'cldr');
+/// The root of the package in which the currently executing script exists.
+final _packageRoot = new PubPackage.containing(new Options().script).path;
 
-final cldrJson = join(cldrInstall, 'json');
+/// This path is .gitignore'd so that The Cldr installation doesn't get
+/// committed to source control.
+final defaultCldrInstallPath = join(_packageRoot, 'third_party', 'cldr');
 
-final _packageRoot = join(dirname(new Options().script), '..');
+final defaultLdml2JsonOutputPath = join(defaultCldrInstallPath, 'json');
 
-String fullUsage(ArgParser parser, {String description: ''}) {
+/// Returns full usage text for the current dart script,
+/// including a [description].
+String getFullUsage(ArgParser parser, {String description: ''}) {
 
   if(description.isNotEmpty) {
     description = '''$description
@@ -33,6 +39,7 @@ Options:
 ${parser.getUsage()}''';
 }
 
+/// Adds a standard help option to [parser].
 void addHelp(ArgParser parser) {
   parser.addFlag(
       'help',

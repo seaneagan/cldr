@@ -6,23 +6,27 @@ part of cldr;
 
 /// A wrapper around Cldr's [Ldml2JsonConverter][converter] tool.
 ///
-/// Dependencies:
+/// ## Dependencies:
 ///
-/// 1. [Cldr {tools,core}.zip][1] extracted to a single directory
-/// 2. [java][2]
-/// 3. [ant][3]
+/// * An installation of the [Cldr core and tools][cldr_downloads],
+///   use <this_package>/bin/install_cldr.dart to get this.
+/// * [java]
 ///
-/// [converter]: http://cldr.unicode.org/index/downloads/cldr-23-1
-/// [1]: http://unicode.org/Public/cldr/23.1
-/// [2]: http://java.com
-/// [3]: http://ant.apache.org
-// TODO: Run processes synchronously when http://dartbug.com/1707 is fixed.
+/// [converter]: http://unicode.org/cldr/trac/browser/tags/latest/tools/java/org/unicode/cldr/json/Ldml2JsonConverter.java
+/// [cldr_downloads]: http://unicode.org/Public/cldr/latest
+/// [java]: http://java.com
 class Ldml2Json {
 
-  var logger = getLogger('cldr.ldml2json');
+  var logger = getLogger('cldr.Ldml2json');
 
-  /// The path to the extracted {core,tools.zip} from Cldr.
+  /// The path to the Cldr core and tools installation.
   final String cldr;
+
+  CldrInstallation _installation;
+  CldrInstallation get installation {
+    if(_installation == null) _installation = new CldrInstallation(cldr);
+    return _installation;
+  }
 
   /// The output directory path.
   final String out;
@@ -41,74 +45,40 @@ class Ldml2Json {
 
   /// Converts Ldml data to Json.
   ///
-  /// The returned Future completes with the output Directory.
-  Future<Directory> convert() {
-    return _checkDependencies().then((_) {
+  /// Returns the output Directory.
+  Directory convert() {
 
-      // Normalize output directory to exist and be empty.
-      var outDir = new Directory(out);
-      if(outDir.existsSync()) {
-        // Clean output directory.
-        truncateDirectorySync(outDir);
-      } else {
-        // Create output directory.
-        outDir.createSync(recursive: true);
-      }
+    _checkDependencies();
 
-      return _runCldrToolsAntBuild().then((_) {
-        // Run the java class for all relevant cldr subdirectories.
-        return Future.forEach(_cldrSubdirectories, _runJavaClass)
-            // Complete with the output directory.
-            .then((_) => outDir);
-      });
-    });
+    var outDir = new Directory(out);
+
+    // Remove any existing output.
+    cleanDirectorySync(outDir);
+
+    // Run the java class for all relevant cldr subdirectories.
+    _cldrSubdirectories.forEach(_runJavaClass);
+
+    return outDir;
   }
-
-  /// Runs the Cldr tools ant build if necessary.
-  Future _runCldrToolsAntBuild() => new Future(() {
-    if(!new Directory(_javaClassesPath).existsSync()) {
-      logger.info("Running the Cldr tools ant build");
-      return Process.run(
-            'ant',
-            ['clean', 'all'],
-            workingDirectory: _cldrJavaPath).then((_) => null);
-    } else {
-      return null;
-    }
-  });
 
   /// Runs the java class.
   _runJavaClass(String cldrSubdirectory) {
-    var javaArgs = _getJavaArgs(
+    var javaArgs = getJavaArgs(
         _JAVA_CLASS_QUALIFIED_NAME,
-        classPath: _classPath,
+        classPath: installation.classPath,
         systemProperties: {'CLDR_DIR' : cldr},
         classArgs: _getJavaClassArgs(cldrSubdirectory));
 
     logger.info('''Calling $_JAVA_CLASS_SIMPLE_NAME with command:
 java ${javaArgs.join(' ')}''');
 
-    return Process.run('java', javaArgs).then((ProcessResult result) {
-      if(result.exitCode == 0) {
-        logger.info(result.stdout);
-      } else {
-        logger.err(result.stderr);
-      }
-    });
+    var result = Process.runSync('java', javaArgs);
+    if(result.exitCode == 0) {
+      logger.info(result.stdout);
+    } else {
+      logger.err(result.stderr);
+    }
   }
-
-  /// The Cldr java path.
-  String get _cldrJavaPath => join(cldr, "tools", "java");
-
-  /// The Cldr java compiled classes path.
-  String get _javaClassesPath => join(_cldrJavaPath, "classes");
-
-  /// The java class path to use.
-  String get _classPath => _getClassPath([
-    _cldrJavaPath,
-    _javaClassesPath,
-    join(_cldrJavaPath, 'libs', '*')
-  ]);
 
   /// The args to pass to the java class.
   ///
@@ -146,19 +116,10 @@ java ${javaArgs.join(' ')}''');
   /// Check dependencies.
   Future _checkDependencies() => new Future(() {
     if(!_dependenciesChecked) {
-      // 1.
-      ["tools", "common"].forEach((topZipDir) {
-        if (!new Directory(join(cldr, topZipDir)).existsSync()) {
-          var zip = topZipDir == "tools" ? "tools" : "core";
-          throw new _MissingDependencyError(
-              'extracted $zip.zip in --cldr dir: $cldr');
-        }
-      });
-      return Future.forEach(
-          [/* 2. */ 'java', /* 3. */ 'ant'], _assertCommandExists)
-              ..then((_) => _dependenciesChecked = true);
+      installation.assertInstalled();
+      assertCommandExists('java');
+      _dependenciesChecked = true;
     }
-    return null;
   });
 
   /// Whether dependencies have been checked yet.
@@ -177,46 +138,4 @@ java ${javaArgs.join(' ')}''');
     }
     return subdirs;
   }
-}
-
-/// Returns a class path consisting of [paths] using the platform dependent
-/// class path separator.
-String _getClassPath(Iterable<String> paths) => paths.join(_classPathSeparator);
-
-/// The platform dependent separator of items in a java class path.
-final String _classPathSeparator = Platform.isWindows ? ";" : ":";
-
-/// Asynchronously assert that a given shell command exists.
-Future _assertCommandExists(String command) {
-  String commandChecker = Platform.isWindows ? 'where' : 'hash';
-  return Process.run(commandChecker, [command]).then((ProcessResult result) {
-    var exists = result.exitCode == 0;
-    if(!exists) {
-      throw new _MissingDependencyError('"$command" shell command');
-    }
-  });
-}
-
-/// Returns args to send to a java process.
-List<String> _getJavaArgs(
-    String javaClass, {
-    String classPath,
-    List<String> classArgs: const [],
-    Map<String, String> systemProperties: const {}}) {
-
-  var args = systemProperties.keys.map((key) =>
-      '-D$key=${systemProperties[key]}')
-      .toList();
-  if(classPath != null) args.addAll(['-cp', classPath]);
-  return args..add(javaClass)..addAll(classArgs);
-}
-
-/// Error thrown when an external dependency is missing.
-class _MissingDependencyError extends Error {
-
-  final String missingDependency;
-
-  _MissingDependencyError(this.missingDependency);
-
-  String toString() => 'Missing dependency: $missingDependency';
 }

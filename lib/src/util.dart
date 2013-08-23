@@ -23,6 +23,17 @@ Logger getLogger(String name) {
 String _logRecordToString(LogRecord record) =>
     '[${record.level}] ${record.message}';
 
+/// Clean [directory] synchronously, create if it doesn't already exist.
+cleanDirectorySync(Directory directory) {
+  if(directory.existsSync()) {
+    // Clean directory.
+    truncateDirectorySync(directory);
+  } else {
+    // Create directory.
+    directory.createSync(recursive: true);
+  }
+}
+
 /// Deletes all contents of a Directory synchronously.
 void truncateDirectorySync(Directory directory) {
   directory.listSync().forEach(_deleteFileSystemEntitySync);
@@ -36,7 +47,7 @@ void _deleteFileSystemEntitySync(fse) {
   }
 }
 
-// Uppercase or lowercase the first charater of a String.
+/// Uppercase or lowercase the first charater of a String.
 String withCapitalization(String s, bool capitalized) {
   var firstLetter = s[0];
   firstLetter = capitalized ?
@@ -45,12 +56,43 @@ String withCapitalization(String s, bool capitalized) {
   return firstLetter + s.substring(1);
 }
 
-// Convert a camel case String to underscore separated.
-// e.g. "fooBar" -> "foo_bar" or "FOO_BAR" (capitalized == true)
-//String camelCaseToUnderscores(String camelCase, bool capitalized) {
-//  var camel = withCapitalization(camelCase, true).splitMapJoin(
-//      new Regexp(r'[A-Z]([a-z]+|[A-Z]+)?'),
-//      onMatch: (_) => "",
-//      onNonMatch: (String segment) => withCapitalization(segment, true));
-//  return withCapitalization(camel, capitalized);
-//}
+/// Assert that a given shell command exists.
+assertCommandExists(String command) {
+  String commandChecker = Platform.isWindows ? 'where' : 'hash';
+  var result = Process.runSync(commandChecker, [command]);
+  var exists = result.exitCode == 0;
+  if(!exists) {
+    throw new MissingDependencyError('"$command" shell command');
+  }
+}
+
+/// Error thrown when an external dependency is missing.
+class MissingDependencyError extends Error {
+
+  final String missingDependency;
+
+  MissingDependencyError(this.missingDependency);
+
+  String toString() => 'Missing dependency: $missingDependency';
+}
+
+/// Returns a class path consisting of [paths] using the platform dependent
+/// class path separator.
+String getClassPath(Iterable<String> paths) => paths.join(_classPathSeparator);
+
+/// The platform dependent separator of items in a java class path.
+final String _classPathSeparator = Platform.isWindows ? ";" : ":";
+
+/// Returns args to send to a java process.
+List<String> getJavaArgs(
+    String javaClass, {
+    String classPath,
+    List<String> classArgs: const [],
+    Map<String, String> systemProperties: const {}}) {
+
+  var args = systemProperties.keys.map((key) =>
+      '-D$key=${systemProperties[key]}')
+      .toList();
+  if(classPath != null) args.addAll(['-cp', classPath]);
+  return args..add(javaClass)..addAll(classArgs);
+}

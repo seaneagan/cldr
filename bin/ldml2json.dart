@@ -42,17 +42,17 @@ main() {
   // Process args.
   var results = parser.parse(new Options().arguments);
   if(results['help']) {
-    print(fullUsage(parser, description: 'Converts Ldml data to Json.'));
+    print(getFullUsage(parser, description: 'Converts Ldml data to Json.'));
     return;
   }
   var out = results['out'];
   if(out == null) {
-    out = cldrJson;
+    out = defaultLdml2JsonOutputPath;
   }
   var config = results['config'];
   var cldr = results['cldr'];
   if(cldr == null) {
-    cldr = cldrInstall;
+    cldr = defaultCldrInstallPath;
   }
 
   new Ldml2Json(cldr, out, config).convert();
