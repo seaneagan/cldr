@@ -17,7 +17,7 @@ part of cldr;
 /// [java]: http://java.com
 class Ldml2Json {
 
-  var logger = getLogger('cldr.Ldml2json');
+  var _logger = getLogger('cldr.Ldml2json');
 
   /// The path to the Cldr core and tools installation.
   final String cldr;
@@ -69,14 +69,14 @@ class Ldml2Json {
         systemProperties: {'CLDR_DIR' : cldr},
         classArgs: _getJavaClassArgs(cldrSubdirectory));
 
-    logger.info('''Calling $_JAVA_CLASS_SIMPLE_NAME with command:
+    _logger.info('''Calling $_JAVA_CLASS_SIMPLE_NAME with command:
 java ${javaArgs.join(' ')}''');
 
     var result = Process.runSync('java', javaArgs);
     if(result.exitCode == 0) {
-      logger.info(result.stdout);
+      _logger.info(result.stdout);
     } else {
-      logger.err(result.stderr);
+      _logger.err(result.stderr);
     }
   }
 

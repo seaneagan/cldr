@@ -66,7 +66,11 @@ class MainDataSet extends DataSetBase {
   Map<String, dynamic> extract(String jsonRoot) {
 
     var topLevelDir = new Directory(join(jsonRoot, _subdirectory));
-    var locales = topLevelDir.listSync().map((fse) => basename(fse.path));
+    var locales = topLevelDir
+        .listSync()
+        .map((dir) => basename(dir.path))
+        // Workaround editor creating unwanted 'packages' symlinks in test data.
+        .where((locale) => locale != 'packages');
 
     return locales.fold(new Map<String, dynamic>(), (localeDataMap, locale) {
       localeDataMap[locale] = _getOutputStructure(jsonRoot, locale);

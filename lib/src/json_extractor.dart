@@ -7,8 +7,6 @@ part of cldr;
 /// Mechanism to extract data from existing [Ldml2Json] output.
 class JsonExtractor {
 
-  static final logger = getLogger("cldr.JsonExtractor");
-
   /// Path to the root of the [Ldml2Json] output.
   final String jsonRoot;
 

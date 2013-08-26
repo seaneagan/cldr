@@ -7,15 +7,15 @@ library cldr.bin.util;
 import 'dart:io';
 import 'package:args/args.dart';
 import 'package:path/path.dart';
-import 'package:codegen/codegen.dart';
+import 'package:cldr/src/util.dart';
 
-/// The root of the package in which the currently executing script exists.
-final _packageRoot = new PubPackage.containing(new Options().script).path;
-
+/// The default path in which to install Cldr core and tools.
+///
 /// This path is .gitignore'd so that The Cldr installation doesn't get
 /// committed to source control.
-final defaultCldrInstallPath = join(_packageRoot, 'third_party', 'cldr');
+final defaultCldrInstallPath = join(packageRoot, 'third_party', 'cldr');
 
+/// The default Ldml2Json output path.
 final defaultLdml2JsonOutputPath = join(defaultCldrInstallPath, 'json');
 
 /// Returns full usage text for the current dart script,

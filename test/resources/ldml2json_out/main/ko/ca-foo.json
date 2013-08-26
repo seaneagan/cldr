@@ -1,0 +1,23 @@
+{
+  "main": {
+    "ko": {
+      "identity": {
+        "version": {
+          "@cldrVersion": "23.1",
+          "@number": "$Revision: 5798 $"
+        },
+        "generation": {
+          "@date": "$Date: 2011-05-02 01:05:34 -0500 (Mon, 02 May 2011) $"
+        },
+        "language": "ko"
+      },
+      "dates": {
+        "calendars": {
+          "foo": {
+            "bar": 2
+          }
+        }
+      }
+    }
+  }
+}

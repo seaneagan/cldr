@@ -1,0 +1,19 @@
+{
+  "supplemental": {
+    "version": {
+      "@cldrVersion": "23.1",
+      "@number": "$Revision: 5817 $"
+    },
+    "generation": {
+      "@date": "$Date: 2011-05-03 10:12:08 -0500 (Tue, 03 May 2011) $"
+    },
+    "foo": {
+      "en": {
+        "bar": 1
+      },
+      "ko": {
+        "bar": 2
+      }
+    }
+  }
+}

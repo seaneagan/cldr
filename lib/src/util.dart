@@ -9,6 +9,10 @@ library cldr.util;
 import 'dart:async';
 import 'dart:io';
 import 'package:logging/logging.dart';
+import 'package:path/path.dart';
+import 'package:http/http.dart';
+import 'package:http/testing.dart';
+import 'package:codegen/codegen.dart';
 
 /// Returns a [Logger] with a preattached [Logger.onRecord] handler.
 // TODO: Replace with the resolution of http://dartbug.com/12028.
@@ -96,3 +100,18 @@ List<String> getJavaArgs(
   if(classPath != null) args.addAll(['-cp', classPath]);
   return args..add(javaClass)..addAll(classArgs);
 }
+
+/// The root of the package in which the currently executing script exists.
+final packageRoot = new PubPackage.containing(new Options().script).path;
+
+/// The path to the test resources.
+final testResources = join(packageRoot, 'test', 'resources');
+
+MockClientHandler testResourcesHandler = (Request request) => new Future(() {
+  print('in testResourcesHandler');
+  return new Response.bytes(
+      new File(join(testResources, request.url.pathSegments.last))
+          .readAsBytesSync(),
+      200,
+      request: request);
+});

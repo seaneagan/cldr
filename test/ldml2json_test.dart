@@ -18,20 +18,20 @@ main() {
     String outPath;
     String configPath;
     File existingFile;
-    //
+    // Cldr must be installed at this default path before running this test!
     final cldrPath = defaultCldrInstallPath;
 
     setUp(() {
       tempDir = new Directory('').createTempSync();
       outPath = new Directory(join(tempDir.path, 'out')).path;
       var config = '''
-section=units ; path=//cldr/main/[^/]++/units/.*
+section=units ; path=//cldr/main/en/units/.*
 section=plurals ; path=//cldr/supplemental/plurals/.*
 ''';
       configPath = (new File(join(tempDir.path, 'ldml2json_config.txt'))
           ..writeAsStringSync(config))
           .path;
-      var existingFile = new File(join(outPath, 'supplemental', 'old.json'));
+      existingFile = new File(join(outPath, 'supplemental', 'old.json'));
       existingFile.directory.createSync(recursive: true);
       existingFile.createSync();
     });
@@ -42,9 +42,9 @@ section=plurals ; path=//cldr/supplemental/plurals/.*
 
     test('basic', () {
 
-      var ldml2Json = new Ldml2Json(cldrPath, outPath, configPath);
+      var unit = new Ldml2Json(cldrPath, outPath, configPath);
 
-      var out = ldml2Json.convert();
+      var out = unit.convert();
 
       void expectOutputFile(File file, String cldrSubdirectory) {
         expect(file, predicate(

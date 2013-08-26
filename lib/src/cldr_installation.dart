@@ -14,7 +14,7 @@ import 'package:cldr/src/util.dart';
 /// [cldr_downloads]: http://unicode.org/Public/cldr/latest
 class CldrInstallation {
 
-  static final logger = getLogger('CldrInstallation');
+  static final _logger = getLogger('CldrInstallation');
 
   /// The path of this Cldr installation.
   final String path;
@@ -36,7 +36,7 @@ class CldrInstallation {
 
   /// Installs the specified [version] of Cldr.
   ///
-  /// This requires having [ant] and [jar] on the path.
+  /// This requires having [ant][ant] and [jar][jar] on the PATH.
   /// [ant]: http://ant.apache.org
   /// [jar]:
   install([String version = latestVersion]) {
@@ -69,7 +69,7 @@ class CldrInstallation {
 
   /// Runs the Cldr tools ant build.
   _runAntBuild() {
-    logger.info("Running the Cldr tools ant build");
+    _logger.info("Running the Cldr tools ant build");
     Process.runSync(
         'ant',
         ['clean', 'all'],
