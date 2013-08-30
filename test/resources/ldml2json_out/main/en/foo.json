@@ -1,0 +1,19 @@
+{
+  "main": {
+    "en": {
+      "identity": {
+        "version": {
+          "@cldrVersion": "23.1",
+          "@number": "$Revision: 5806 $"
+        },
+        "generation": {
+          "@date": "$Date: 2011-05-02 13:42:02 -0500 (Mon, 02 May 2011) $"
+        },
+        "language": "en"
+      },
+      "foo": {
+        "bar": 1
+      }
+    }
+  }
+}

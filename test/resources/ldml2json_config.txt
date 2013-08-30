@@ -1,0 +1,2 @@
+section=units ; path=//cldr/main/en/units/.*
+section=plurals ; path=//cldr/supplemental/plurals/.*

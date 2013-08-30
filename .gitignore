@@ -1,0 +1,10 @@
+.project
+.metadata
+.settings/
+*pubspec.lock
+.children
+.project
+packages
+third_party/cldr/*
+out
+.buildlog
