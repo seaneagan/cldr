@@ -1,5 +1,5 @@
 name: cldr
-version: 0.0.1
+version: 0.0.2
 author: Sean Eagan <seaneagan1@gmail.com>
 description: Mechanisms to extract data from Cldr.
 homepage: http://github.com/seaneagan/cldr
@@ -10,7 +10,8 @@ dependencies:
   http: any
   logging: any
   path: any
-  cli:
-    path: C:\Users\se136c\dart\cli
+  cli: any
 dev_dependencies:
   unittest: any
+
+# TODO: Remove crypto dependency once http://dartbug.com/11358 is fixed.

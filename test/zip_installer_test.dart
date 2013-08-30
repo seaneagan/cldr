@@ -32,6 +32,7 @@ main() {
       ProcessResult mockLdml2JsonConverter(Command command) =>
           new MockProcessResult();
       mockRunner = new MockRunner(mockLdml2JsonConverter);
+      mockClient = new TestResourcesHttpClient();
 
       unit = new ZipInstaller(
           zipUri,

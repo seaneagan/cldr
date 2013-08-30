@@ -81,7 +81,6 @@ section=plurals ; path=//cldr/supplemental/plurals/.*
           out.path,
           outPath,
           reason: 'Correct output directory is returned.');
-
     });
   });
 
@@ -91,19 +90,8 @@ section=plurals ; path=//cldr/supplemental/plurals/.*
     var cldrSubdirectory = 'main';
     var config = 'foo.txt';
     Ldml2JsonConverterCommand unit;
-    // A partial parser to validate certain options are included.
-    ArgParser parser;
 
     setUp(() {
-      parser = new ArgParser();
-      var options = {
-        'destdir': 'd',
-        'type': 't',
-        'resolved': 'r',
-        'konfig': 'k'
-      };
-      options.forEach((option, abbr) => parser.addOption(option, abbr: abbr));
-
       unit = new Ldml2JsonConverterCommand(
           new MockCldrInstallation(cldrPath),
           cldrSubdirectory,
@@ -116,25 +104,34 @@ section=plurals ; path=//cldr/supplemental/plurals/.*
       ArgResults results;
 
       setUp(() {
+        // A partial parser to validate certain options are included.
+        var parser = new ArgParser();
+        var options = {
+          'destdir': 'd',
+          'type': 't',
+          'resolved': 'r',
+          'konfig': 'k'
+        };
+        options.forEach((option, abbr) => parser.addOption(option, abbr: abbr));
         results = parser.parse(unit.classArguments);
       });
 
-      group('main', () {
-
+      group('has option', () {
+        test('--type', () =>
+            expect(results, hasOption('type', cldrSubdirectory)));
+        test('--destdir', () =>
+            expect(results,
+                hasOption('destdir', join(outPath, cldrSubdirectory))));
+        test('--resolved', () =>
+            expect(results, hasOption('resolved', 'true')));
+        test('--konfig', () =>
+            expect(results, hasOption('konfig', config)));
       });
-
-      test('correct --type option', () =>
-          expect(results, hasOption('type', cldrSubdirectory)));
-      test('correct --destdir option', () =>
-          expect(results, hasOption('destdir', join(outPath, cldrSubdirectory))));
-      test('correct --resolved option', () =>
-          expect(results, hasOption('resolved', 'true')));
-      test('correct --konfig option', () =>
-          expect(results, hasOption('konfig', config)));
     });
   });
 }
 
+/// Match an [ArgResults] containing an [option] matching [matcher].
 hasOption(String option, var matcher) => new _HasOptionMatcher(option, matcher);
 
 class _HasOptionMatcher extends CustomMatcher {
@@ -157,7 +154,7 @@ class _MockCldrInstallation extends CldrInstallation {
 
   _MockCldrInstallation(String path)
       : super(path,
-      httpClient: testResourcesHttpClient,
+      httpClient: new TestResourcesHttpClient(),
       runner: new MockRunner((command) => new MockProcessResult()));
 }
 
