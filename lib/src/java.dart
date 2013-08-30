@@ -19,11 +19,7 @@ class JavaCommand extends Command {
       this.javaClass,
       {this.classPath,
        this.classArguments: const [],
-       this.systemProperties: const {},
-       String workingDirectory,
-       Map<String, String> environment,
-       bool includeParentEnvironment: true,
-       bool runInShell: false})
+       this.systemProperties: const {}})
       : super(
             'java',
             null);

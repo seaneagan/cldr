@@ -41,29 +41,32 @@ main() {
 
     test('initially not installed', () => expect(unit, isNot(cldrIsInstalled)));
 
-    test('install requests bytes of each required zip', () {
-      return unit.install().then((_){
-        CldrInstallation.requiredZips.forEach((requiredZip) {
-          var zip = "$requiredZip.zip";
-          var isRequiredZip = predicate((zipUri) =>
-              Uri.parse(zipUri).pathSegments.last == zip,
-              'uri ending with "$zip"');
-          mockClient.getLogs(
-              callsTo('readBytes', isRequiredZip)).verify(happenedOnce);
+    group('install', () {
+
+      test('requests bytes of each required zip', () {
+        return unit.install().then((_){
+          CldrInstallation.requiredZips.forEach((requiredZip) {
+            var zip = "$requiredZip.zip";
+            var isRequiredZip = predicate((zipUri) =>
+                Uri.parse(zipUri).pathSegments.last == zip,
+                'uri ending with "$zip"');
+            mockClient.getLogs(
+                callsTo('readBytes', isRequiredZip)).verify(happenedOnce);
+          });
         });
       });
-    });
 
-    test('install runs ant build', () {
-      return unit.install().then((_){
-        CldrInstallation.requiredZips.forEach((requiredZip) {
-          var zip = "$requiredZip.zip";
-          var isAntCommand = predicate((command) =>
-              command.executable == 'ant' &&
-              orderedEquals(['clean', 'all']).matches(command.arguments, {}),
-              'Cldr tools ant command');
-          mockRunner.getLogs(
-              callsTo('runSync', isAntCommand)).verify(happenedOnce);
+      test('runs ant build', () {
+        return unit.install().then((_){
+          CldrInstallation.requiredZips.forEach((requiredZip) {
+            var zip = "$requiredZip.zip";
+            var isAntCommand = predicate((command) =>
+                command.executable == 'ant' &&
+                orderedEquals(['clean', 'all']).matches(command.arguments, {}),
+                'Cldr tools ant command');
+            mockRunner.getLogs(
+                callsTo('runSync', isAntCommand)).verify(happenedOnce);
+          });
         });
       });
     });

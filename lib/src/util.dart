@@ -92,21 +92,33 @@ class MissingDependencyError extends Error {
   String toString() => 'Missing dependency: $missingDependency';
 }
 
-/// The root of the package in which the currently executing script exists.
+/// The root of the package containing the currently executing script.
 final packageRoot = new PubPackage.containing(new Options().script).path;
 
-/// The path to the test resources.
+/// The test resources path of the package containing the currently executing
+/// script.
 final testResources = join(packageRoot, 'test', 'resources');
 
-/// An http client redirects requests to [testResources].
-final testResourcesHttpClient = new TestResourcesHttpClient();
+/// Redirects http request to a sub path of [testResources].
+///
+/// The last segment (basename) of requested Uri's is looked up under [path].
 class TestResourcesHttpClient extends Mock implements Client {
-  TestResourcesHttpClient() : super.spy(new MockClient(_testResourcesHandler));
+
+  /// The file system path to which to redirect requests.
+  final String path;
+
+  TestResourcesHttpClient([String subPath = ''])
+      : this._(join(testResources, subPath));
+
+  TestResourcesHttpClient._(String path)
+      : this.path = path,
+        super.spy(new MockClient(_getHandler(path)));
+
+  static MockClientHandler _getHandler(String path) => (Request request) =>
+      new Future(() =>
+          new Response.bytes(
+              new File(join(path, request.url.pathSegments.last))
+                  .readAsBytesSync(),
+              200,
+              request: request));
 }
-MockClientHandler _testResourcesHandler = (Request request) => new Future(() {
-  return new Response.bytes(
-      new File(join(testResources, request.url.pathSegments.last))
-          .readAsBytesSync(),
-      200,
-      request: request);
-});

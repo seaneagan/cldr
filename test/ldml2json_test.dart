@@ -30,14 +30,9 @@ main() {
 
     setUp(() {
       tempDir = new Directory('').createTempSync();
-      outPath = new Directory(join(tempDir.path, 'out')).path;
-      var config = '''
-section=units ; path=//cldr/main/en/units/.*
-section=plurals ; path=//cldr/supplemental/plurals/.*
-''';
-      configPath = (new File(join(tempDir.path, 'ldml2json_config.txt'))
-          ..writeAsStringSync(config))
-          .path;
+      outPath = join(tempDir.path, 'out');
+      configPath = join(testResources, 'ldml2json_config.txt');
+      // Simulate existing output.
       existingFile = new File(join(outPath, 'supplemental', 'old.json'));
       createFileResursiveSync(existingFile);
     });
@@ -46,41 +41,56 @@ section=plurals ; path=//cldr/supplemental/plurals/.*
       tempDir.deleteSync(recursive: true);
     });
 
-    test('convert', () {
+    group('convert', () {
 
-      ProcessResult mockLdml2JsonConverter(Command command) =>
-          new MockProcessResult(
-              stdout: 'Mock Ldml2JsonConverter stdout.',
-              stderr: 'Mock Ldml2JsonConverter stderr.');
-      var mockRunner = new MockRunner(mockLdml2JsonConverter);
+      MockRunner mockRunner;
+      Ldml2Json unit;
+      Directory out;
 
-      var unit = new Ldml2Json(
-          new MockCldrInstallation(cldrPath),
-          outPath,
-          config: configPath,
-          runner: mockRunner);
+      setUp(() {
+        ProcessResult mockLdml2JsonConverter(Command command) =>
+            new MockProcessResult(
+                stdout: 'Mock Ldml2JsonConverter stdout.',
+                stderr: 'Mock Ldml2JsonConverter stderr.');
+        mockRunner = new MockRunner(mockLdml2JsonConverter);
 
-      var out = unit.convert();
+        unit = new Ldml2Json(
+            new MockCldrInstallation(cldrPath),
+            outPath,
+            config: configPath,
+            runner: mockRunner);
 
-      isConvertCommand(String cldrSubdirectory) => predicate((command) {
-        if(command is! Ldml2JsonConverterCommand) return false;
-        command = command as Ldml2JsonConverterCommand;
-        return command.cldrSubdirectory == cldrSubdirectory &&
-               command.out == outPath &&
-               command.config == configPath &&
-               command.installation.path == cldrPath;
-      }, "Ldml2JsonConverterCommand for '$cldrSubdirectory' Cldr subdirectory");
-
-      Ldml2JsonConverterCommand.CLDR_SUBDIRECTORIES.forEach((cldrSubdirectory) {
-        mockRunner.getLogs(
-            callsTo('runSync', isConvertCommand(cldrSubdirectory)))
-                .verify(happenedOnce);
+        out = unit.convert();
       });
 
-      expect(
-          out.path,
-          outPath,
-          reason: 'Correct output directory is returned.');
+      test('Ldml2JsonConverterCommands run for each Cldr subdirectory', () {
+
+        isConvertCommand(String cldrSubdirectory) => predicate((command) {
+          if(command is! Ldml2JsonConverterCommand) return false;
+          command = command as Ldml2JsonConverterCommand;
+          return
+              command.cldrSubdirectory == cldrSubdirectory &&
+              command.out == outPath &&
+              command.config == configPath &&
+              command.installation.path == cldrPath;
+        }, "Ldml2JsonConverterCommand for '$cldrSubdirectory' "
+           "Cldr subdirectory");
+
+        Ldml2JsonConverterCommand.CLDR_SUBDIRECTORIES.forEach(
+            (cldrSubdirectory) {
+              mockRunner.getLogs(
+                  callsTo('runSync', isConvertCommand(cldrSubdirectory)))
+                  .verify(happenedOnce);
+            });
+      });
+
+      test('Correct output directory returned', () {
+        expect(out.path, outPath);
+      });
+
+      test('Existing output is deleted', () {
+        expect(existingFile.existsSync(), isFalse);
+      });
     });
   });
 
@@ -107,8 +117,8 @@ section=plurals ; path=//cldr/supplemental/plurals/.*
         // A partial parser to validate certain options are included.
         var parser = new ArgParser();
         var options = {
-          'destdir': 'd',
           'type': 't',
+          'destdir': 'd',
           'resolved': 'r',
           'konfig': 'k'
         };
@@ -116,7 +126,7 @@ section=plurals ; path=//cldr/supplemental/plurals/.*
         results = parser.parse(unit.classArguments);
       });
 
-      group('has option', () {
+      group('has valid option', () {
         test('--type', () =>
             expect(results, hasOption('type', cldrSubdirectory)));
         test('--destdir', () =>

@@ -45,29 +45,43 @@ main() {
       tempDir.deleteSync(recursive: true);
     });
 
-    test('install', () {
+    group('install', () {
 
-      return unit.install().then((_){
+      var mockZip = 'mock.zip';
 
-        var fileExists = predicate((file) => file.existsSync(), 'file exists');
+      test('zip is deleted', () {
+        return unit.install().then((_){
 
-        var mockZip = 'mock.zip';
+          var fileExists =
+              predicate((file) => file.existsSync(), 'file exists');
 
-        expect(new File(join(installDir, mockZip)),
-            isNot(fileExists));
+          expect(new File(join(installDir, mockZip)),
+              isNot(fileExists));
+        });
+      });
 
-        var isExtractionCommand = predicate((command) =>
-            command.executable == 'jar' &&
-            orderedEquals(['xf', mockZip]).matches(command.arguments, {}),
-            'extraction Command for "$mockZip"');
+      test('extraction command is run', () {
 
-        mockRunner.getLogs(
-            callsTo('runSync', isExtractionCommand)).verify(happenedOnce);
-        var isMockZip = predicate((uri) =>
+        return unit.install().then((_){
+
+          var isExtractionCommand = predicate((command) =>
+              command.executable == 'jar' &&
+              orderedEquals(['xf', mockZip]).matches(command.arguments, {}),
+              'extraction Command for "$mockZip"');
+
+          mockRunner.getLogs(
+              callsTo('runSync', isExtractionCommand)).verify(happenedOnce);
+        });
+      });
+
+      test('bytes are requested', () {
+        return unit.install().then((_){
+          var isMockZip = predicate((uri) =>
             Uri.parse(zipUri).pathSegments.last == mockZip,
             'uri ending with "$mockZip"');
         mockClient.getLogs(
             callsTo('readBytes', isMockZip)).verify(happenedOnce);
+        });
       });
     });
   });
