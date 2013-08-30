@@ -19,14 +19,8 @@ class Ldml2Json {
 
   var _logger = getLogger('cldr.Ldml2json');
 
-  /// The path to the Cldr core and tools installation.
-  final String cldr;
-
-  CldrInstallation _installation;
-  CldrInstallation get installation {
-    if(_installation == null) _installation = new CldrInstallation(cldr);
-    return _installation;
-  }
+  /// The Cldr core and tools installation to use.
+  CldrInstallation installation;
 
   /// The output directory path.
   final String out;
@@ -34,14 +28,26 @@ class Ldml2Json {
   /// The Ldml2JsonConverter config file path.
   final String config;
 
-  /// The java class qualified name.
-  static final _JAVA_CLASS_QUALIFIED_NAME =
-      'org.unicode.cldr.json.$_JAVA_CLASS_SIMPLE_NAME';
+  /// Used for all command runs.
+  ///
+  /// This is provided for mocking and testing purposes.
+  Runner get runner {
+    if(_runner == null) _runner = new Runner();
+    return _runner;
+  }
+  Runner _runner;
 
-  /// The java class qualified name.
-  static final _JAVA_CLASS_SIMPLE_NAME = 'Ldml2JsonConverter';
-
-  Ldml2Json(this.cldr, this.out, [this.config]);
+  /// The [cldrInstallation] can either be a [CldrInstallation] or a path to
+  /// one.
+  Ldml2Json(
+      var cldrInstallation,
+      this.out,
+      {this.config,
+       Runner runner})
+      : installation = cldrInstallation is String ?
+            new CldrInstallation(cldrInstallation) :
+            cldrInstallation,
+        _runner = runner;
 
   /// Converts Ldml data to Json.
   ///
@@ -55,7 +61,7 @@ class Ldml2Json {
     // Remove any existing output.
     cleanDirectorySync(outDir);
 
-    // Run the java class for all relevant cldr subdirectories.
+    // Run the java class for all relevant Cldr subdirectories.
     _cldrSubdirectories.forEach(_runJavaClass);
 
     return outDir;
@@ -63,16 +69,18 @@ class Ldml2Json {
 
   /// Runs the java class.
   _runJavaClass(String cldrSubdirectory) {
-    var javaArgs = getJavaArgs(
-        _JAVA_CLASS_QUALIFIED_NAME,
-        classPath: installation.classPath,
-        systemProperties: {'CLDR_DIR' : cldr},
-        classArgs: _getJavaClassArgs(cldrSubdirectory));
 
-    _logger.info('''Calling $_JAVA_CLASS_SIMPLE_NAME with command:
-java ${javaArgs.join(' ')}''');
+    var command = new Ldml2JsonConverterCommand(
+        installation,
+        cldrSubdirectory,
+        config,
+        out);
 
-    var result = Process.runSync('java', javaArgs);
+    _logger.info('''Running ${command.javaClass}:
+$command''');
+
+    var result = runner.runSync(command);
+
     if(result.exitCode == 0) {
       _logger.info(result.stdout);
     } else {
@@ -80,55 +88,21 @@ java ${javaArgs.join(' ')}''');
     }
   }
 
-  /// The args to pass to the java class.
-  ///
-  /// Description from README in http://unicode.org/Public/cldr/23.1/json.zip:
-  ///
-  /// Usage: Ldml2JsonConverter [OPTIONS] [FILES]
-  /// This program converts CLDR data to the JSON format.
-  /// Please refer to the following options.
-  ///         example: org.unicode.cldr.json.Ldml2JsonConverter -c xxx -d yyy
-  /// Here are the options:
-  /// -h (help)       no-arg  Provide the list of possible options
-  /// -c (commondir)  .*      Common directory for CLDR files, defaults to CldrUtility.COMMON_DIRECTORY
-  /// -d (destdir)    .*      Destination directory for output files, defaults to CldrUtility.GEN_DIRECTORY
-  /// -m (match)      .*      Regular expression to define only specific locales or files to be generated
-  /// -t (type)       (main|supplemental)     Type of CLDR data being generated, main or supplemental.
-  /// -r (resolved)   (true|false)    Whether the output JSON for the main directory should be based on resolved or unresolved data
-  /// -s (draftstatus)        (approved|contributed|provisional|unconfirmed)  The minimum draft status of the output data
-  /// -l (coverage)   (minimal|basic|moderate|modern|comprehensive|optional)  The maximum coverage level of the output data
-  /// -n (fullnumbers)        (true|false)    Whether the output JSON should output data for all numbering systems, even those not used in the locale
-  /// -o (other)      (true|false)    Whether to write out the 'other' section, which contains any unmatched paths
-  /// -k (konfig)     .*      LDML to JSON configuration file
-  List<String> _getJavaClassArgs(String cldrSubdirectory) {
-    var args = [
-      // The 'supplemental' directory is added automatically.
-      '-d', cldrSubdirectory == 'main' ? join(out, cldrSubdirectory) : out,
-      '-t', cldrSubdirectory,
-      '-r', 'true'
-    ];
-    if(config != null) {
-      args.addAll(['-k', config]);
-    }
-    return args;
-  }
-
   /// Check dependencies.
-  Future _checkDependencies() => new Future(() {
+  _checkDependencies() {
     if(!_dependenciesChecked) {
       installation.assertInstalled();
-      assertCommandExists('java');
+      assertCommandExists('java', runner: runner);
       _dependenciesChecked = true;
     }
-  });
-
+  }
   /// Whether dependencies have been checked yet.
   bool _dependenciesChecked = false;
 
   /// The Cldr subdirectories from which to run the java class.
   Iterable<String> get _cldrSubdirectories {
     // The default config contains all data.
-    var subdirs = ['main', 'supplemental'];
+    var subdirs = Ldml2JsonConverterCommand.CLDR_SUBDIRECTORIES;
 
     if(config != null) {
       // Scan custom configs for subdirectory references.

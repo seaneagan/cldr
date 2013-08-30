@@ -21,9 +21,9 @@
 library cldr;
 
 import 'dart:io';
-import 'dart:async';
-import 'package:path/path.dart';
-import 'src/cldr_installation.dart';
+import 'package:cli/cli.dart';
+import 'src/ldml2json_converter_command.dart';
+import 'cldr_installation.dart';
 import 'src/util.dart';
 
 part 'src/ldml2json.dart';

@@ -55,5 +55,5 @@ main() {
     cldr = defaultCldrInstallPath;
   }
 
-  new Ldml2Json(cldr, out, config).convert();
+  new Ldml2Json(cldr, out, config: config).convert();
 }

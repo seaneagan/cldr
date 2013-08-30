@@ -13,6 +13,8 @@ import 'package:path/path.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
 import 'package:codegen/codegen.dart';
+import 'package:cli/cli.dart';
+import 'package:unittest/mock.dart';
 
 /// Returns a [Logger] with a preattached [Logger.onRecord] handler.
 // TODO: Replace with the resolution of http://dartbug.com/12028.
@@ -38,17 +40,25 @@ cleanDirectorySync(Directory directory) {
   }
 }
 
-/// Deletes all contents of a Directory synchronously.
-void truncateDirectorySync(Directory directory) {
-  directory.listSync().forEach(_deleteFileSystemEntitySync);
+/// Creates a File and all of its parent directories synchronously.
+// TODO: Replace with the resolution of http://dartbug.com/12462
+createFileResursiveSync(File file) {
+  file.directory.createSync(recursive: true);
+  file.createSync();
 }
 
-void _deleteFileSystemEntitySync(fse) {
-  if(fse is Directory) {
-    fse.deleteSync(recursive: true);
-  } else if(fse is File || fse is Link) {
-    fse.deleteSync();
+/// Deletes all contents of a Directory synchronously.
+void truncateDirectorySync(Directory directory) {
+
+  void deleteFileSystemEntitySync(fse) {
+    if(fse is Directory) {
+      fse.deleteSync(recursive: true);
+    } else if(fse is File || fse is Link) {
+      fse.deleteSync();
+    }
   }
+
+  directory.listSync().forEach(deleteFileSystemEntitySync);
 }
 
 /// Uppercase or lowercase the first charater of a String.
@@ -61,9 +71,11 @@ String withCapitalization(String s, bool capitalized) {
 }
 
 /// Assert that a given shell command exists.
-assertCommandExists(String command) {
+assertCommandExists(String testCommand, {Runner runner}) {
+  if(runner == null) runner = new Runner();
   String commandChecker = Platform.isWindows ? 'where' : 'hash';
-  var result = Process.runSync(commandChecker, [command]);
+  var command = new Command(commandChecker, [testCommand]);
+  var result = runner.runSync(command);
   var exists = result.exitCode == 0;
   if(!exists) {
     throw new MissingDependencyError('"$command" shell command');
@@ -80,35 +92,18 @@ class MissingDependencyError extends Error {
   String toString() => 'Missing dependency: $missingDependency';
 }
 
-/// Returns a class path consisting of [paths] using the platform dependent
-/// class path separator.
-String getClassPath(Iterable<String> paths) => paths.join(_classPathSeparator);
-
-/// The platform dependent separator of items in a java class path.
-final String _classPathSeparator = Platform.isWindows ? ";" : ":";
-
-/// Returns args to send to a java process.
-List<String> getJavaArgs(
-    String javaClass, {
-    String classPath,
-    List<String> classArgs: const [],
-    Map<String, String> systemProperties: const {}}) {
-
-  var args = systemProperties.keys.map((key) =>
-      '-D$key=${systemProperties[key]}')
-      .toList();
-  if(classPath != null) args.addAll(['-cp', classPath]);
-  return args..add(javaClass)..addAll(classArgs);
-}
-
 /// The root of the package in which the currently executing script exists.
 final packageRoot = new PubPackage.containing(new Options().script).path;
 
 /// The path to the test resources.
 final testResources = join(packageRoot, 'test', 'resources');
 
-MockClientHandler testResourcesHandler = (Request request) => new Future(() {
-  print('in testResourcesHandler');
+/// An http client redirects requests to [testResources].
+final testResourcesHttpClient = new TestResourcesHttpClient();
+class TestResourcesHttpClient extends Mock implements Client {
+  TestResourcesHttpClient() : super.spy(new MockClient(_testResourcesHandler));
+}
+MockClientHandler _testResourcesHandler = (Request request) => new Future(() {
   return new Response.bytes(
       new File(join(testResources, request.url.pathSegments.last))
           .readAsBytesSync(),

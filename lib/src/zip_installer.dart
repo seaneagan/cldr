@@ -1,3 +1,6 @@
+// Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
 
 library cldr.zip_installer;
 
@@ -5,7 +8,7 @@ import 'dart:io';
 import 'dart:async';
 import 'package:path/path.dart';
 import 'package:http/http.dart' as http;
-import 'package:logging/logging.dart';
+import 'package:cli/cli.dart';
 import 'package:cldr/src/util.dart';
 
 /// Installs zip files from the network to the local file system.
@@ -28,6 +31,15 @@ class ZipInstaller {
   }
   http.Client _httpClient;
 
+  /// Used for all command runs.
+  ///
+  /// This is provided for mocking and testing purposes.
+  Runner get runner {
+    if(_runner == null) _runner = new Runner();
+    return _runner;
+  }
+  Runner _runner;
+
   /// The [basename] of the zip file.
   String get _zipBasename {
     if(__zipBasename == null) __zipBasename = basename(zipUri);
@@ -37,8 +49,13 @@ class ZipInstaller {
 
   String get _zipPath => join(installDir, _zipBasename);
 
-  ZipInstaller(this.zipUri, this.installDir, {http.Client httpClient})
-      : this._httpClient = httpClient;
+  ZipInstaller(
+      this.zipUri,
+      this.installDir,
+      {http.Client httpClient,
+       Runner runner})
+      : this._httpClient = httpClient,
+        this._runner = runner;
 
   /// Installs [zipUri] to [installDir].
   ///
@@ -51,8 +68,6 @@ class ZipInstaller {
 
   Future<List<int>> _download() {
     _logger.info("Downloading '$_zipBasename'");
-    var bytesFuture = httpClient.readBytes(zipUri);
-    return bytesFuture..then((_) => print('wtf'));
     return httpClient.readBytes(zipUri);
   }
 
@@ -68,15 +83,13 @@ class ZipInstaller {
 
     // The `jar xf` answer had the most upvotes here:
     //     http://stackoverflow.com/a/1021592/896989
-    Process.runSync(
-        'jar',
-        ['xf', _zipBasename],
-        workingDirectory: installDir);
+    var command = new Command('jar', ['xf', _zipBasename]);
+    var environment = new Environment(workingDirectory: installDir);
+    runner.runSync(command, environment: environment);
   }
 
   _delete() {
     _logger.info("Deleting '$_zipBasename' from '$installDir'");
     new File(_zipPath).deleteSync();
   }
-
 }

@@ -8,7 +8,7 @@ import 'package:path/path.dart';
 import 'package:unittest/unittest.dart';
 import 'package:cldr/cldr.dart';
 import 'package:cldr/src/data_set_impl.dart';
-import '../bin/src/util.dart';
+import 'package:cldr/src/util.dart';
 
 main() {
 
@@ -16,8 +16,8 @@ main() {
 
     JsonExtractor unit;
 
-    // Expect the same dummy data for each type of DataSet for brevity
-    // and to demonstrate the abstraction provided.
+    // Reuse result mock data for each DataSet type to show
+    // that the DataSet type is abstracted away.
     void expectExtractionResult(DataSet dataSet) {
 
       var result = unit.extract(dataSet);

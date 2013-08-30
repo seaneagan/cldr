@@ -69,7 +69,7 @@ class MainDataSet extends DataSetBase {
     var locales = topLevelDir
         .listSync()
         .map((dir) => basename(dir.path))
-        // Workaround editor creating unwanted 'packages' symlinks in test data.
+        // TODO: Remove this workaround of http://dartbug.com/10845.
         .where((locale) => locale != 'packages');
 
     return locales.fold(new Map<String, dynamic>(), (localeDataMap, locale) {

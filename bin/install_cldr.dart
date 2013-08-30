@@ -7,7 +7,7 @@ library cldr.bin.install_cldr;
 import 'dart:io';
 import 'package:args/args.dart';
 import 'src/util.dart';
-import 'package:cldr/src/cldr_installation.dart';
+import 'package:cldr/cldr_installation.dart';
 import 'package:cldr/cldr.dart';
 
 /// Installs Cldr core and tools needed by [Ldml2Json].
