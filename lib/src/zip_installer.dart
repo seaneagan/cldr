@@ -84,8 +84,7 @@ class ZipInstaller {
     // The `jar xf` answer had the most upvotes here:
     //     http://stackoverflow.com/a/1021592/896989
     var command = new Command('jar', ['xf', _zipBasename]);
-    var environment = new Environment(workingDirectory: installDir);
-    runner.runSync(command, environment: environment);
+    runner.runSync(command, workingDirectory: installDir);
   }
 
   _delete() {

@@ -113,8 +113,7 @@ class CldrInstallation {
   _runAntBuild() {
     _logger.info("Running the Cldr tools ant build");
     var command = new Command('ant', ['clean', 'all']);
-    var environment = new Environment(workingDirectory: javaPath);
-    runner.runSync(command, environment: environment);
+    runner.runSync(command, workingDirectory: javaPath);
   }
 
   /// The Cldr zips which must be installed.
