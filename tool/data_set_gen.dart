@@ -72,12 +72,35 @@ _generateDataSetsLibrary(String jsonPath) {
 final _libraryName = 'data_sets.dart';
 
 /// Returns the dart code representing the DataSets.
-String _getDataSetsCode(Directory directory) =>
-    _getDataSets(directory).map(_getDataSetDeclaration).join('\n\n');
+String _getDataSetsCode(Directory directory) {
+
+  isCalendarDataSet(dataSet) => dataSet['type'] == 'Calendar';
+
+  var dataSets = _getDataSets(directory);
+
+  var topLevelDataSets = dataSets.where((dataSet) =>
+      !isCalendarDataSet(dataSet));
+  var topLevelDataSetCode = topLevelDataSets
+      .map(_getTopLevelDataSetDeclaration).join('\n\n');
+
+  var calendarDataSets = dataSets.where(isCalendarDataSet);
+  var calendarDataSetCode = _getCalendarSystemsDeclaration(calendarDataSets);
+
+  var calendarSystems = calendarDataSets.map((dataSet) => dataSet['member']);
+
+  var enumDeclaration = _getCalendarSystemEnumDeclaration(calendarSystems);
+  return '''
+$topLevelDataSetCode
+
+$calendarDataSetCode
+
+$enumDeclaration
+''';
+}
 
 /// Returns a simple representation of the DataSets found in [directory]
 /// sorted by name.
-Iterable<Map<String, String>> _getDataSets (Directory directory) {
+Iterable<Map<String, String>> _getDataSets(Directory directory) {
 
   var mainDir = new Directory(join(directory.path, 'main', 'root'));
   var supplementalDir = new Directory(join(directory.path, 'supplemental'));
@@ -95,16 +118,19 @@ Iterable<Map<String, String>> _getDataSets (Directory directory) {
         var calendarPrefix = 'ca-';
 
         var isCalendar = basenameWithoutExtension.startsWith(calendarPrefix);
-        var typePrefix = isCalendar ?
+        var type = isCalendar ?
             'Calendar' :
             withCapitalization(dirname, true);
         var dataSetName =
             removePrefix(basenameWithoutExtension, calendarPrefix);
+        var member = isCalendar ?
+            dataSetName.toUpperCase().replaceAll('-', '_') :
+            separatorsToCamelCase(basenameWithoutExtension, false);
 
         return {
-          'type': "${typePrefix}DataSet",
+          'type': type,
           'arg': dataSetName,
-          'member' : separatorsToCamelCase(basenameWithoutExtension, false)
+          'member' : member
         };
       }))
       .expand((x) => x)
@@ -115,14 +141,46 @@ Iterable<Map<String, String>> _getDataSets (Directory directory) {
 
 /// Returns dart code representing a top-level variable declaration
 /// for [dataSet].
-String _getDataSetDeclaration(Map<String, String> dataSet) {
+String _getTopLevelDataSetDeclaration(Map<String, String> dataSet) {
   var type = dataSet['type'];
   var arg = dataSet['arg'];
   var member = dataSet['member'];
 
   // TODO: Consider converting dataSetVar to ALL_CAPS depending on outcome of
   // http://dartbug.com/12608.
-  return "final DataSet $member = new $type('$arg');";
+  return "final DataSet $member = new ${type}DataSet('$arg');";
+}
+
+String _getCalendarSystemsDeclaration(calendarSystemDataSets) {
+  var mapContents = calendarSystemDataSets.map((calendarSystem) =>
+      "  CalendarSystem.${calendarSystem['member']}: "
+      "new CalendarDataSet('${calendarSystem['arg']}')").join(''',
+''');
+
+  var mapLiteral = '''{
+$mapContents
+};''';
+
+  return "final Map<CalendarSystem, dynamic> calendarSystems = $mapLiteral";
+}
+
+String _getCalendarSystemEnumDeclaration(Iterable<String> calendarSystems) {
+
+  var enumContents = calendarSystems.map((calendarSystem) =>
+      "  static const $calendarSystem = "
+      "const CalendarSystem._('$calendarSystem');").join('\n\n');
+
+  return '''
+class CalendarSystem {
+    
+  final String _name;
+
+  const CalendarSystem._(this._name);
+
+$enumContents
+
+  String toString() => 'CalendarSystem.\$_name';
+}''';
 }
 
 /// Converts an underscore separated String to camel case.

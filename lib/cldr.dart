@@ -22,9 +22,9 @@ library cldr;
 
 import 'dart:io';
 import 'package:cli/cli.dart';
-import 'src/ldml2json_converter_command.dart';
-import 'cldr_installation.dart';
-import 'src/util.dart';
+import 'package:cldr/cldr_installation.dart';
+import 'package:cldr/src/ldml2json_converter_command.dart';
+import 'package:cldr/src/util.dart';
 
 part 'src/ldml2json.dart';
 part 'src/json_extractor.dart';

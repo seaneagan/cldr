@@ -9,6 +9,7 @@ library cldr.util;
 import 'dart:async';
 import 'dart:io';
 import 'package:logging/logging.dart';
+import 'package:meta/meta.dart';
 import 'package:path/path.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
@@ -102,6 +103,7 @@ final testResources = join(packageRoot, 'test', 'resources');
 /// Redirects http request to a sub path of [testResources].
 ///
 /// The last segment (basename) of requested Uri's is looked up under [path].
+@proxy
 class TestResourcesHttpClient extends Mock implements Client {
 
   /// The file system path to which to redirect requests.

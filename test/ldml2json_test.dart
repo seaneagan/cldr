@@ -5,6 +5,7 @@
 library cldr.test.ldml2json_test;
 
 import 'dart:io';
+import 'package:meta/meta.dart';
 import 'package:path/path.dart';
 import 'package:unittest/unittest.dart';
 import 'package:unittest/mock.dart';
@@ -168,6 +169,7 @@ class _MockCldrInstallation extends CldrInstallation {
       runner: new MockRunner((command) => new MockProcessResult()));
 }
 
+@proxy
 class MockCldrInstallation extends Mock implements CldrInstallation {
 
   MockCldrInstallation(String path)

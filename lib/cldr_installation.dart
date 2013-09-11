@@ -26,7 +26,9 @@ class CldrInstallation {
   ///
   /// This is provided for mocking and testing purposes.
   http.Client get httpClient {
-    if(_httpClient == null) _httpClient = new http.Client();
+    // Workaround http://dartbug.com/12570 by always returning a new Client.
+    // TODO: Cache Client once fixed.
+    if(_httpClient == null) return new http.Client();
     return _httpClient;
   }
   http.Client _httpClient;
@@ -111,7 +113,7 @@ class CldrInstallation {
 
   /// Runs the Cldr tools ant build.
   _runAntBuild() {
-    _logger.info("Running the Cldr tools ant build");
+    _logger.info("Running the Cldr tools ant build in: '$javaPath'");
     var command = new Command('ant', ['clean', 'all']);
     runner.runSync(command, workingDirectory: javaPath);
   }

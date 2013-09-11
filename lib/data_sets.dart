@@ -8,32 +8,6 @@ library cldr.data_sets;
 import 'package:cldr/cldr.dart';
 import 'package:cldr/src/data_set_impl.dart';
 
-final DataSet caBuddhist = new CalendarDataSet('buddhist');
-
-final DataSet caChinese = new CalendarDataSet('chinese');
-
-final DataSet caCoptic = new CalendarDataSet('coptic');
-
-final DataSet caEthiopic = new CalendarDataSet('ethiopic');
-
-final DataSet caEthiopicAmeteAlem = new CalendarDataSet('ethiopic-amete-alem');
-
-final DataSet caGregorian = new CalendarDataSet('gregorian');
-
-final DataSet caHebrew = new CalendarDataSet('hebrew');
-
-final DataSet caIndian = new CalendarDataSet('indian');
-
-final DataSet caIslamic = new CalendarDataSet('islamic');
-
-final DataSet caIslamicCivil = new CalendarDataSet('islamic-civil');
-
-final DataSet caJapanese = new CalendarDataSet('japanese');
-
-final DataSet caPersian = new CalendarDataSet('persian');
-
-final DataSet caRoc = new CalendarDataSet('roc');
-
 final DataSet calendarData = new SupplementalDataSet('calendarData');
 
 final DataSet calendarPreferenceData = new SupplementalDataSet('calendarPreferenceData');
@@ -48,9 +22,13 @@ final DataSet currencies = new MainDataSet('currencies');
 
 final DataSet currencyData = new SupplementalDataSet('currencyData');
 
+final DataSet dateFields = new MainDataSet('dateFields');
+
 final DataSet dayPeriods = new SupplementalDataSet('dayPeriods');
 
 final DataSet delimiters = new MainDataSet('delimiters');
+
+final DataSet gender = new SupplementalDataSet('gender');
 
 final DataSet languageData = new SupplementalDataSet('languageData');
 
@@ -76,6 +54,8 @@ final DataSet numberingSystems = new SupplementalDataSet('numberingSystems');
 
 final DataSet numbers = new MainDataSet('numbers');
 
+final DataSet ordinals = new SupplementalDataSet('ordinals');
+
 final DataSet parentLocales = new SupplementalDataSet('parentLocales');
 
 final DataSet plurals = new SupplementalDataSet('plurals');
@@ -83,6 +63,8 @@ final DataSet plurals = new SupplementalDataSet('plurals');
 final DataSet posix = new MainDataSet('posix');
 
 final DataSet postalCodeData = new SupplementalDataSet('postalCodeData');
+
+final DataSet primaryZones = new SupplementalDataSet('primaryZones');
 
 final DataSet references = new SupplementalDataSet('references');
 
@@ -96,6 +78,8 @@ final DataSet territoryContainment = new SupplementalDataSet('territoryContainme
 
 final DataSet territoryInfo = new SupplementalDataSet('territoryInfo');
 
+final DataSet timeData = new SupplementalDataSet('timeData');
+
 final DataSet timeZoneNames = new MainDataSet('timeZoneNames');
 
 final DataSet units = new MainDataSet('units');
@@ -105,3 +89,61 @@ final DataSet variants = new MainDataSet('variants');
 final DataSet weekData = new SupplementalDataSet('weekData');
 
 final DataSet windowsZones = new SupplementalDataSet('windowsZones');
+
+final Map<CalendarSystem, dynamic> calendarSystems = {
+  CalendarSystem.BUDDHIST: new CalendarDataSet('buddhist'),
+  CalendarSystem.CHINESE: new CalendarDataSet('chinese'),
+  CalendarSystem.COPTIC: new CalendarDataSet('coptic'),
+  CalendarSystem.DANGI: new CalendarDataSet('dangi'),
+  CalendarSystem.ETHIOPIC: new CalendarDataSet('ethiopic'),
+  CalendarSystem.ETHIOPIC_AMETE_ALEM: new CalendarDataSet('ethiopic-amete-alem'),
+  CalendarSystem.GENERIC: new CalendarDataSet('generic'),
+  CalendarSystem.GREGORIAN: new CalendarDataSet('gregorian'),
+  CalendarSystem.HEBREW: new CalendarDataSet('hebrew'),
+  CalendarSystem.INDIAN: new CalendarDataSet('indian'),
+  CalendarSystem.ISLAMIC: new CalendarDataSet('islamic'),
+  CalendarSystem.ISLAMIC_CIVIL: new CalendarDataSet('islamic-civil'),
+  CalendarSystem.JAPANESE: new CalendarDataSet('japanese'),
+  CalendarSystem.PERSIAN: new CalendarDataSet('persian'),
+  CalendarSystem.ROC: new CalendarDataSet('roc')
+};
+
+class CalendarSystem {
+    
+  final String _name;
+
+  const CalendarSystem._(this._name);
+
+  static const BUDDHIST = const CalendarSystem._('BUDDHIST');
+
+  static const CHINESE = const CalendarSystem._('CHINESE');
+
+  static const COPTIC = const CalendarSystem._('COPTIC');
+
+  static const DANGI = const CalendarSystem._('DANGI');
+
+  static const ETHIOPIC = const CalendarSystem._('ETHIOPIC');
+
+  static const ETHIOPIC_AMETE_ALEM = const CalendarSystem._('ETHIOPIC_AMETE_ALEM');
+
+  static const GENERIC = const CalendarSystem._('GENERIC');
+
+  static const GREGORIAN = const CalendarSystem._('GREGORIAN');
+
+  static const HEBREW = const CalendarSystem._('HEBREW');
+
+  static const INDIAN = const CalendarSystem._('INDIAN');
+
+  static const ISLAMIC = const CalendarSystem._('ISLAMIC');
+
+  static const ISLAMIC_CIVIL = const CalendarSystem._('ISLAMIC_CIVIL');
+
+  static const JAPANESE = const CalendarSystem._('JAPANESE');
+
+  static const PERSIAN = const CalendarSystem._('PERSIAN');
+
+  static const ROC = const CalendarSystem._('ROC');
+
+  String toString() => 'CalendarSystem.$_name';
+}
+
