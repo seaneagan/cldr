@@ -174,4 +174,7 @@ class MockCldrInstallation extends Mock implements CldrInstallation {
 
   MockCldrInstallation(String path)
       : super.spy(new _MockCldrInstallation(path));
+
+  // TODO: Remove once http://dartbug.com/13410 is fixed.
+  noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

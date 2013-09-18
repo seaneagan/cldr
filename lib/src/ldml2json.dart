@@ -40,7 +40,7 @@ class Ldml2Json {
   /// The [cldrInstallation] can either be a [CldrInstallation] or a path to
   /// one.
   Ldml2Json(
-      var cldrInstallation,
+      cldrInstallation,
       this.out,
       {this.config,
        Runner runner})
@@ -56,7 +56,7 @@ class Ldml2Json {
 
     _checkDependencies();
 
-    var outDir = new Directory(out);
+    var outDir = fileSystem.getDirectory(out);
 
     // Remove any existing output.
     cleanDirectorySync(outDir);
@@ -106,7 +106,7 @@ $command''');
 
     if(config != null) {
       // Scan custom configs for subdirectory references.
-      var configContent = new File(config).readAsStringSync();
+      var configContent = fileSystem.getFile(config).readAsStringSync();
       subdirs = subdirs.where((subdir) =>
           configContent.contains('//cldr/$subdir'));
     }

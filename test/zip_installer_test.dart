@@ -9,6 +9,7 @@ import 'package:path/path.dart';
 import 'package:unittest/unittest.dart';
 import 'package:unittest/mock.dart';
 import 'package:cli/cli.dart';
+import 'package:mockable_filesystem/filesystem.dart';
 import 'package:cli/testing.dart';
 import 'package:cldr/src/zip_installer.dart';
 import 'package:cldr/src/util.dart';
@@ -25,7 +26,7 @@ main() {
     TestResourcesHttpClient mockClient;
 
     setUp(() {
-      tempDir = new Directory('').createTempSync();
+      tempDir = fileSystem.getDirectory('').createTempSync();
       zipUri = 'http://example.com/mock.zip';
       installDir = join(tempDir.path, 'out');
 
@@ -55,7 +56,7 @@ main() {
           var fileExists =
               predicate((file) => file.existsSync(), 'file exists');
 
-          expect(new File(join(installDir, mockZip)),
+          expect(fileSystem.getFile(join(installDir, mockZip)),
               isNot(fileExists));
         });
       });

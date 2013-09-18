@@ -159,9 +159,9 @@ String _getCalendarSystemsDeclaration(calendarSystemDataSets) {
 
   var mapLiteral = '''{
 $mapContents
-};''';
+}''';
 
-  return "final Map<CalendarSystem, dynamic> calendarSystems = $mapLiteral";
+  return "final Map<CalendarSystem, DataSet> calendarSystems = $mapLiteral;";
 }
 
 String _getCalendarSystemEnumDeclaration(Iterable<String> calendarSystems) {
@@ -171,6 +171,8 @@ String _getCalendarSystemEnumDeclaration(Iterable<String> calendarSystems) {
       "const CalendarSystem._('$calendarSystem');").join('\n\n');
 
   return '''
+/// A [calendar system][wiki] for which Cldr has data.
+/// [wiki]: http://en.wikipedia.org/wiki/Calendar#Calendar_systems
 class CalendarSystem {
     
   final String _name;

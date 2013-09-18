@@ -9,6 +9,7 @@ import 'dart:async';
 import 'package:path/path.dart';
 import 'package:http/http.dart' as http;
 import 'package:cli/cli.dart';
+import 'package:mockable_filesystem/filesystem.dart';
 import 'package:cldr/src/util.dart';
 
 /// Installs zip files from the network to the local file system.
@@ -54,8 +55,8 @@ class ZipInstaller {
       this.installDir,
       {http.Client httpClient,
        Runner runner})
-      : this._httpClient = httpClient,
-        this._runner = runner;
+      : _httpClient = httpClient,
+        _runner = runner;
 
   /// Installs [zipUri] to [installDir].
   ///
@@ -73,7 +74,7 @@ class ZipInstaller {
 
   _write(List<int> bytes) {
     _logger.info("Writing '$_zipBasename' to '$installDir'");
-    var zipFile = new File(_zipPath);
+    var zipFile = fileSystem.getFile(_zipPath);
     zipFile.directory.createSync(recursive: true);
     zipFile.writeAsBytesSync(bytes);
   }
@@ -89,6 +90,6 @@ class ZipInstaller {
 
   _delete() {
     _logger.info("Deleting '$_zipBasename' from '$installDir'");
-    new File(_zipPath).deleteSync();
+    fileSystem.getFile(_zipPath).deleteSync();
   }
 }

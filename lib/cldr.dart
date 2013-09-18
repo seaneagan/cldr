@@ -22,6 +22,7 @@ library cldr;
 
 import 'dart:io';
 import 'package:cli/cli.dart';
+import 'package:mockable_filesystem/filesystem.dart';
 import 'package:cldr/cldr_installation.dart';
 import 'package:cldr/src/ldml2json_converter_command.dart';
 import 'package:cldr/src/util.dart';

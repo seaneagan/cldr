@@ -5,6 +5,7 @@
 import 'dart:io';
 import 'dart:json' as json;
 import 'package:path/path.dart';
+import 'package:mockable_filesystem/filesystem.dart';
 import 'package:cldr/cldr.dart';
 
 /// A base implementation of [DataSet].
@@ -47,7 +48,7 @@ abstract class DataSetBase implements DataSet {
 
   _getOutputStructure(String jsonRoot, [String locale]) {
     var jsonFilePath = join(jsonRoot, _getJsonFilePath(locale));
-    var theJson = new File(jsonFilePath).readAsStringSync();
+    var theJson = fileSystem.getFile(jsonFilePath).readAsStringSync();
     var jsonStructure = json.parse(theJson);
     return _getJsonSubstructure(jsonStructure, locale);
   }
@@ -65,7 +66,7 @@ class MainDataSet extends DataSetBase {
 
   Map<String, dynamic> extract(String jsonRoot) {
 
-    var topLevelDir = new Directory(join(jsonRoot, _subdirectory));
+    var topLevelDir = fileSystem.getDirectory(join(jsonRoot, _subdirectory));
     var locales = topLevelDir
         .listSync()
         .map((dir) => basename(dir.path))

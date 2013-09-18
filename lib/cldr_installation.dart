@@ -9,6 +9,7 @@ import 'dart:async';
 import 'package:path/path.dart';
 import 'package:http/http.dart' as http;
 import 'package:cli/cli.dart';
+import 'package:mockable_filesystem/filesystem.dart';
 import 'package:cldr/src/zip_installer.dart';
 import 'package:cldr/src/java.dart';
 import 'package:cldr/src/util.dart';
@@ -58,7 +59,8 @@ class CldrInstallation {
   CldrInstallation(
       this.path,
       {http.Client httpClient,
-       Runner runner})
+       Runner runner,
+       FileSystem fileSystem})
       : _httpClient = httpClient,
         _runner = runner;
 
@@ -104,7 +106,7 @@ class CldrInstallation {
       }
     });
 
-    if(!new Directory(javaClassesPath).existsSync()) {
+    if(!fileSystem.getDirectory(javaClassesPath).existsSync()) {
       missing.add('Cldr tools ant build output');
     }
 

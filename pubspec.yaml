@@ -9,6 +9,7 @@ dependencies:
   codegen: any
   http: any
   logging: any
+  mockable_filesystem: any
   path: any
 dev_dependencies:
   unittest: any

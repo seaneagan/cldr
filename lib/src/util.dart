@@ -15,6 +15,7 @@ import 'package:http/http.dart';
 import 'package:http/testing.dart';
 import 'package:codegen/codegen.dart';
 import 'package:cli/cli.dart';
+import 'package:mockable_filesystem/filesystem.dart';
 import 'package:unittest/mock.dart';
 
 /// Returns a [Logger] with a preattached [Logger.onRecord] handler.
@@ -119,8 +120,11 @@ class TestResourcesHttpClient extends Mock implements Client {
   static MockClientHandler _getHandler(String path) => (Request request) =>
       new Future(() =>
           new Response.bytes(
-              new File(join(path, request.url.pathSegments.last))
+              fileSystem.getFile(join(path, request.url.pathSegments.last))
                   .readAsBytesSync(),
               200,
               request: request));
+
+  // TODO: Remove once http://dartbug.com/13410 is fixed.
+  noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

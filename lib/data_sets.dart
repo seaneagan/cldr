@@ -90,7 +90,7 @@ final DataSet weekData = new SupplementalDataSet('weekData');
 
 final DataSet windowsZones = new SupplementalDataSet('windowsZones');
 
-final Map<CalendarSystem, dynamic> calendarSystems = {
+final Map<CalendarSystem, DataSet> calendarSystems = {
   CalendarSystem.BUDDHIST: new CalendarDataSet('buddhist'),
   CalendarSystem.CHINESE: new CalendarDataSet('chinese'),
   CalendarSystem.COPTIC: new CalendarDataSet('coptic'),
@@ -108,6 +108,8 @@ final Map<CalendarSystem, dynamic> calendarSystems = {
   CalendarSystem.ROC: new CalendarDataSet('roc')
 };
 
+/// A [calendar system][wiki] for which Cldr has data.
+/// [wiki]: http://en.wikipedia.org/wiki/Calendar#Calendar_systems
 class CalendarSystem {
     
   final String _name;
