@@ -5,6 +5,7 @@
 library cldr.tool.data_set_gen;
 
 import 'dart:io';
+import 'dart:convert';
 import 'package:path/path.dart';
 import 'package:args/args.dart';
 import 'package:codegen/codegen.dart';
@@ -118,18 +119,49 @@ Iterable<Map<String, String>> _getDataSets(Directory directory) {
         var calendarPrefix = 'ca-';
 
         var isCalendar = basenameWithoutExtension.startsWith(calendarPrefix);
+
         var type = isCalendar ?
             'Calendar' :
             withCapitalization(dirname, true);
+
+        var named = {};
+
+        var mainParentSegments = {
+          'dates': 'timeZoneNames',
+          'numbers': 'currenties'
+        }..addAll(new Map.fromIterable([
+          'languages',
+          'measurementSystemNames',
+          'scripts',
+          'territories',
+          'transformNames',
+          'variants'
+        ], value: (_) => 'localeDisplayNames'));
+
+        var supplementalSegments = {
+          'characterFallbacks': 'characters',
+          'dayPeriods': 'dayPeriodRuleSet'
+        };
+
+        if(dirname == 'main' && mainParentSegments.containsKey(basenameWithoutExtension)) {
+          named['parentSegments'] = [mainParentSegments[basenameWithoutExtension]];
+        }
+
+        if(dirname == 'supplemental' && supplementalSegments.containsKey(basenameWithoutExtension)) {
+          named['segment'] = supplementalSegments[basenameWithoutExtension];
+        }
+
         var dataSetName =
             removePrefix(basenameWithoutExtension, calendarPrefix);
+
         var member = isCalendar ?
             dataSetName.toUpperCase().replaceAll('-', '_') :
             separatorsToCamelCase(basenameWithoutExtension, false);
 
         return {
           'type': type,
-          'arg': dataSetName,
+          'positionals': [dataSetName],
+          'named': named,
           'member' : member
         };
       }))
@@ -141,20 +173,19 @@ Iterable<Map<String, String>> _getDataSets(Directory directory) {
 
 /// Returns dart code representing a top-level variable declaration
 /// for [dataSet].
-String _getTopLevelDataSetDeclaration(Map<String, String> dataSet) {
-  var type = dataSet['type'];
-  var arg = dataSet['arg'];
+String _getTopLevelDataSetDeclaration(Map<String, dynamic> dataSet) {
+
   var member = dataSet['member'];
 
   // TODO: Consider converting dataSetVar to ALL_CAPS depending on outcome of
   // http://dartbug.com/12608.
-  return "final DataSet $member = new ${type}DataSet('$arg');";
+  return "final DataSet $member = ${_getDataSetInstantiation(dataSet)};";
 }
 
 String _getCalendarSystemsDeclaration(calendarSystemDataSets) {
   var mapContents = calendarSystemDataSets.map((calendarSystem) =>
       "  CalendarSystem.${calendarSystem['member']}: "
-      "new CalendarDataSet('${calendarSystem['arg']}')").join(''',
+      "${_getDataSetInstantiation(calendarSystem)}").join(''',
 ''');
 
   var mapLiteral = '''{
@@ -162,6 +193,16 @@ $mapContents
 }''';
 
   return "final Map<CalendarSystem, DataSet> calendarSystems = $mapLiteral;";
+}
+
+String _getDataSetInstantiation(Map<String, dynamic> dataSet) {
+    var type = dataSet['type'];
+    var positionals = dataSet['positionals'].map(JSON.encode).join(', ');
+    var named = dataSet['named'].keys.map((name) =>
+        '$name: ${JSON.encode(dataSet['named'][name])}').join(', ');
+    var args = [positionals, named].where((part) => part != '').join(', ');
+
+    return "new ${type}DataSet($args)";
 }
 
 String _getCalendarSystemEnumDeclaration(Iterable<String> calendarSystems) {

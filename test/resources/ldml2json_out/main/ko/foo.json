@@ -11,8 +11,12 @@
         },
         "language": "ko"
       },
-      "foo": {
-        "bar": 2
+      "parent1": {
+        "parent2": {
+          "foo": {
+            "bar": 2
+          }
+        }
       }
     }
   }

@@ -39,7 +39,9 @@ main() {
     });
 
     test('main', () {
-      expectExtractionResult(new MainDataSet('foo'));
+      expectExtractionResult(new MainDataSet(
+          'foo',
+          parentSegments: ['parent1', 'parent2']));
     });
 
     test('calendar', () {
@@ -47,7 +49,8 @@ main() {
     });
 
     test('supplemental', () {
-      expectExtractionResult(new SupplementalDataSet('foo'));
+      expectExtractionResult(new SupplementalDataSet(
+          'foo', segment: 'fooSegment'));
     });
 
   });

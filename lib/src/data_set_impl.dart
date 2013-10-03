@@ -9,9 +9,12 @@ import 'package:mockable_filesystem/filesystem.dart';
 import 'package:cldr/cldr.dart';
 
 /// A base implementation of [DataSet].
-abstract class DataSetBase implements DataSet {
+abstract class _BaseDataSet implements DataSet {
+
   /// Json file [basename].  The file [extension] is always "json".
   final String _jsonFileBasename;
+
+  String get segment => _jsonFileBasename;
 
   /// Cldr top-level directory, either "main" or "supplemental".
   final String _subdirectory;
@@ -19,7 +22,7 @@ abstract class DataSetBase implements DataSet {
   /// Whether to include the locale in the path to files and data within files.
   final bool _pathIncludesLocale;
 
-  DataSetBase(
+  _BaseDataSet(
       this._jsonFileBasename,
       this._subdirectory,
       this._pathIncludesLocale);
@@ -44,7 +47,7 @@ abstract class DataSetBase implements DataSet {
   }
 
   List<String> _getJsonStructureSegments(String locale) =>
-      _getFilePathSegments(locale);
+      _getDirPathSegments(locale).toList()..add(segment);
 
   _getOutputStructure(String jsonRoot, [String locale]) {
     var jsonFilePath = join(jsonRoot, _getJsonFilePath(locale));
@@ -60,8 +63,11 @@ abstract class DataSetBase implements DataSet {
           (jsonStructure, segment) => jsonStructure[segment]);
 }
 
-class MainDataSet extends DataSetBase {
-  MainDataSet(String jsonFileBasename)
+class MainDataSet extends _BaseDataSet {
+
+  final List<String> parentSegments;
+
+  MainDataSet(String jsonFileBasename, {this.parentSegments: const <String>[]})
       : super(jsonFileBasename, 'main', true);
 
   Map<String, dynamic> extract(String jsonRoot) {
@@ -78,11 +84,22 @@ class MainDataSet extends DataSetBase {
       return localeDataMap;
     });
   }
+
+  List<String> _getJsonStructureSegments(String locale) =>
+      _getDirPathSegments(locale)
+          .toList()
+          ..addAll(parentSegments)
+          ..add(segment);
 }
 
-class SupplementalDataSet extends DataSetBase {
-  SupplementalDataSet(String jsonFileBasename)
-      : super(jsonFileBasename, 'supplemental', false);
+class SupplementalDataSet extends _BaseDataSet {
+
+  String get segment => _segment == null ? super.segment : _segment;
+  final String _segment;
+
+  SupplementalDataSet(String jsonFileBasename, {String segment})
+      : _segment = segment,
+        super(jsonFileBasename, 'supplemental', false);
 
   Map<String, dynamic> extract(String jsonRoot) =>
       _getOutputStructure(jsonRoot);
@@ -92,12 +109,9 @@ class CalendarDataSet extends MainDataSet {
 
   final String calendarId;
 
+  String get segment => calendarId;
+
   CalendarDataSet(String calendarId)
       : this.calendarId = calendarId,
-        super('ca-$calendarId');
-
-  List<String> _getJsonStructureSegments(String locale) =>
-      _getDirPathSegments(locale)
-          .toList()
-          ..addAll(['dates', 'calendars', calendarId]);
+        super('ca-$calendarId', parentSegments: ['dates', 'calendars']);
 }

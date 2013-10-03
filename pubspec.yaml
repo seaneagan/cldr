@@ -1,5 +1,5 @@
 name: cldr
-version: 0.0.3
+version: 0.0.5
 author: Dart Authors <misc@dartlang.org>
 description: Mechanisms to extract data from Cldr.
 homepage: http://github.com/dart-lang/cldr

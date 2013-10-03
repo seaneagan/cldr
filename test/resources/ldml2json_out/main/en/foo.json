@@ -11,8 +11,12 @@
         },
         "language": "en"
       },
-      "foo": {
-        "bar": 1
+      "parent1": {
+        "parent2": {
+          "foo": {
+            "bar": 1
+          }
+        }
       }
     }
   }

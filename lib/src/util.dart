@@ -60,7 +60,9 @@ void truncateDirectorySync(Directory directory) {
     }
   }
 
-  directory.listSync().forEach(deleteFileSystemEntitySync);
+  if(directory.existsSync()) {
+    directory.listSync().forEach(deleteFileSystemEntitySync);
+  }
 }
 
 /// Uppercase or lowercase the first charater of a String.
