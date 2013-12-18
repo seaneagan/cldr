@@ -9,7 +9,6 @@ library cldr.util;
 import 'dart:async';
 import 'dart:io';
 import 'package:logging/logging.dart';
-import 'package:meta/meta.dart';
 import 'package:path/path.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
@@ -45,7 +44,7 @@ cleanDirectorySync(Directory directory) {
 /// Creates a File and all of its parent directories synchronously.
 // TODO: Replace with the resolution of http://dartbug.com/12462
 createFileResursiveSync(File file) {
-  file.directory.createSync(recursive: true);
+  file.parent.createSync(recursive: true);
   file.createSync();
 }
 
@@ -97,7 +96,7 @@ class MissingDependencyError extends Error {
 }
 
 /// The root of the package containing the currently executing script.
-final packageRoot = new PubPackage.containing(new Options().script).path;
+final packageRoot = new PubPackage.containing(fromUri(Platform.script)).path;
 
 /// The test resources path of the package containing the currently executing
 /// script.

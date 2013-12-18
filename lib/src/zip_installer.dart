@@ -75,7 +75,7 @@ class ZipInstaller {
   _write(List<int> bytes) {
     _logger.info("Writing '$_zipBasename' to '$installDir'");
     var zipFile = fileSystem.getFile(_zipPath);
-    zipFile.directory.createSync(recursive: true);
+    zipFile.parent.createSync(recursive: true);
     zipFile.writeAsBytesSync(bytes);
   }
 

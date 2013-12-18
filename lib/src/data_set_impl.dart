@@ -3,7 +3,7 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'dart:io';
-import 'dart:json' as json;
+import 'dart:convert';
 import 'package:path/path.dart';
 import 'package:mockable_filesystem/filesystem.dart';
 import 'package:cldr/cldr.dart';
@@ -52,7 +52,7 @@ abstract class _BaseDataSet implements DataSet {
   _getOutputStructure(String jsonRoot, [String locale]) {
     var jsonFilePath = join(jsonRoot, _getJsonFilePath(locale));
     var theJson = fileSystem.getFile(jsonFilePath).readAsStringSync();
-    var jsonStructure = json.parse(theJson);
+    var jsonStructure = JSON.decode(theJson);
     return _getJsonSubstructure(jsonStructure, locale);
   }
 

@@ -24,7 +24,7 @@ main() {
     CldrInstallation unit;
 
     setUp(() {
-      tempDir = new Directory('').createTempSync();
+      tempDir = Directory.systemTemp.createTempSync();
       installDir = join(tempDir.path, 'cldr');
       mockClient = new TestResourcesHttpClient();
       mockRunner = new MockRunner((Command command) =>

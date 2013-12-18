@@ -5,7 +5,6 @@
 library cldr.test.ldml2json_test;
 
 import 'dart:io';
-import 'package:meta/meta.dart';
 import 'package:path/path.dart';
 import 'package:unittest/unittest.dart';
 import 'package:unittest/mock.dart';
@@ -30,7 +29,7 @@ main() {
     File existingFile;
 
     setUp(() {
-      tempDir = new Directory('').createTempSync();
+      tempDir = Directory.systemTemp.createTempSync();
       outPath = join(tempDir.path, 'out');
       configPath = join(testResources, 'ldml2json_config.txt');
       // Simulate existing output.

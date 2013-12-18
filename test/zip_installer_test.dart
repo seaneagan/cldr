@@ -26,7 +26,7 @@ main() {
     TestResourcesHttpClient mockClient;
 
     setUp(() {
-      tempDir = fileSystem.getDirectory('').createTempSync();
+      tempDir = Directory.systemTemp.createTempSync();
       zipUri = 'http://example.com/mock.zip';
       installDir = join(tempDir.path, 'out');
 
